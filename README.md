@@ -23,7 +23,7 @@ claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repo
 
 | Agent | What it does | Status |
 |---|---|---|
-| `cerebro-operativo` | Operating brain for an organization: playbooks and a decision log kept current from recorded meetings, answers to "how do we handle this" with sources, drafts in the company's voice | Planned |
+| [`cerebro-operativo`](cerebro-operativo/) | Operating brain for an organization: playbooks and a decision log kept current from recorded meetings, answers to "how do we handle this" with sources, drafts in the company's voice | Engine scaffolded (templates, docs, demo); skills pending their first release |
 
 ## Conventions
 

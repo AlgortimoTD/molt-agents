@@ -1,0 +1,1 @@
+Acá queda el resumen de cada corrida de la rutina (`ingesta-AAAA-MM-DD.md`): qué entró, qué cambió, qué quedó por confirmar y qué se descartó. En `auditorias/` quedan los reportes de la auditoría semanal. También vive acá `como-operar-el-cerebro.md`, la guía de operación.

@@ -7,5 +7,11 @@
     "description": "Molt agents marketplace: one Claude plugin per sold agent, installable from Claude Code, the Claude desktop app and claude.ai.",
     "version": "0.1.0"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "cerebro-operativo",
+      "source": "./cerebro-operativo",
+      "description": "Operating brain for an organization on Google Drive: playbooks and a decision log kept current from recorded meetings, answers to \"how do we handle this\" with sources, drafts in the company's voice, a daily routine and a weekly audit."
+    }
+  ]
 }
