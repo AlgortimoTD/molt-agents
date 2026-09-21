@@ -1,0 +1,1 @@
+Drop a transcript here by hand when Fathom did not record the meeting. Put the date first (`YYYY-MM-DD-<title>.md`). The next run of the routine picks it up, processes it and moves it to `reuniones/`; if you are in a hurry, ask in the chat "process the transcript I left in entrada".

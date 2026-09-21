@@ -1,8 +1,10 @@
 # templates/
 
-What `cerebro-setup` fills to create an organization's brain. Everything here lands in the customer's folder, so it is written in the customer's language (Spanish by default; the setup skill produces it in the language the organization fixes) and carries no data of any organization: every placeholder is `<así>` and the setup interview fills it.
+What `cerebro-setup` fills to create an organization's brain. Everything here lands in the customer's folder, so it exists in the two languages the agent supports, `es/` and `en/`, with identical structure. The setup skill detects the language of the person's first interaction, confirms it with an explicit question, and picks one set; that language is then written in the brain's `CLAUDE.md` and `_config/fuentes.md`, where every skill reads it. No template carries data of any organization: every placeholder is `<like this>` and the interview fills it.
 
-| Template | Becomes | Filled by |
+**Canonical tokens, identical in both languages.** The skills navigate the folder by names, so these never change with the language: folder and file names (`_config/empresa.md`, `_config/valores-y-negociables.md`, `_config/voz.md`, `_config/fuentes.md`, `playbooks/`, `decisiones/bitacora.md`, `casos/`, `reuniones/`, `reuniones/entrada/`, `salidas/`, `_estado/ultima-ingesta.json`, `memory.md`), the `## Historial` heading of a playbook, the `<!-- Vigente desde AAAA-MM-DD -->` marker, and the decision states `aplicada`, `por confirmar`, `propuesta`, `abierta`, `revertida`. The English templates keep them and explain them once. Everything else is prose in the organization's language.
+
+| Template (same name under `es/` and `en/`) | Becomes | Filled by |
 |---|---|---|
 | `CLAUDE.root.template.md` | `CLAUDE.md` of the brain (line 1 is the marker `<!-- cerebro-operativo -->`) | interview: organization, roles, language |
 | `config/empresa.template.md` | `_config/empresa.md` | interview and the public site |
@@ -17,4 +19,4 @@ What `cerebro-setup` fills to create an organization's brain. Everything here la
 | `reuniones-entrada-README.template.md` | `reuniones/entrada/README.md` | as is |
 | `salidas-README.template.md` | `salidas/README.md` | as is |
 
-The setup skill also copies `docs/como-operar-el-cerebro.md` into `salidas/` so the operating guide travels with the brain.
+The setup skill also copies the operating guide of the chosen language (`docs/es/como-operar-el-cerebro.md` or `docs/en/how-to-operate-the-brain.md`) into `salidas/` so it travels with the brain.

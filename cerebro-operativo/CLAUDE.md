@@ -61,7 +61,9 @@ Context hierarchy: the root `CLAUDE.md` is the only source of the hard rules and
 
 ## Language
 
-The organization fixes the working language of playbooks, log, cases and answers in its `CLAUDE.md` and `_config/fuentes.md`. Every skill reads it there. The templates default to Spanish; the setup skill produces them in the language the organization chooses.
+The agent works in Spanish and in English. `cerebro-setup` detects the language of the person's first interaction, confirms it with an explicit question before creating anything, picks the matching template set (`templates/es/` or `templates/en/`) and writes the choice in the brain's `CLAUDE.md` and `_config/fuentes.md`. From then on every skill reads the working language there, never from the language of the question or the transcript.
+
+**Canonical tokens do not translate.** The skills navigate the folder by names, so folder and file names (`_config/empresa.md`, `decisiones/bitacora.md`, `reuniones/entrada/`, `salidas/ingesta-<fecha>.md`, and the rest of the map above), the `## Historial` heading, the `<!-- Vigente desde -->` marker and the decision states (`aplicada`, `por confirmar`, `propuesta`, `abierta`, `revertida`) are identical in both languages. The English templates explain them once; everything else is prose in the organization's language.
 
 ## Dependencies
 

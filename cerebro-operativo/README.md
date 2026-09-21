@@ -33,6 +33,10 @@ claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repo
 
 Say **"puebla el cerebro con la empresa de ejemplo"**: a fully fictional agency ([demo/](demo/README.md)) with two playbooks, a decision log, a closed case and one meeting transcript not yet processed. Processing it adds a decision, rewrites a playbook section with history and leaves one inference "por confirmar": the whole mechanism in five minutes, with nothing real exposed. Delete the folder when done.
 
+## Languages
+
+Spanish and English. The setup detects the language of your first message, asks you to confirm it, and creates the brain in that language (templates and operating guide exist in both under `templates/` and `docs/`). Folder and file names stay the same in both languages because the skills navigate by them.
+
 ## Requirements
 
 None on the computer: the brain is Markdown, one JSON state file, connectors and a scheduled task. Connectors: Google Drive (required; Drive for desktop on the machines that consult locally, the Drive connector for cloud sessions and for the routine), Fathom (optional, read-only; a pasted transcript does the same job). Cloud sessions need nothing installed.
