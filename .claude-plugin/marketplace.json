@@ -1,0 +1,11 @@
+{
+  "name": "molt-agents",
+  "owner": {
+    "name": "Molt Solutions"
+  },
+  "metadata": {
+    "description": "Molt agents marketplace: one Claude plugin per sold agent, installable from Claude Code, the Claude desktop app and claude.ai.",
+    "version": "0.1.0"
+  },
+  "plugins": []
+}

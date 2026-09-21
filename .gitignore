@@ -1,0 +1,9 @@
+# Personal layer of any agent in this repository: never versioned
+**/local/
+
+# Frozen packages (regenerable)
+**/dist/
+
+# OS noise
+.DS_Store
+Thumbs.db
