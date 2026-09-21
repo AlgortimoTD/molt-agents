@@ -51,14 +51,20 @@ while IFS= read -r slug; do
 done < "$MANIFEST"
 [ ${#ENTRIES[@]} -gt 0 ] || { echo "release: manifest is empty" >&2; exit 1; }
 
-printf '%s\n' "${ENTRIES[@]}" | "$PY" - "$ROOT/$AGENT/skills/RELEASE.json" <<'PYEOF'
+# The entries travel through a temp file: a heredoc already owns stdin for the Python program.
+ENTRIES_FILE="$(mktemp)"; printf '%s\n' "${ENTRIES[@]}" > "$ENTRIES_FILE"
+"$PY" - "$ROOT/$AGENT/skills/RELEASE.json" "$ENTRIES_FILE" <<'PYEOF'
 import json, sys, datetime
-rows = [l.strip().split("|") for l in sys.stdin if l.strip()]
+rows = [l.strip().split("|") for l in open(sys.argv[2], encoding="utf-8") if l.strip()]
+if not rows:
+    sys.exit("release: no entries to stamp")
 out = {"stamped_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
        "source": "catalogs/global/<slug>/skill in the platform monorepo",
        "skills": {slug: {"version": v, "skill_md_sha256": s} for slug, v, s in rows}}
 json.dump(out, open(sys.argv[1], "w", newline="\n"), indent=2, ensure_ascii=False); open(sys.argv[1], "a", newline="\n").write("\n")
+print(f"release: RELEASE.json records {len(rows)} skill(s)")
 PYEOF
+rm -f "$ENTRIES_FILE"
 
 if [ "$BUMP" != "none" ]; then
   "$PY" - "$ROOT/$AGENT/.claude-plugin/plugin.json" "$BUMP" <<'PYEOF'
