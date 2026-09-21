@@ -1,0 +1,26 @@
+{
+  "stamped_at": "2026-09-21T19:57:52Z",
+  "source": "catalogs/global/<slug>/skill in the platform monorepo",
+  "skills": {
+    "cerebro-setup": {
+      "version": "1.0.0",
+      "skill_md_sha256": "5f29b28b682ac68e378ebdf93f7c2c222aa7444706baf88fe46117aac231f1a3"
+    },
+    "cerebro-audit": {
+      "version": "1.0.0",
+      "skill_md_sha256": "55c258bcdb67f05a958b592fa39a5fbb89d17e9db09e533e4c09525dc8cef0bc"
+    },
+    "transcript-to-playbook-updater": {
+      "version": "1.0.0",
+      "skill_md_sha256": "64a47e9407fb1d85439512d1d3596258728d6cbefe57b1d0319c16270f850cb1"
+    },
+    "escalation-playbook-responder": {
+      "version": "1.0.0",
+      "skill_md_sha256": "eeac578b60ead929b122a6613fd5b6541fe682f85a524d4a64a4870046b31e76"
+    },
+    "brand-voice-style-guide": {
+      "version": "1.1.0",
+      "skill_md_sha256": "ac0cdc749388ca10f322ca358d57fef48e133f8f67528ddc1fedc5ed324b0f09"
+    }
+  }
+}

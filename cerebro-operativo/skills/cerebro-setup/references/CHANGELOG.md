@@ -1,0 +1,16 @@
+# cerebro-setup CHANGELOG
+
+Version metadata is maintained by `skills-sync` (`version:bump` re-stamps the `SKILL.md`
+description + `## Version` heading and inserts the row below).
+
+Semver:
+- **MAJOR (X.0.0):** breaking change to the folder contract this skill creates (file map,
+  marker, canonical tokens) or to the interview's outputs.
+- **MINOR (x.Y.0):** a new phase, block, language or check, no contract break.
+- **PATCH (x.y.Z):** typo, link, cosmetic copy.
+
+## History
+
+| Version | Date | Commits | What changed |
+|---------|------|---------|--------------|
+| 1.0.0 | 2026-09-21 | *(this commit)* | Initial version. Zero-command onboarding of the operating brain: detects the language of the first message and confirms it explicitly before creating anything, then Drive folder, guided interview that fills the plugin templates of the chosen language (es or en), voice guide, plugin check, daily routine with the literal prompt, and a first transcript processed end to end. Idempotent Phase 0 recognizes an existing brain by the marker on line 1 of its CLAUDE.md and never creates a second one. Demo mode seeds the fictional organization next to the real brain and never saves it to memory, so a later real install is not mistaken for a second brain. Nothing is installed on the machine. Canonical tokens (file names, Historial, Vigente desde, decision states) never translate. |

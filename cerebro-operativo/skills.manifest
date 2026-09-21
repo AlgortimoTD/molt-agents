@@ -1,0 +1,7 @@
+# Skills of the cerebro-operativo plugin, one slug per line.
+# scripts/release.sh copies each one from catalogs/global/<slug>/skill/ in the platform monorepo.
+cerebro-setup
+cerebro-audit
+transcript-to-playbook-updater
+escalation-playbook-responder
+brand-voice-style-guide

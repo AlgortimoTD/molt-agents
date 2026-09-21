@@ -1,0 +1,1 @@
+Arrastra acá un transcript pegado a mano cuando la reunión no la grabó Fathom. Ponle la fecha adelante (`AAAA-MM-DD-<titulo>.md`). La siguiente corrida de la rutina lo recoge, lo procesa y lo mueve a `reuniones/`; si tienes prisa, pide en el chat "procesa el transcript que dejé en entrada".
