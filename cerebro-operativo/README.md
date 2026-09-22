@@ -29,6 +29,10 @@ When it answers "listo", say **"quiero instalarlo"**. `cerebro-setup` takes over
 
 claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repository, `AlgortimoTD/molt-agents`, Sync automatically, Add. The repository is public: no GitHub App grant is needed. CLI users: `claude plugin marketplace add AlgortimoTD/molt-agents` and `claude plugin install cerebro-operativo@molt-agents`.
 
+## User guide
+
+For the people who use the brain: [docs/user-guide.html](docs/user-guide.html), one card per feature with the exact phrase to say, in Spanish and English. Its source is [docs/user-guide.json](docs/user-guide.json), built with the `orb-agent-user-guide` skill; regenerate it with that skill, never by hand.
+
 ## Try it with the demo organization
 
 Say **"puebla el cerebro con la empresa de ejemplo"**: a fully fictional agency ([demo/](demo/README.md)) with two playbooks, a decision log, a closed case and one meeting transcript not yet processed. Processing it adds a decision, rewrites a playbook section with history and leaves one inference "por confirmar": the whole mechanism in five minutes, with nothing real exposed. Delete the folder when done.
