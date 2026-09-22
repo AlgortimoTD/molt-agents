@@ -20,7 +20,7 @@ queda por confirmar.
 | 27:05 | Marina: "Quedamos en que si un cliente se pone así, nadie le contesta en caliente. Me avisan y lo tomo yo." | aplicada |
 | 31:40 | Julia: "Yo creo que deberíamos cobrar el 50 % de anticipo en los nuevos." Tomás: "Puede ser, lo miramos." | por confirmar |
 
-## Transcript
+## Transcripción
 
 [00:00] Marina: Bueno, arranquemos. Tomás, ¿cómo vamos con Vía Norte?
 

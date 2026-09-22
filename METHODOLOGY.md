@@ -13,7 +13,7 @@ An agent is sold as a row of Orbital's agent catalog (`orbital.agt_agents`, cura
 | Layer | What it is | Where it lives | Shared |
 |---|---|---|---|
 | The engine | skills, templates, docs, demo, the routine prompt | this repository | yes, 100 percent agnostic |
-| The instance | the customer's filled `CLAUDE.md`, `_config/*`, execution state, `memory.md` | the customer's own folder (Google Drive) | never |
+| The instance | the customer's filled `CLAUDE.md`, `_config/*`, execution state, the memory file | the customer's own folder (Google Drive) | never |
 | The data | the customer's records (playbooks, logs, cases, meetings, outputs) | the same folder | never |
 
 **Nothing personal outside the customer's folder.** If a skill needs a customer fact (who approves what, which language, which meetings count), it reads it from `_config/` of the folder it runs in. It never carries it written. There is no `local/` layer on the machine: everything that is instance lives in the customer's folder, so the phone and the desktop see the same thing.

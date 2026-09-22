@@ -1,6 +1,6 @@
 # Memory
 
-Loose agreements and things to remember that are neither a process decision nor a case. One
+Loose agreements, gaps and things to remember that are neither a process decision nor a case. One
 line per entry, dated, the newest at the end.
 
 - <YYYY-MM-DD> · This folder is born. The seed came from the installation interview of

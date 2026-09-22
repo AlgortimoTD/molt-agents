@@ -1,1 +1,1 @@
-Here goes the summary of each routine run (`ingesta-YYYY-MM-DD.md`): what came in, what changed, what stayed pending confirmation and what was discarded. Under `auditorias/` go the reports of the weekly audit. The operating guide, `how-to-operate-the-brain.md`, also lives here.
+Here goes the summary of each routine run (`ingestion-YYYY-MM-DD.md`): what came in, what changed, what stayed pending confirmation and what was discarded. Under `audits/` go the reports of the weekly audit. The operating guide, `how-to-operate-the-brain.md`, also lives here.

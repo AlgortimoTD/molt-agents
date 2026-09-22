@@ -22,5 +22,5 @@ not cite anecdotes.>
 
 ## Which value applied
 
-<The value, negotiable or non-negotiable from `_config/valores-y-negociables.md` that decided
+<The value, negotiable or non-negotiable from `_config/values-and-negotiables.md` that decided
 the case. If it is not written there yet, this case is the candidate to write it.>

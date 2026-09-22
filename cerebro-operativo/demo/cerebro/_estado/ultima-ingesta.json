@@ -3,6 +3,6 @@
   "last_meeting_id": "demo-faro-2026-09-08",
   "timezone": "America/Bogota",
   "processed": [
-    { "id": "demo-faro-2026-09-08", "date": "2026-09-08", "file": "reuniones/2026-09-08-reunion-semanal.md" }
+    { "id": "demo-faro-2026-09-08", "date": "2026-09-08", "title": "Reunión semanal", "ingested_at": "2026-09-08T18:00:00Z" }
   ]
 }

@@ -4,7 +4,7 @@
 
 ## <Sección del proceso>
 
-<!-- Vigente desde AAAA-MM-DD (origen: entrevista | reunión AAAA-MM-DD, minuto MM:SS) -->
+<!-- Vigente desde AAAA-MM-DD (origen: entrevista | documentos/<archivo> | reunión AAAA-MM-DD, minuto MM:SS) -->
 
 <Cómo se hace, en las palabras del equipo, citando la fuente.>
 

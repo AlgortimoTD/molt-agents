@@ -1,21 +1,21 @@
 ---
 name: brand-voice-style-guide
 description: >-
-  v1.1.0 · Reverse-engineer a company's voice from the copy it already published and write it
-  down as a one-page guide anything else can follow. Reads the site, the blog and the public
-  social posts (plus any text the team hands over), and produces voz.md: tone axes with a
-  position and evidence, do and do-not pairs taken from real sentences, banned phrases,
-  vocabulary, and rewrite samples. Built for a brain folder, so the output is a file other
-  skills consume, not a one-off answer. Use it when setting up a company brain, when copy
-  sounds off-brand, or before letting anything write on a company's behalf. Triggers:
-  "extract our brand voice", "build a voice and style guide", "make this sound like us",
-  "why does this copy sound off", "extrae nuestra voz de marca", "arma la guía de estilo y
-  voz", "haz que esto suene a nosotros", "esto no suena a nuestra marca". [v1.1.0]
+  v1.2.0 · Reverse-engineer a company's voice from the copy it already published and write it down
+  as a one-page guide anything else can follow. Reads the site, the blog and the public social posts
+  (plus any text the team hands over), and produces one voice file: tone axes with a position and
+  evidence, do and do-not pairs taken from real sentences, banned phrases, vocabulary, and rewrite
+  samples. Built for a brain folder, so the output is a file other skills consume, not a one-off
+  answer. Use it when setting up a company brain, when copy sounds off-brand, or before letting
+  anything write on a company's behalf. Triggers: "extract our brand voice", "build a voice and
+  style guide", "make this sound like us", "why does this copy sound off", "extrae nuestra voz de
+  marca", "arma la guía de estilo y voz", "haz que esto suene a nosotros", "esto no suena a nuestra
+  marca". [v1.2.0]
 ---
 
 # brand-voice-style-guide
 
-## Version 1.1.0
+## Version 1.2.0
 
 Every company already has a voice; almost none has written it down. It lives in the way the
 founder ends an email and in the words the team refuses to use, and it survives only as long
@@ -28,29 +28,38 @@ produces the voice they wish they had, but from reading what they actually publi
 
 ## The output is a file
 
-You produce **one file**, normally `_config/voz.md` inside a brain folder. That matters more
-than it sounds: the guide is consumed by other skills and by people drafting under time
-pressure, so it has to be short enough to be read whole and specific enough to settle an
-argument. A four-page essay on brand personality settles nothing.
+You produce **one file**. That matters more than it sounds: the guide is consumed by other
+skills and by people drafting under time pressure, so it has to be short enough to be read
+whole and specific enough to settle an argument. A four-page essay on brand personality
+settles nothing.
 
-When the destination folder has a `CLAUDE.md`, read it first for the company and the working
-language. It outranks this skill on both.
+Inside a brain folder, the file is the one its vocabulary names `voice`. The brain's
+`CLAUDE.md` ends with a vocabulary block (`<!-- cerebro-operativo:vocabulary ... -->`, one
+`key: name` line each); read it and write to the path it gives for `voice`, never to a path you
+assume. Read the same `CLAUDE.md` for the company and the working language; it outranks this
+skill on both. Outside a brain folder, write `voice.md` (or the name the person asks for) where
+they say.
 
 ## Language
 
-The customer sets it, and there are three real cases. Ask if it is not already written in
-`CLAUDE.md` or `_config/fuentes.md`:
+Two different things, and they are easy to confuse:
 
-- **One language.** The whole guide in it.
-- **Two languages, same voice.** One guide, with the axes and rules once, and the examples in
-  both. The rules generalize; the sentences do not.
-- **Two languages, different registers.** This is common and easy to miss: a company whose
-  site is in English and whose team works in Spanish often sounds more formal in one than the
-  other. When the evidence shows it, say so explicitly and give each language its own axis
-  positions. Flattening them into one average voice produces copy that is wrong in both.
+- **The language the guide is written in.** Inside a brain it is the brain's working language,
+  always: every heading, label and explanation of the file. Outside a brain, ask.
+- **The languages whose voice it describes.** The customer sets them, and there are three real
+  cases. Ask if they are not already written in `CLAUDE.md` or in the brain's `sources` file:
+  - **One language.** The whole guide describes it.
+  - **Two languages, same voice.** One guide, with the axes and rules once, and the examples
+    in both. The rules generalize; the sentences do not.
+  - **Two languages, different registers.** This is common and easy to miss: a company whose
+    site is in English and whose team works in Spanish often sounds more formal in one than
+    the other. When the evidence shows it, say so explicitly and give each language its own
+    axis positions. Flattening them into one average voice produces copy that is wrong in
+    both.
 
-Never default to your own language, and never assume the language of the site is the language
-of the guide.
+The examples quoted as evidence stay in the language they were published in; everything
+around them is in the language of the guide. Never default to your own language, and never
+assume the language of the site is the language of the guide.
 
 ## How to build it
 
@@ -86,7 +95,10 @@ rule somebody can follow and check.
 
 ### 3. Write the guide
 
-Use this structure. It is deliberately short.
+Use this structure. It is deliberately short. It is shown for a guide written in Spanish; in
+English the same headings read "<Company>'s voice", "Sources", "Missing", "In one line", "Tone
+axes", "Do and do not", "Banned phrases", "Vocabulary" and "Rewrite samples" (with "Before",
+"After" and "What changed").
 
 ```markdown
 # Voz de <Company>
@@ -153,6 +165,8 @@ constructions they avoid, the thing they always put first.
   general taste.
 - At least one full before and after rewrite, with the reasoning.
 - The sources and the gaps are named at the top, with the date they were read.
+- Inside a brain, the file sits at the brain's `voice` path and every heading is in the
+  brain's working language.
 - The whole thing fits on one page a person will actually read.
 - A person from the company reads a rewrite and recognizes it as theirs. That is the only test
   that matters, and it is worth asking for explicitly.

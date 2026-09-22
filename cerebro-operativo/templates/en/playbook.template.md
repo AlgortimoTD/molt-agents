@@ -4,7 +4,7 @@
 
 ## <Section of the process>
 
-<!-- Vigente desde YYYY-MM-DD (origin: interview | meeting YYYY-MM-DD, minute MM:SS) -->
+<!-- Current since YYYY-MM-DD (origin: interview | documents/<file> | meeting YYYY-MM-DD, minute MM:SS) -->
 
 <How it is done, in the team's words, citing the source.>
 
@@ -12,12 +12,11 @@
 
 **Pending confirmation.** <What is missing and who knows it.>
 
-## Historial
+## History
 
 No entries. This file was born on <YYYY-MM-DD>.
 
-<!-- The `## Historial` heading and the "Vigente desde" marker are canonical tokens the skills
-navigate by; they stay in every language. Format of a history entry, newest first:
+<!-- Format of a history entry, newest first:
 ### YYYY-MM-DD · <Section> · replaced by the decision of the meeting YYYY-MM-DD (MM:SS)
 <The previous text, in full.>
 -->

@@ -1,6 +1,6 @@
 > **DOCUMENTO FICTICIO.** Configuración de una agencia inventada, escrita para demostrar el agente.
 
-# Fuentes: qué entra al cerebro, quién aprueba qué y cómo corre la rutina
+# Fuentes: qué entra al cerebro, quién tiene qué rol y cómo corre la rutina
 
 ## Reuniones que entran
 
@@ -17,17 +17,33 @@ America/Bogota. Las fechas de la bitácora y los nombres de archivo van en hora 
 
 ## Idioma
 
-Español para todo, incluidos los borradores para clientes.
+Español, fijado en la instalación, para todo lo que se escribe en esta carpeta, incluidos los
+borradores para clientes.
+
+## Roles
+
+| Persona | Rol | Desde | Fuente |
+|---|---|---|---|
+| **Marina** | responsable del cerebro | 2026-09-01 | entrevista 2026-09-01 |
+| Tomás | editor | 2026-09-01 | entrevista 2026-09-01 |
+| Julia | editor | 2026-09-01 | entrevista 2026-09-01 |
 
 ## Quién aprueba qué
 
 | Qué | Quién | Nota |
 |---|---|---|
-| Cambios a `_config/valores-y-negociables.md` | **Marina** | La rutina los propone y espera. Marina además edita el archivo directamente |
+| Cualquier cambio, en cualquier archivo | Marina, sin aprobación de nadie | Por el chat, o a mano avisándole al cerebro para que deje el rastro |
+| Cambios a `playbooks/` y `casos/` pedidos en el chat | Tomás, Julia o Marina | Quedan en la bitácora con quién los pidió |
+| Cambios a `_config/valores-y-negociables.md` que no pide Marina | Los aprueba Marina | La rutina, Tomás o Julia los proponen y esperan |
+| Cambios a `playbooks/` que vienen de una decisión explícita en una reunión | La rutina los aplica sola | Queda el rastro en la bitácora y en el Historial |
+| Que los procesos estén escritos y al día | Marina | Revisa lo que el cerebro propone y convoca la reunión de arranque cuando un proceso cambia de fondo |
 | Ejecutar un cambio aprobado | **Tomás** | |
-| Cambios a `playbooks/` que vienen de una decisión explícita | La rutina los aplica sola | Queda el rastro en la bitácora y en el Historial |
-| Marcar una reunión con cliente "para el cerebro" | **Marina** | |
-| Agregar un caso a `casos/` | Cualquiera del equipo, por el chat | |
+| Marcar una reunión con cliente "para el cerebro" | Marina | |
+
+## Permisos de la carpeta en Drive
+
+- Marina, Tomás y Julia: **editor**.
+- La cuenta de la rutina (la de Marina): **editor**.
 
 ## La rutina diaria de ingesta
 

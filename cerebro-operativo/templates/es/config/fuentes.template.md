@@ -1,12 +1,12 @@
-# Fuentes: qué entra al cerebro, quién aprueba qué y cómo corre la rutina
+# Fuentes: qué entra al cerebro, quién tiene qué rol y cómo corre la rutina
 
 ## Reuniones que entran
 
 - **Sí entran:** las reuniones internas del equipo <nombre del equipo en Fathom>. En
   particular <la reunión recurrente principal, día y hora>, que es la fuente principal de
   decisiones.
-- **No entran:** las reuniones con clientes, salvo que <quien aprueba valores> marque una
-  "para el cerebro".
+- **No entran:** las reuniones con clientes, salvo que la persona responsable del cerebro
+  marque una "para el cerebro".
 - Dueño del equipo Fathom: **<Nombre>**. La rutina corre en la cuenta de **<Nombre>**,
   leyendo las grabaciones compartidas al equipo. Sin Fathom, los transcripts se pegan en
   `reuniones/entrada/` y cumplen la misma función.
@@ -18,18 +18,41 @@
 
 ## Idioma
 
-<Idioma> para playbooks, bitácora, casos y respuestas. Ver `CLAUDE.md`. <Si los clientes
-hablan otro idioma: los borradores para clientes van en ese idioma.>
+Español, fijado en la instalación, para todo lo que se escribe en esta carpeta: nombres de
+carpetas y archivos, playbooks, bitácora, casos y respuestas. Ver `CLAUDE.md`. <Si los
+clientes hablan otro idioma: los borradores para clientes van en ese idioma.>
+
+## Roles
+
+Salen de la entrevista de instalación y se cambian pidiéndoselo al cerebro en el chat (lo
+cambia la persona responsable del cerebro). Tiene que haber exactamente una persona responsable; editor y
+consulta pueden quedar vacíos.
+
+| Persona | Rol | Desde | Fuente |
+|---|---|---|---|
+| **<Nombre>** | responsable del cerebro | <AAAA-MM-DD> | <entrevista AAAA-MM-DD> |
+| <Nombre> | <editor o consulta> | <AAAA-MM-DD> | <entrevista AAAA-MM-DD> |
 
 ## Quién aprueba qué
 
 | Qué | Quién | Nota |
 |---|---|---|
-| Cambios a `_config/valores-y-negociables.md` | **<Nombre>** | La rutina los propone y espera. Esa persona además edita el archivo directamente |
+| Cualquier cambio, en cualquier archivo | La persona responsable del cerebro, sin aprobación de nadie | Por el chat, o a mano avisándole al cerebro para que deje el rastro |
+| Cambios a `playbooks/` y `casos/` pedidos en el chat | Editor o responsable | Quedan en la bitácora con quién los pidió |
+| Cambios a `_config/valores-y-negociables.md` que no pide la persona responsable | Los aprueba la persona responsable | La rutina, un editor o consulta los proponen y esperan |
+| Cambios a `playbooks/` que vienen de una decisión explícita en una reunión | La rutina los aplica sola | Queda el rastro en la bitácora y en el Historial del playbook |
+| Que los procesos estén escritos y al día | La persona responsable del cerebro | Revisa lo que el cerebro propone y convoca la reunión de arranque cuando un proceso cambia de fondo |
 | Ejecutar un cambio aprobado | **<Nombre>** | |
-| Cambios a `playbooks/` que vienen de una decisión explícita | La rutina los aplica sola | Queda el rastro en la bitácora y en el Historial del playbook |
-| Marcar una reunión con cliente "para el cerebro" | **<Nombre>** | |
-| Agregar un caso a `casos/` | Cualquiera del equipo, por el chat | |
+| Marcar una reunión con cliente "para el cerebro" | La persona responsable del cerebro | |
+
+## Permisos de la carpeta en Drive
+
+El cerebro no sabe quién le escribe; lo que protege la carpeta son sus permisos. Deben
+coincidir con los roles:
+
+- Responsable del cerebro y editores: **editor** en la carpeta de Drive.
+- Consulta: **lector** en la carpeta de Drive.
+- La cuenta donde corre la rutina: **editor**.
 
 ## La rutina diaria de ingesta
 

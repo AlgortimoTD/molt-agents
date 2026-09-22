@@ -2,15 +2,19 @@
 
 # Cómo operar el cerebro
 
-Cuatro cosas que van a necesitar hacer y que nadie debería tener que preguntar. Están en
+Cinco cosas que van a necesitar hacer y que nadie debería tener que preguntar. Están en
 orden de frecuencia: la primera pasa todas las semanas, la última casi nunca. Los roles
-("quien aprueba valores", "quien ejecuta") son los de `_config/fuentes.md` de esta carpeta.
+(responsable del cerebro, editor, consulta) son los de la tabla de roles de
+`_config/fuentes.md` de esta carpeta.
 
-Regla que atraviesa las cuatro: **el cerebro escribe, tú le dices qué**. Nadie edita
-`playbooks/` ni `decisiones/bitacora.md` a mano. No es burocracia: si dos personas editan
-el mismo archivo en Drive al tiempo, una de las dos versiones se pierde, y si alguien
+Regla que atraviesa las cinco: **el cerebro escribe, tú le dices qué**. Los cambios se
+piden en el chat y el cerebro los escribe con su rastro. No es burocracia: si dos personas
+editan el mismo archivo en Drive al tiempo, una de las dos versiones se pierde, y si alguien
 cambia un playbook sin pasar por la bitácora, el registro deja de corresponder con el
-proceso y ya no se sabe cuál de los dos está bien.
+proceso y ya no se sabe cuál de los dos está bien. La persona responsable del cerebro puede
+además editar cualquier archivo a mano; si lo hace, que le avise al cerebro en el chat ("edité el
+playbook de propuestas") para que archive la versión anterior y deje la línea en la
+bitácora.
 
 ---
 
@@ -35,7 +39,25 @@ problema; solo es menos rastreable.
 
 ---
 
-## 2. Corregir una decisión mal extraída
+## 2. Agregar un documento que ya tenían
+
+Un manual, un procedimiento, una plantilla, una presentación de inducción que aparece
+después de la instalación.
+
+1. Déjalo en `documentos/`, o pégalo en el chat. Si es un enlace de Drive, pega el enlace.
+2. Pide en el chat: **"procesa el documento que dejé en documentos"**.
+
+El cerebro lo lee, decide a qué proceso corresponde y escribe o completa ese playbook
+**desde el documento**, con la fecha del documento y su nombre como origen. No lo
+moderniza: si algo suena viejo, lo escribe tal cual y lo marca por confirmar, para que lo
+corrijan en una reunión. El original no se toca.
+
+Si el documento contradice algo que ya estaba escrito, el cerebro no elige solo: te muestra
+las dos versiones con sus fechas y pregunta cuál vale.
+
+---
+
+## 3. Corregir una decisión mal extraída
 
 Va a pasar. Las reuniones informales traen ruido y el filtro no es perfecto.
 
@@ -47,9 +69,10 @@ Díselo en el chat, en lenguaje normal:
 
 El cerebro hace tres cosas y te las reporta:
 
-1. **Agrega una línea nueva** a la bitácora que corrige la anterior. No borra la vieja.
-   Esa es la regla completa: en esta carpeta nada se borra, porque el día que alguien
-   pregunte "¿esto por qué cambió?", la respuesta tiene que estar.
+1. **Agrega una línea nueva** a la bitácora que corrige la anterior, con tu nombre en
+   "Pedido por". No borra la vieja. Esa es la regla completa: en esta carpeta nada se
+   borra, porque el día que alguien pregunte "¿esto por qué cambió?", la respuesta tiene
+   que estar.
 2. **Devuelve el playbook al texto correcto**, y el texto equivocado pasa a `## Historial`
    como pasó el anterior.
 3. **Te muestra cómo quedó** antes de darlo por hecho.
@@ -59,9 +82,12 @@ extrajiste mal". El cerebro deja la línea en la bitácora marcada como revertid
 fecha, y devuelve el playbook al texto que tenía antes. La línea se queda porque la
 bitácora es el registro de lo que pasó, incluido el error.
 
+Si la corrección toca valores o negociables y no la pide la persona responsable del cerebro,
+queda como propuesta hasta que esa persona la apruebe.
+
 ---
 
-## 3. Agregar un caso
+## 4. Agregar un caso
 
 Un caso es una historia con cliente, con decisión y con final. Es lo que el cerebro cita
 cuando alguien pregunta "¿cómo manejamos algo así?".
@@ -82,7 +108,7 @@ del equipo recuerda es exactamente el conocimiento que esta carpeta existe para 
 
 ---
 
-## 4. Qué hacer si la rutina no corrió
+## 5. Qué hacer si la rutina no corrió
 
 **Cómo te das cuenta:** no hay un archivo `ingesta-AAAA-MM-DD.md` nuevo en `salidas/`.
 
@@ -108,3 +134,13 @@ no escribió archivo. Es correcto.
 **Lo que NO hay que hacer:** ponerse a escribir los playbooks a mano mientras tanto. El
 transcript no se pierde, y cuando la rutina vuelva a correr los recoge todos. Escribirlos
 a mano crea justo el conflicto que la regla del escritor único evita.
+
+---
+
+## Cambiar quién tiene qué rol
+
+Lo pide la persona responsable del cerebro en el chat: **"a partir de hoy Ana es editora"** o
+**"desde hoy Ana es la responsable del cerebro"**. El cerebro actualiza la tabla de roles de
+`_config/fuentes.md` con la fecha y deja la línea en la bitácora. Después hay que ajustar
+los permisos de la carpeta en Drive para que coincidan: eso lo hace una persona, porque es
+lo que de verdad decide quién puede cambiar la carpeta.
