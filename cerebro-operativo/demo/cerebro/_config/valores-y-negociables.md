@@ -22,7 +22,7 @@ En las palabras del equipo (entrevista 2026-09-01):
 - **El alcance de una pieza**, mientras el precio se ajuste con él. Lo decide Julia con
   Tomás (entrevista 2026-09-01).
 - **Por confirmar:** plazos, formas de pago y rondas de cambios. Marina quedó en completar la
-  lista (`memory.md`, 2026-09-01).
+  lista (`memoria.md`, 2026-09-01).
 
 ## No negociables
 

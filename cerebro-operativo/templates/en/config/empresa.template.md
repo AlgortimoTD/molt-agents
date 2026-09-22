@@ -26,7 +26,7 @@ date, a meeting and its minute, or the public site with the date it was read), o
 ## Key clients
 
 - <Client>: <what is done for them, since when, who handles them>. Cases with a story live in
-  `casos/`.
+  `cases/`.
 
 ## Tools
 

@@ -16,7 +16,7 @@ Each item is the attendee's own click; Claude cannot do it for them:
 |---|---|---|
 | 1. What it is | 10 | Facilitator demo on the demo organization: one transcript processed, one "how do we handle this" answered with sources. The three layers explained. |
 | 2. Install | 20 | Every laptop has the plugin, a brain folder in Drive, and has run "quiero instalarlo" to the first heartbeat. |
-| 3. Seed the demo organization | 10 | "puebla el cerebro con la empresa de ejemplo": two playbooks, a decision log, a case, and one transcript not yet processed. |
+| 3. Seed the demo organization | 10 | "puebla el cerebro con la empresa de ejemplo": two playbooks (one written from an old manual in `documentos/`), a decision log, a case, a roles table, and one transcript not yet processed. |
 | 4. Use cases | 45 | Each attendee runs at least four of the six use cases below on their own machine. |
 | 5. Surfaces and the routine | 15 | Facilitator shows the same folder from the phone (Drive connector) and the scheduled daily routine. |
 | 6. Sales script | 20 | The five-minute pitch, the objections, and who will run the first prospect demo. |
@@ -30,7 +30,7 @@ Each item is the attendee's own click; Claude cannot do it for them:
    > Instala el cerebro operativo de mi empresa. Viene del marketplace AlgortimoTD/molt-agents, plugin cerebro-operativo. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.
 
    Click alternative: `/plugin`, Marketplaces, Add, `AlgortimoTD/molt-agents`, Discover, cerebro-operativo, Install.
-4. In the same chat say **"quiero instalarlo"**. `cerebro-setup` takes over: Drive integration, root `CLAUDE.md` and `_config/` through the interview, the voice guide, the daily routine, the first transcript processed end to end. For claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repository, `AlgortimoTD/molt-agents`, Sync automatically, Add, plus the Google Drive connector.
+4. In the same chat say **"quiero instalarlo"**. `cerebro-setup` takes over: the language first (final, and every folder and file ends up named in it), Drive integration, the documents the organization already has turned into its first playbooks, root `CLAUDE.md` and `_config/` through the interview (including who is the brain owner, the editors and the viewers), the voice guide, the daily routine, the kickoff meeting processed end to end, and the closing inventory of what the brain knows and what it does not, with the Drive permissions that match the roles. For claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repository, `AlgortimoTD/molt-agents`, Sync automatically, Add, plus the Google Drive connector.
 
 After a release, ask in the chat: *actualiza el plugin cerebro-operativo* (claude.ai syncs on its own).
 
@@ -49,7 +49,7 @@ Optional: run use case 1 a second time on the same transcript and show that noth
 
 ## Block 5: surfaces and the routine
 
-Google Drive is the backbone. Local sessions (Cowork, Claude Code) read the synced, offline-enabled folder; claude.ai web and the mobile app read and write the same folder through the Drive connector; the daily routine runs in the cloud from one account, reads the watermark, fetches the new internal meetings from Fathom (or finds nothing and says so), and writes only inside the folder. Contract: only the routine writes playbooks and the log; nothing is deleted; only explicit decisions enter.
+Google Drive is the backbone. Local sessions (Cowork, Claude Code) read the synced, offline-enabled folder; claude.ai web and the mobile app read and write the same folder through the Drive connector; the daily routine runs in the cloud from one account, reads the watermark, fetches the new internal meetings from Fathom (or finds nothing and says so), and writes only inside the folder. Contract: the agent is the one writer of playbooks and the log (the brain owner may also edit by hand and tells the agent); nothing is deleted; only explicit decisions enter.
 
 ## Block 6: the five-minute pitch
 

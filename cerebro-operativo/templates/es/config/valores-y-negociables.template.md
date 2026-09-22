@@ -1,8 +1,8 @@
 # Valores, negociables y no negociables
 
 Este archivo es el que decide cómo responde el cerebro ante un cliente, y es el único que
-**<quien aprueba valores>** edita directamente. Todo cambio que proponga la rutina espera su
-aprobación; <quien ejecuta> ejecuta lo aprobado. Lo que todavía no se ha dicho en firme
+la **persona responsable del cerebro** cambia cuando quiera. Todo cambio que propongan la rutina, un
+editor o alguien de consulta espera su aprobación; <quien ejecuta> ejecuta lo aprobado. Lo que todavía no se ha dicho en firme
 queda marcado **por confirmar**, y mientras siga así el cerebro responde "esto no está
 escrito" en vez de proponer un criterio.
 

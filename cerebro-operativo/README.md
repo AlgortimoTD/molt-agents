@@ -16,7 +16,7 @@ The **operating brain of an organization**, run by Claude on top of a Google Dri
 | Layer | Where it lives | Shared |
 |---|---|---|
 | The engine (skills, templates, routine prompt, demo) | this plugin | yes, 100 percent agnostic |
-| The organization's context (`CLAUDE.md`, `_config/`, `memory.md`, `_estado/`) | the organization's own Drive folder | no |
+| The organization's context (`CLAUDE.md`, `_config/`, the memory file, the watermark) | the organization's own Drive folder | no |
 | The organization's records (playbooks, decisions, cases, meetings, outputs) | the same folder | no |
 
 ## Installation
