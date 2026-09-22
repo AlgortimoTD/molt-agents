@@ -1,0 +1,491 @@
+{
+  "agent": "cerebro-operativo",
+  "plugin_version": "0.2.0",
+  "generated_on": "2026-09-22",
+  "artifact_url": "https://claude.ai/artifact/XLESPvKu15hwf75aUYLTcE",
+  "cover": {
+    "title": {
+      "es": "Cómo usar tu cerebro operativo",
+      "en": "How to use your operating brain"
+    },
+    "line": {
+      "es": "Una frase por cada cosa que hace. Díselas tal cual en el chat, desde el computador o el celular.",
+      "en": "One phrase for each thing it does. Say them as written in the chat, on your computer or your phone."
+    }
+  },
+  "cards": [
+    {
+      "id": "getting-started",
+      "kind": "start",
+      "title": {
+        "es": "Instálalo",
+        "en": "Install it"
+      },
+      "phrase": {
+        "es": "quiero instalarlo",
+        "en": "install the brain"
+      },
+      "appears": {
+        "es": "Te pregunta el idioma, prepara la carpeta en Drive y te entrevista sobre tu empresa.",
+        "en": "It asks the language, prepares the Drive folder and interviews you about your company."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "¿idioma?",
+            "tu carpeta en Drive"
+          ],
+          "en": [
+            "language?",
+            "your Drive folder"
+          ]
+        },
+        "shows": "a chat bubble with the phrase, a question about the language, and an arrow into a Drive folder holding three files"
+      },
+      "covers": [
+        "cerebro-setup"
+      ]
+    },
+    {
+      "id": "ask-how-to-handle",
+      "kind": "feature",
+      "title": {
+        "es": "Pregunta cómo manejar algo",
+        "en": "Ask how to handle something"
+      },
+      "phrase": {
+        "es": "¿cómo manejamos esto?",
+        "en": "how do we handle this"
+      },
+      "appears": {
+        "es": "Los valores que aplican, lo negociable y lo que no, el caso más parecido y la fuente de cada cosa.",
+        "en": "The values that apply, what bends and what does not, the closest past case, and the source of each."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "valores",
+            "caso parecido",
+            "fuente y fecha"
+          ],
+          "en": [
+            "values",
+            "closest case",
+            "source and date"
+          ]
+        },
+        "shows": "a question bubble answered by a bubble built from three stacked pieces (values, closest case, source), each tied to a file card"
+      },
+      "covers": [
+        "escalation-playbook-responder"
+      ]
+    },
+    {
+      "id": "meetings-every-day",
+      "kind": "feature",
+      "title": {
+        "es": "Tus reuniones quedan escritas",
+        "en": "Your meetings get written down"
+      },
+      "phrase": {
+        "es": "corre la ingesta ahora",
+        "en": "run the ingestion now"
+      },
+      "appears": {
+        "es": "Cada día la rutina lee las reuniones grabadas y deja las decisiones, los playbooks al día y un resumen.",
+        "en": "Every day the routine reads the recorded meetings and leaves the decisions, updated playbooks and a summary."
+      },
+      "picture": {
+        "motif": "clock",
+        "labels": {
+          "es": [
+            "cada día",
+            "reunión grabada",
+            "bitácora",
+            "playbooks",
+            "resumen"
+          ],
+          "en": [
+            "every day",
+            "recorded meeting",
+            "decision log",
+            "playbooks",
+            "summary"
+          ]
+        },
+        "shows": "a clock that fires once a day, pulling a recorded meeting and dropping three files into the folder: decision log, playbooks, summary"
+      },
+      "covers": [
+        "transcript-to-playbook-updater"
+      ]
+    },
+    {
+      "id": "ask-what-you-decided",
+      "kind": "feature",
+      "title": {
+        "es": "Pregunta qué decidieron",
+        "en": "Ask what you decided"
+      },
+      "phrase": {
+        "es": "¿qué decidimos sobre las propuestas?",
+        "en": "what did we decide about proposals?"
+      },
+      "appears": {
+        "es": "La decisión con su fecha, la reunión de donde salió y el playbook que cambió.",
+        "en": "The decision with its date, the meeting it came from and the playbook it changed."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "decisión",
+            "fecha y reunión",
+            "playbook"
+          ],
+          "en": [
+            "decision",
+            "date and meeting",
+            "playbook"
+          ]
+        },
+        "shows": "a question bubble answered by one decision log line that points back to its meeting and forward to the playbook it changed"
+      },
+      "covers": []
+    },
+    {
+      "id": "write-in-your-voice",
+      "kind": "feature",
+      "title": {
+        "es": "Escribe con tu voz",
+        "en": "Write in your voice"
+      },
+      "phrase": {
+        "es": "escribe esto con nuestra voz",
+        "en": "make this sound like us"
+      },
+      "appears": {
+        "es": "Un borrador con el tono de tu empresa, marcado para revisar antes de enviar. Lo envías tú.",
+        "en": "A draft in your company's tone, marked for review before sending. You send it."
+      },
+      "picture": {
+        "motif": "before-after",
+        "labels": {
+          "es": [
+            "tu texto",
+            "con tu voz",
+            "revisar antes de enviar"
+          ],
+          "en": [
+            "your text",
+            "in your voice",
+            "review before sending"
+          ]
+        },
+        "shows": "two panels: a flat draft on the left, the same draft rewritten on the right with a review stamp on top"
+      },
+      "covers": [
+        "brand-voice-style-guide"
+      ]
+    },
+    {
+      "id": "add-a-meeting-by-hand",
+      "kind": "feature",
+      "title": {
+        "es": "Suma una reunión a mano",
+        "en": "Add a meeting by hand"
+      },
+      "phrase": {
+        "es": "procesa el transcript que dejé en entrada",
+        "en": "process the transcript I left in the inbox"
+      },
+      "appears": {
+        "es": "El archivo de la reunión, sus decisiones en la bitácora y los playbooks que cambiaron.",
+        "en": "The meeting file, its decisions in the log and the playbooks that changed."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "reuniones/entrada",
+            "2026-09-22-reunion.md",
+            "bitácora",
+            "playbooks"
+          ],
+          "en": [
+            "meetings/inbox",
+            "2026-09-22-meeting.md",
+            "decision log",
+            "playbooks"
+          ]
+        },
+        "shows": "a text file with the date first dropped into the inbox folder, then fanning out into the log and a playbook"
+      },
+      "covers": [
+        "transcript-to-playbook-updater"
+      ]
+    },
+    {
+      "id": "fix-a-decision",
+      "kind": "feature",
+      "title": {
+        "es": "Corrige una decisión",
+        "en": "Fix a decision"
+      },
+      "phrase": {
+        "es": "esa decisión quedó mal, corrígela",
+        "en": "that decision is wrong, fix it"
+      },
+      "appears": {
+        "es": "Una línea nueva que corrige la anterior y el playbook con el texto correcto. Nada se borra.",
+        "en": "A new line that corrects the old one, and the playbook back to the right text. Nothing is deleted."
+      },
+      "picture": {
+        "motif": "before-after",
+        "labels": {
+          "es": [
+            "antes",
+            "después",
+            "Historial"
+          ],
+          "en": [
+            "before",
+            "after",
+            "History"
+          ]
+        },
+        "shows": "two panels of the same playbook section: the wrong text on the left moves down into History, the right text sits on top on the right"
+      },
+      "covers": [
+        "transcript-to-playbook-updater"
+      ]
+    },
+    {
+      "id": "add-an-old-document",
+      "kind": "feature",
+      "title": {
+        "es": "Suma un documento viejo",
+        "en": "Add an existing document"
+      },
+      "phrase": {
+        "es": "procesa el documento que dejé en documentos",
+        "en": "process the document I left in documents"
+      },
+      "appears": {
+        "es": "El playbook de ese proceso, escrito desde el documento y con su fecha. El original no se toca.",
+        "en": "That process's playbook, written from the document and with its date. The original stays untouched."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "documentos",
+            "manual-2023.md",
+            "playbook nuevo",
+            "original intacto"
+          ],
+          "en": [
+            "documents",
+            "manual-2023.md",
+            "new playbook",
+            "original untouched"
+          ]
+        },
+        "shows": "an old manual in the documents folder stays in place while a new playbook card is drawn out of it"
+      },
+      "covers": []
+    },
+    {
+      "id": "tell-it-a-case",
+      "kind": "feature",
+      "title": {
+        "es": "Cuéntale un caso",
+        "en": "Tell it a case"
+      },
+      "phrase": {
+        "es": "agrega un caso",
+        "en": "add a case"
+      },
+      "appears": {
+        "es": "Un caso con qué pasó, qué se hizo, cómo terminó, qué se aprendió y qué valor se aplicó.",
+        "en": "A case with what happened, what was done, how it ended, the lesson and the value applied."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "casos",
+            "qué se aprendió",
+            "qué valor se aplicó"
+          ],
+          "en": [
+            "cases",
+            "what was learned",
+            "which value applied"
+          ]
+        },
+        "shows": "a spoken story in a bubble becoming one case file with five parts, the last two highlighted"
+      },
+      "covers": []
+    },
+    {
+      "id": "put-the-folder-in-order",
+      "kind": "feature",
+      "title": {
+        "es": "Pon la carpeta en orden",
+        "en": "Put the folder in order"
+      },
+      "phrase": {
+        "es": "organiza la carpeta",
+        "en": "organize the folder"
+      },
+      "appears": {
+        "es": "Un informe con lo que ordenó y lo que queda pendiente. También corre sola cada semana.",
+        "en": "A report of what it tidied and what is still pending. It also runs on its own every week."
+      },
+      "picture": {
+        "motif": "clock",
+        "labels": {
+          "es": [
+            "cada semana",
+            "carpeta",
+            "informe",
+            "pendientes"
+          ],
+          "en": [
+            "every week",
+            "folder",
+            "report",
+            "pending"
+          ]
+        },
+        "shows": "a weekly clock sweeping loose files back into their folders and leaving one report with a short pending list"
+      },
+      "covers": [
+        "cerebro-audit"
+      ]
+    },
+    {
+      "id": "change-who-holds-a-role",
+      "kind": "feature",
+      "title": {
+        "es": "Cambia quién tiene cada rol",
+        "en": "Change who holds each role"
+      },
+      "phrase": {
+        "es": "a partir de hoy Ana es editora",
+        "en": "from today Ana is an editor"
+      },
+      "appears": {
+        "es": "La tabla de roles actualizada con la fecha. Después ajustas tú los permisos de la carpeta en Drive.",
+        "en": "The roles table updated with the date. Then you adjust the folder's Drive permissions yourself."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "responsable",
+            "editor",
+            "consulta",
+            "permisos de Drive"
+          ],
+          "en": [
+            "brain owner",
+            "editor",
+            "viewer",
+            "Drive permissions"
+          ]
+        },
+        "shows": "a chat bubble moving a name into the editor row of a three-row roles table, with a separate Drive permissions box a person adjusts"
+      },
+      "covers": []
+    },
+    {
+      "id": "try-the-sample-company",
+      "kind": "feature",
+      "title": {
+        "es": "Prueba la empresa de ejemplo",
+        "en": "Try the sample company"
+      },
+      "phrase": {
+        "es": "puebla el cerebro con la empresa de ejemplo",
+        "en": "seed the demo organization"
+      },
+      "appears": {
+        "es": "Una carpeta aparte con una empresa inventada: playbooks, bitácora, un caso y una reunión por procesar.",
+        "en": "A separate folder with a made-up company: playbooks, a log, a case and one meeting to process."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "Cerebro (demo)",
+            "tu cerebro",
+            "empresa inventada"
+          ],
+          "en": [
+            "Cerebro (demo)",
+            "your brain",
+            "made-up company"
+          ]
+        },
+        "shows": "two folders side by side, the demo one filled with sample files and kept apart from the real one"
+      },
+      "covers": [
+        "cerebro-setup"
+      ]
+    },
+    {
+      "id": "what-it-never-does",
+      "kind": "limits",
+      "title": {
+        "es": "Lo que nunca hace",
+        "en": "What it never does"
+      },
+      "limits": [
+        {
+          "es": "No manda correos, mensajes ni respuestas a clientes. Te deja borradores.",
+          "en": "It sends no email, message or client reply. It leaves you drafts."
+        },
+        {
+          "es": "No borra nada: lo que cambia pasa al historial con su fecha.",
+          "en": "It deletes nothing: what changes moves to history with its date."
+        },
+        {
+          "es": "No inventa políticas: si algo no está escrito, te lo dice.",
+          "en": "It invents no policy: if something is not written, it says so."
+        },
+        {
+          "es": "Solo anota decisiones dichas con firmeza; lo demás queda por confirmar.",
+          "en": "It records only firm decisions; the rest stays pending confirmation."
+        },
+        {
+          "es": "No cambia los valores sin el visto bueno del responsable del cerebro.",
+          "en": "It changes no values without the brain owner's approval."
+        },
+        {
+          "es": "No graba reuniones: las lee de Fathom o del texto que pegas.",
+          "en": "It records no meetings: it reads them from Fathom or pasted text."
+        }
+      ],
+      "picture": {
+        "motif": "stop",
+        "labels": {
+          "es": [
+            "no envía",
+            "no borra",
+            "no inventa"
+          ],
+          "en": [
+            "never sends",
+            "never deletes",
+            "never invents"
+          ]
+        },
+        "shows": "a closed door at the folder's edge with an envelope stopped in front of it; inside, a crossed-out eraser and a blank page marked not written"
+      },
+      "covers": []
+    }
+  ]
+}
