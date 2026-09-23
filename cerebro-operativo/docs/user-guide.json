@@ -425,7 +425,7 @@
             "empresa inventada"
           ],
           "en": [
-            "Cerebro (demo)",
+            "Brain (demo)",
             "your brain",
             "made-up company"
           ]
@@ -770,12 +770,12 @@
               "en": "seed the demo organization"
             },
             "appears": {
-              "es": "Copia en tu Drive una agencia de diseño inventada, Faro Estudio, como \"Cerebro (demo)\", al lado de tu cerebro y nunca adentro. Todo en ella es ficticio.",
-              "en": "It copies into your Drive a made-up design agency, Faro Estudio, as \"Cerebro (demo)\", next to your brain and never inside it. Everything in it is fictional."
+              "es": "Copia en tu Drive, en el idioma de tu cerebro, una agencia de diseño inventada, Faro Estudio, como \"Cerebro (demo)\", al lado de tu cerebro y nunca adentro. Todo en ella es ficticio.",
+              "en": "It copies into your Drive, in your brain's language, a made-up design agency, Faro Estudio, as \"Brain (demo)\", next to your brain and never inside it. Everything in it is fictional."
             },
             "check": {
               "es": "En Drive existe \"Cerebro (demo)\" con carpetas de playbooks, decisiones, casos, reuniones, documentos y configuración.",
-              "en": "\"Cerebro (demo)\" exists in Drive with folders for playbooks, decisions, cases, meetings, documents and configuration."
+              "en": "\"Brain (demo)\" exists in Drive with folders for playbooks, decisions, cases, meetings, documents and configuration."
             }
           },
           {
@@ -795,7 +795,7 @@
           {
             "do": {
               "es": "En Code, abre \"Cerebro (demo)\" como proyecto. Los capítulos que siguen se hacen ahí.",
-              "en": "In Code, open \"Cerebro (demo)\" as the project. The following chapters happen there."
+              "en": "In Code, open \"Brain (demo)\" as the project. The following chapters happen there."
             },
             "appears": {
               "es": "Un chat nuevo sobre la carpeta de la demo.",
@@ -803,19 +803,19 @@
             },
             "check": {
               "es": "El proyecto abierto se llama \"Cerebro (demo)\".",
-              "en": "The open project is called \"Cerebro (demo)\"."
+              "en": "The open project is called \"Brain (demo)\"."
             }
           }
         ],
         "if_not": [
           {
             "when": {
-              "es": "Elegiste inglés y te avisa que la demo está en español.",
-              "en": "You chose English and it warns you the demo is in Spanish."
+              "es": "La demo salió en un idioma distinto al de tu cerebro.",
+              "en": "The demo came out in a language other than your brain's."
             },
             "then": {
-              "es": "Es normal: la empresa de ejemplo solo existe en español. Sigue con ella para probar el mecanismo, o espera la demo en inglés.",
-              "en": "That is expected: the sample company only exists in Spanish. Go on with it to test the mechanism, or wait for the English demo."
+              "es": "Borra esa carpeta y pídela de nuevo nombrando el idioma: \"puebla el cerebro con la empresa de ejemplo en español\".",
+              "en": "Delete that folder and ask again naming the language: \"seed the demo organization in English\"."
             }
           },
           {
@@ -856,7 +856,7 @@
             },
             "appears": {
               "es": "El archivo de la reunión del 15 de septiembre; tres líneas nuevas en la bitácora (aplicada, por confirmar, abierta); la sección \"Llamada de descubrimiento\" del playbook de propuestas reescrita, con el texto anterior bajo Historial; y el resumen de la ingesta en salidas.",
-              "en": "The September 15 meeting file; three new lines in the decision log (applied, pending confirmation, open); the \"Llamada de descubrimiento\" section of the proposals playbook rewritten, with the previous text under Historial; and the ingest summary in the outputs folder."
+              "en": "The September 15 meeting file; three new lines in the decision log (applied, pending confirmation, open); the \"Discovery call\" section of the proposals playbook rewritten, with the previous text under History; and the ingest summary in the outputs folder."
             },
             "check": {
               "es": "La bitácora pasó de tres líneas a seis y en salidas hay un archivo de ingesta con fecha 2026-09-15.",
@@ -1087,7 +1087,7 @@
             },
             "appears": {
               "es": "Una línea nueva en la bitácora que corrige la anterior, con tu nombre en \"Pedido por\"; el playbook de vuelta al texto correcto, con el equivocado en Historial; y te muestra cómo quedó antes de darlo por hecho.",
-              "en": "A new line in the decision log correcting the previous one, with your name under \"Pedido por\"; the playbook back to the right text, with the wrong one under Historial; and it shows you the result before calling it done."
+              "en": "A new line in the decision log correcting the previous one, with your name under \"Requested by\"; the playbook back to the right text, with the wrong one under History; and it shows you the result before calling it done."
             },
             "check": {
               "es": "La bitácora tiene una línea más y ninguna menos. La vieja sigue ahí.",
@@ -1264,7 +1264,7 @@
           {
             "do": {
               "es": "Cuando termines de probar, borra tú la carpeta \"Cerebro (demo)\" en Drive. Nada más la referencia, y tu cerebro real no la necesita.",
-              "en": "When you finish testing, delete the \"Cerebro (demo)\" folder in Drive yourself. Nothing else references it, and your real brain does not need it."
+              "en": "When you finish testing, delete the \"Brain (demo)\" folder in Drive yourself. Nothing else references it, and your real brain does not need it."
             },
             "appears": {
               "es": "Tu Drive vuelve a tener solo la carpeta de tu cerebro.",
@@ -1272,7 +1272,7 @@
             },
             "check": {
               "es": "\"Cerebro (demo)\" ya no aparece en Drive y tu cerebro sigue intacto.",
-              "en": "\"Cerebro (demo)\" no longer shows in Drive and your brain is intact."
+              "en": "\"Brain (demo)\" no longer shows in Drive and your brain is intact."
             }
           }
         ]

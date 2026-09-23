@@ -47,7 +47,7 @@ Context hierarchy: the root `CLAUDE.md` is the only source of the hard rules, th
 | The user says / happens | What runs |
 |---|---|
 | "quiero instalarlo" / new organization | `cerebro-setup`: language first, Drive folder, the documents they already have, the interview (people and roles), plugin check, daily routine, kickoff meeting, gap inventory and Drive permissions |
-| "puebla el cerebro con la empresa de ejemplo" / learning or demoing | `cerebro-setup` (demo mode): copies the fictional organization from [demo/](demo/README.md) next to the real folder, never inside it |
+| "puebla el cerebro con la empresa de ejemplo" / "seed the demo organization" / learning or demoing | `cerebro-setup` (demo mode): copies the fictional organization from [demo/](demo/README.md), in the brain's language (`demo/es/cerebro/` as `Cerebro (demo)`, `demo/en/brain/` as `Brain (demo)`), next to the real folder, never inside it |
 | A recorded meeting is published, or "procesa este transcript" / a file lands in `{meetings-inbox}` | `transcript-to-playbook-updater`: meeting file, decision log lines, playbook sections rewritten with history, ingest summary; the watermark advances |
 | "¿cómo manejamos esto?" / an escalation described in the chat | `escalation-playbook-responder`: values that apply, negotiable and non-negotiable, closest documented case, source of every claim; drafts only on request and marked for review |
 | "¿qué decidimos sobre X?" | the decision log and the playbook histories, answered with date and source meeting |

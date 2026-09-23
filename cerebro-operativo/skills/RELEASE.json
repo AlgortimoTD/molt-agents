@@ -1,10 +1,10 @@
 {
-  "stamped_at": "2026-09-22T18:04:51Z",
+  "stamped_at": "2026-09-23T19:56:32Z",
   "source": "catalogs/global/<slug>/skill in the platform monorepo",
   "skills": {
     "cerebro-setup": {
-      "version": "1.1.1",
-      "skill_md_sha256": "362a7422b8209a9f1511394644fa72f1d6f0ce1d371ee5e020f6c6f3c48c3529"
+      "version": "1.2.0",
+      "skill_md_sha256": "6d8c10c913749f7de98403c241d955e386fb7b5539395b1b4d5e97fd1ed0f6b6"
     },
     "cerebro-audit": {
       "version": "1.1.1",

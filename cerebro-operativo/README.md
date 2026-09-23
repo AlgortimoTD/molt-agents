@@ -35,7 +35,7 @@ For the people who use the brain: [docs/user-guide.html](docs/user-guide.html), 
 
 ## Try it with the demo organization
 
-Say **"puebla el cerebro con la empresa de ejemplo"**: a fully fictional agency ([demo/](demo/README.md)) with two playbooks, a decision log, a closed case and one meeting transcript not yet processed. Processing it adds a decision, rewrites a playbook section with history and leaves one inference "por confirmar": the whole mechanism in five minutes, with nothing real exposed. Delete the folder when done.
+Say **"puebla el cerebro con la empresa de ejemplo"** or **"seed the demo organization"**: a fully fictional agency ([demo/](demo/README.md)), in Spanish or in English to match your brain, with two playbooks, a decision log, a closed case and one meeting transcript not yet processed. Processing it adds a decision, rewrites a playbook section with history and leaves one inference pending confirmation: the whole mechanism in five minutes, with nothing real exposed. Delete the folder when done.
 
 ## Languages
 
