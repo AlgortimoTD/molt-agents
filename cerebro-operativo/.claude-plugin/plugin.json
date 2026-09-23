@@ -1,7 +1,7 @@
 {
   "name": "cerebro-operativo",
   "description": "Operating brain for an organization, on Google Drive: playbooks and a decision log kept current from recorded meetings by a daily routine, answers to \"how do we handle this\" with values, negotiables and sources, and drafts in the company's own voice. Usable from desktop, web and mobile against the same folder.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Molt Solutions"
   }

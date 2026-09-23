@@ -1,21 +1,22 @@
 ---
 name: cerebro-setup
 description: >-
-  v1.1.1 · Zero-command onboarding of an organization's operating brain in Spanish or English. Asks
+  v1.2.0 · Zero-command onboarding of an organization's operating brain in Spanish or English. Asks
   the language first (mandatory, final) and writes every file, folder and heading in it. Mounts the
   Google Drive folder, turns the documents they already have into the first playbooks, interviews
   them (people and roles, values, processes, meetings), schedules the daily routine, processes a
   kickoff meeting that corrects the documents, and closes with an inventory of what the brain knows
-  and what it does not. Also seeds the demo organization. The person never runs a command. Use it
-  whenever someone wants to install, set up or try the brain, even without naming it, or when
-  another skill cannot find a brain folder. Triggers: "quiero instalarlo", "instala el cerebro",
-  "configura el cerebro de mi empresa", "puebla el cerebro con la empresa de ejemplo", "install the
-  brain", "set up the operating brain", "seed the demo organization". [v1.1.1]
+  and what it does not. Also seeds the demo organization, in Spanish or English. The person never
+  runs a command. Use it whenever someone wants to install, set up or try the brain, even without
+  naming it, or when another skill cannot find a brain folder. Triggers: "quiero instalarlo",
+  "instala el cerebro", "configura el cerebro de mi empresa", "puebla el cerebro con la empresa de
+  ejemplo", "install the brain", "set up the operating brain", "seed the demo organization".
+  [v1.2.0]
 ---
 
 # cerebro-setup
 
-## Version 1.1.1
+## Version 1.2.0
 
 An organization's brain is a folder with memory: how the team does things, why, and what
 happened the previous times, kept in files the team can read and correct. This skill creates
@@ -56,7 +57,8 @@ you will find:
   `templates/README.md` first: it lists what each template becomes.
 - `templates/vocabulary.md`: the dictionary of every folder, file, heading, marker, state and
   role name, by key, in each language.
-- `demo/cerebro/`: the fictional organization for demo mode.
+- `demo/es/cerebro/` and `demo/en/brain/`: the fictional organization for demo mode, once per
+  language, each with the names of its vocabulary column.
 - `docs/es/como-operar-el-cerebro.md` and `docs/en/how-to-operate-the-brain.md`: the operating
   guide you copy into the brain.
 
@@ -113,8 +115,9 @@ Before saying anything about steps, look:
 - Is there already a folder whose `CLAUDE.md` starts with `<!-- cerebro-operativo -->`? Check
   the working folder first, then the platform memory entry `cerebro-operativo: <folder>`. If
   there is one, the brain is mounted: offer the audit (`cerebro-audit`) or help with what is
-  missing, and stop here. Never create a second brain. A folder named `Cerebro (demo)` does
-  not count: it is the sample organization, and its presence never blocks a real install.
+  missing, and stop here. Never create a second brain. A folder named `Cerebro (demo)` or
+  `Brain (demo)` does not count: it is the sample organization, and its presence never blocks
+  a real install.
 - Is Google Drive for desktop installed and syncing on this machine (a mounted drive with the
   person's files)? Is the Google Drive connector available in the app? Is the plugin
   installed (this skill running is evidence that it is)?
@@ -299,22 +302,33 @@ Trigger: "puebla el cerebro con la empresa de ejemplo", "seed the demo organizat
 person who wants to learn or demo before having real documents. Everything in `demo/` is
 invented, so it can be shown to anyone.
 
-1. Copy `demo/cerebro/` into the person's Drive as `Cerebro (demo)/`, **next to** their real
-   brain if they have one, never inside it.
-2. Do not edit the copied files. The folder is already consistent: two playbooks (one of them
-   written from an old document in `documentos/`), a decision log, a closed case, one ingested
-   meeting with its summary and watermark, and one transcript waiting in `reuniones/entrada/`.
-3. Say what to try, in order: process the waiting transcript (it adds a decision, rewrites a
-   section with history and leaves one inference pending), ask "¿cómo manejamos un cliente
-   que maltrata al equipo?", ask what was decided about proposals, request a draft in the
-   voice, correct a decision, run the audit. Then process the transcript a second time and
-   show that nothing changes.
-4. The demo organization is written in Spanish. If the person chose English, say so before
-   copying and offer to proceed anyway or to wait for the English demo.
+1. **Pick the language of the demo.** It is the language of the person's brain when they have
+   one (the `lang:` line of its vocabulary block). Without a brain, ask the same explicit
+   question as the installation, in the language of their message, but say that this answer
+   is only for the demo and does not fix the language of a future brain. Never copy one
+   language and translate on the fly: each copy is already written in its own vocabulary.
+
+   | Language | Copy from | Into Drive as | Inbox with the waiting transcript |
+   |---|---|---|---|
+   | Spanish | `demo/es/cerebro/` | `Cerebro (demo)/` | `reuniones/entrada/` |
+   | English | `demo/en/brain/` | `Brain (demo)/` | `meetings/inbox/` |
+
+2. Copy it into the person's Drive, **next to** their real brain if they have one, never
+   inside it.
+3. Do not edit the copied files. The folder is already consistent: two playbooks (one of them
+   written from an old document in `{documents}`), a decision log, a closed case, one ingested
+   meeting with its summary and watermark, and one transcript waiting in `{meetings-inbox}`.
+   The copy's own vocabulary block resolves those names, like in any brain.
+4. Say what to try, in order and in the demo's language: process the waiting transcript (it
+   adds a decision, rewrites a section with history and leaves one inference pending), ask
+   how to handle a client who mistreats the team ("¿cómo manejamos un cliente que maltrata al
+   equipo?" / "how do we handle a client who mistreats the team?"), ask what was decided
+   about proposals, request a draft in the voice, correct a decision, run the audit. Then
+   process the transcript a second time and show that nothing changes.
 5. **Do not save the demo folder to memory.** The `cerebro-operativo: <folder>` entry is for
    the organization's real brain only; pointing it at the demo would make Phase 0 of the real
    install find "an existing brain" and refuse to create the company's own.
-6. When they are done, offer to delete `Cerebro (demo)/`; nothing else references it.
+6. When they are done, offer to delete the demo folder; nothing else references it.
 
 ## Error handling
 

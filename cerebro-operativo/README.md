@@ -31,11 +31,11 @@ claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repo
 
 ## User guide
 
-For the people who use the brain: [docs/user-guide.html](docs/user-guide.html), one card per feature with the exact phrase to say, in Spanish and English. Its source is [docs/user-guide.json](docs/user-guide.json), built with the `orb-agent-user-guide` skill; regenerate it with that skill, never by hand.
+For the people who use the brain: [docs/user-guide.html](docs/user-guide.html), in Spanish and English, with two views. The quick guide: one card per feature with the exact phrase to say. The complete guide: eight chapters that take a reader from installing the brain (Claude desktop app, Code section, the message above) to testing every feature on the demo organization, each step with what to do, what appears and how to check it. Its source is [docs/user-guide.json](docs/user-guide.json), built with the `orb-agent-user-guide` skill; regenerate it with that skill, never by hand.
 
 ## Try it with the demo organization
 
-Say **"puebla el cerebro con la empresa de ejemplo"**: a fully fictional agency ([demo/](demo/README.md)) with two playbooks, a decision log, a closed case and one meeting transcript not yet processed. Processing it adds a decision, rewrites a playbook section with history and leaves one inference "por confirmar": the whole mechanism in five minutes, with nothing real exposed. Delete the folder when done.
+Say **"puebla el cerebro con la empresa de ejemplo"** or **"seed the demo organization"**: a fully fictional agency ([demo/](demo/README.md)), in Spanish or in English to match your brain, with two playbooks, a decision log, a closed case and one meeting transcript not yet processed. Processing it adds a decision, rewrites a playbook section with history and leaves one inference pending confirmation: the whole mechanism in five minutes, with nothing real exposed. Delete the folder when done.
 
 ## Languages
 
