@@ -1,6 +1,6 @@
 {
   "agent": "cerebro-operativo",
-  "plugin_version": "0.2.0",
+  "plugin_version": "0.3.0",
   "generated_on": "2026-09-23",
   "artifact_url": "https://claude.ai/artifact/XLESPvKu15hwf75aUYLTcE",
   "cover": {
@@ -810,6 +810,16 @@
         "if_not": [
           {
             "when": {
+              "es": "Te preguntó en qué idioma quieres la demo.",
+              "en": "It asked which language you want the demo in."
+            },
+            "then": {
+              "es": "Pasa cuando todavía no tienes un cerebro instalado. La respuesta solo aplica a la demo y no fija el idioma de tu cerebro futuro.",
+              "en": "It happens when you have no brain installed yet. The answer applies only to the demo and does not fix the language of your future brain."
+            }
+          },
+          {
+            "when": {
               "es": "La demo salió en un idioma distinto al de tu cerebro.",
               "en": "The demo came out in a language other than your brain's."
             },
@@ -856,11 +866,11 @@
             },
             "appears": {
               "es": "El archivo de la reunión del 15 de septiembre; tres líneas nuevas en la bitácora (aplicada, por confirmar, abierta); la sección \"Llamada de descubrimiento\" del playbook de propuestas reescrita, con el texto anterior bajo Historial; y el resumen de la ingesta en salidas.",
-              "en": "The September 15 meeting file; three new lines in the decision log (applied, pending confirmation, open); the \"Discovery call\" section of the proposals playbook rewritten, with the previous text under History; and the ingest summary in the outputs folder."
+              "en": "The September 15 meeting file; three new lines in the decision log (applied, pending confirmation, open); the \"Discovery call\" section of the proposals playbook rewritten, with the previous text under History; and the ingestion report in the outputs folder."
             },
             "check": {
               "es": "La bitácora pasó de tres líneas a seis y en salidas hay un archivo de ingesta con fecha 2026-09-15.",
-              "en": "The decision log went from three lines to six and the outputs folder has an ingest file dated 2026-09-15."
+              "en": "The decision log went from three lines to six and the outputs folder has an ingestion report dated 2026-09-15."
             }
           },
           {
@@ -931,8 +941,8 @@
               "en": "Two days in a row without a file, and there were recorded meetings."
             },
             "then": {
-              "es": "La transcripción no quedó compartida con el equipo de Fathom, la conexión de Fathom venció o la tarea se apagó. Escríbele a Molt con la fecha de la reunión que falta. No escribas los playbooks a mano mientras tanto.",
-              "en": "The transcript was not shared with the Fathom team, the Fathom connection expired, or the task was switched off. Write to Molt with the date of the missing meeting. Do not write the playbooks by hand meanwhile."
+              "es": "Revisa, en orden: que la transcripción esté compartida con el equipo de Fathom; que la conexión de Fathom siga autorizada en la cuenta de la rutina (si venció, autorízala de nuevo); y que la tarea programada siga encendida. No escribas los playbooks a mano.",
+              "en": "Check, in order: that the transcript is shared with the Fathom team; that the Fathom connection is still authorized in the routine's account (if it expired, authorize it again); and that the scheduled task is still on. Do not write the playbooks by hand."
             }
           }
         ]
