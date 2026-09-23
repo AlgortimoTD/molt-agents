@@ -31,7 +31,7 @@ claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repo
 
 ## User guide
 
-For the people who use the brain: [docs/user-guide.html](docs/user-guide.html), one card per feature with the exact phrase to say, in Spanish and English. Its source is [docs/user-guide.json](docs/user-guide.json), built with the `orb-agent-user-guide` skill; regenerate it with that skill, never by hand.
+For the people who use the brain: [docs/user-guide.html](docs/user-guide.html), in Spanish and English, with two views. The quick guide: one card per feature with the exact phrase to say. The complete guide: eight chapters that take a reader from installing the brain (Claude desktop app, Code section, the message above) to testing every feature on the demo organization, each step with what to do, what appears and how to check it. Its source is [docs/user-guide.json](docs/user-guide.json), built with the `orb-agent-user-guide` skill; regenerate it with that skill, never by hand.
 
 ## Try it with the demo organization
 
