@@ -1,374 +1,1381 @@
 {
   "agent": "codificador-sesiones",
-  "plugin_version": "0.2.0",
+  "plugin_version": "0.2.2",
   "generated_on": "2026-09-28",
   "artifact_url": "https://claude.ai/artifact/HGUmRgcVQiWRYN47QUjZW1",
   "cover": {
-    "title": {"es": "Cómo usar el codificador de sesiones", "en": "How to use the session coder"},
-    "line": {"es": "Una frase por cosa que hace. Dísela tal cual en el chat de la carpeta.", "en": "One phrase per thing it does. Say it as it is in the folder's chat."}
+    "title": {
+      "es": "Cómo usar el codificador de sesiones",
+      "en": "How to use the session coder"
+    },
+    "line": {
+      "es": "Una frase por cosa que hace. Dísela tal cual en el chat de la carpeta.",
+      "en": "One phrase per thing it does. Say it as it is in the folder's chat."
+    }
   },
   "cards": [
     {
       "id": "getting-started",
       "kind": "start",
-      "title": {"es": "Instálalo en tu equipo", "en": "Install it for your team"},
-      "phrase": {"es": "instala el codificador", "en": "install the session coder"},
-      "appears": {"es": "Te entrevista, recibe tus formatos y un estudio que ya codificaron, y deja la carpeta lista.", "en": "It interviews you, takes your formats and a study you already coded, and leaves the folder ready."},
-      "picture": {"motif": "chat", "labels": {"es": ["tus formatos", "un estudio anterior", "carpeta lista"], "en": ["your formats", "a previous study", "folder ready"]}, "shows": "the phrase bubble, two files handed over (a spreadsheet and a study) and an arrow into a ready folder"},
-      "covers": ["codificador-sesiones-setup"]
+      "title": {
+        "es": "Instálalo en tu equipo",
+        "en": "Install it for your team"
+      },
+      "phrase": {
+        "es": "instala el codificador",
+        "en": "install the session coder"
+      },
+      "appears": {
+        "es": "Te entrevista, recibe tus formatos y un estudio que ya codificaron, y deja la carpeta lista.",
+        "en": "It interviews you, takes your formats and a study you already coded, and leaves the folder ready."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "tus formatos",
+            "un estudio anterior",
+            "carpeta lista"
+          ],
+          "en": [
+            "your formats",
+            "a previous study",
+            "folder ready"
+          ]
+        },
+        "shows": "the phrase bubble, two files handed over (a spreadsheet and a study) and an arrow into a ready folder"
+      },
+      "covers": [
+        "codificador-sesiones-setup"
+      ]
     },
     {
       "id": "code-a-session",
       "kind": "feature",
-      "title": {"es": "Codifica una sesión", "en": "Code a session"},
-      "phrase": {"es": "codifica la sesión de hoy del grupo 3", "en": "code today's session of group 3"},
-      "appears": {"es": "La sesión codificada: cada participante y variable con su categoría, la cita textual y el minuto.", "en": "The coded session: each participant and variable with its category, the verbatim quote and the minute."},
-      "picture": {"motif": "folder", "labels": {"es": ["participante", "categoría", "cita", "minuto"], "en": ["participant", "category", "quote", "minute"]}, "shows": "a transcript turning into one matrix row with four cells, the quote cell marked"},
-      "covers": ["qualitative-session-coder"]
+      "title": {
+        "es": "Codifica una sesión",
+        "en": "Code a session"
+      },
+      "phrase": {
+        "es": "codifica la sesión de hoy del grupo 3",
+        "en": "code today's session of group 3"
+      },
+      "appears": {
+        "es": "La sesión codificada: cada participante y variable con su categoría, la cita textual y el minuto.",
+        "en": "The coded session: each participant and variable with its category, the verbatim quote and the minute."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "participante",
+            "categoría",
+            "cita",
+            "minuto"
+          ],
+          "en": [
+            "participant",
+            "category",
+            "quote",
+            "minute"
+          ]
+        },
+        "shows": "a transcript turning into one matrix row with four cells, the quote cell marked"
+      },
+      "covers": [
+        "qualitative-session-coder"
+      ]
     },
     {
       "id": "paste-a-transcript",
       "kind": "feature",
-      "title": {"es": "Pega un transcript", "en": "Paste a transcript"},
-      "phrase": {"es": "codifica el transcript que está en entrada", "en": "code the transcript in the inbox"},
-      "appears": {"es": "Codifica la sesión que dejaste en la carpeta de entrada y la saca de ahí.", "en": "It codes the session you left in the inbox folder and moves it out."},
-      "picture": {"motif": "folder", "labels": {"es": ["sesiones/entrada", "sesiones"], "en": ["sessions/inbox", "sessions"]}, "shows": "a text file dropped in an inbox folder, an arrow to a coded session file in the sessions folder"},
-      "covers": ["qualitative-session-coder"]
+      "title": {
+        "es": "Pega un transcript",
+        "en": "Paste a transcript"
+      },
+      "phrase": {
+        "es": "codifica el transcript que está en entrada",
+        "en": "code the transcript in the inbox"
+      },
+      "appears": {
+        "es": "Codifica la sesión que dejaste en la carpeta de entrada y la saca de ahí.",
+        "en": "It codes the session you left in the inbox folder and moves it out."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "sesiones/entrada",
+            "sesiones"
+          ],
+          "en": [
+            "sessions/inbox",
+            "sessions"
+          ]
+        },
+        "shows": "a text file dropped in an inbox folder, an arrow to a coded session file in the sessions folder"
+      },
+      "covers": [
+        "qualitative-session-coder"
+      ]
     },
     {
       "id": "ask-what-they-said",
       "kind": "feature",
-      "title": {"es": "Pregunta qué dijo la gente", "en": "Ask what people said"},
-      "phrase": {"es": "¿qué dijo la gente del grupo 2 sobre el dinero?", "en": "what did people in group 2 say about money?"},
-      "appears": {"es": "Cuántas personas por grupo y sus citas, cada una con su sesión y su minuto.", "en": "How many people per group and their quotes, each with its session and minute."},
-      "picture": {"motif": "chat", "labels": {"es": ["3 de 4", "cita", "minuto"], "en": ["3 of 4", "quote", "minute"]}, "shows": "the question bubble and an answer card with a count and two quotes with their minute"},
-      "covers": ["qualitative-session-coder"]
+      "title": {
+        "es": "Pregunta qué dijo la gente",
+        "en": "Ask what people said"
+      },
+      "phrase": {
+        "es": "¿qué dijo la gente del grupo 2 sobre el dinero?",
+        "en": "what did people in group 2 say about money?"
+      },
+      "appears": {
+        "es": "Cuántas personas por grupo y sus citas, cada una con su sesión y su minuto.",
+        "en": "How many people per group and their quotes, each with its session and minute."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "3 de 4",
+            "cita",
+            "minuto"
+          ],
+          "en": [
+            "3 of 4",
+            "quote",
+            "minute"
+          ]
+        },
+        "shows": "the question bubble and an answer card with a count and two quotes with their minute"
+      },
+      "covers": [
+        "qualitative-session-coder"
+      ]
     },
     {
       "id": "cross-two-variables",
       "kind": "feature",
-      "title": {"es": "Cruza dos variables", "en": "Cross two variables"},
-      "phrase": {"es": "cruza deporte con alimentación por grupo", "en": "cross sport with eating by group"},
-      "appears": {"es": "El cruce en tres pasos. Al final de cada uno se detiene y espera lo que decidas.", "en": "The cross in three steps. At the end of each one it stops and waits for your decision."},
-      "picture": {"motif": "chat", "labels": {"es": ["frecuencias", "relaciones", "resumen", "pausa"], "en": ["frequencies", "relations", "summary", "pause"]}, "shows": "three numbered boxes in a row with a pause mark between each one"},
-      "covers": ["cross-variable-analyzer"]
+      "title": {
+        "es": "Cruza dos variables",
+        "en": "Cross two variables"
+      },
+      "phrase": {
+        "es": "cruza deporte con alimentación por grupo",
+        "en": "cross sport with eating by group"
+      },
+      "appears": {
+        "es": "El cruce en tres pasos. Al final de cada uno se detiene y espera lo que decidas.",
+        "en": "The cross in three steps. At the end of each one it stops and waits for your decision."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "frecuencias",
+            "relaciones",
+            "resumen",
+            "pausa"
+          ],
+          "en": [
+            "frequencies",
+            "relations",
+            "summary",
+            "pause"
+          ]
+        },
+        "shows": "three numbered boxes in a row with a pause mark between each one"
+      },
+      "covers": [
+        "cross-variable-analyzer"
+      ]
     },
     {
       "id": "accept-a-new-category",
       "kind": "feature",
-      "title": {"es": "Acepta una categoría nueva", "en": "Accept a new category"},
-      "phrase": {"es": "acepta recreación como categoría de actividades", "en": "accept recreation as a category of activities"},
-      "appears": {"es": "Entra al libro de códigos con fecha, y las citas que la sostenían pasan a ser códigos.", "en": "It enters the codebook with a date, and the quotes behind it become codes."},
-      "picture": {"motif": "before-after", "labels": {"es": ["propuesta", "aceptada", "libro de códigos"], "en": ["proposed", "accepted", "codebook"]}, "shows": "before: a dashed category box with a question mark; after: the same box solid inside the codebook"},
-      "covers": ["qualitative-session-coder"]
+      "title": {
+        "es": "Acepta una categoría nueva",
+        "en": "Accept a new category"
+      },
+      "phrase": {
+        "es": "acepta recreación como categoría de actividades",
+        "en": "accept recreation as a category of activities"
+      },
+      "appears": {
+        "es": "Entra al libro de códigos con fecha, y las citas que la sostenían pasan a ser códigos.",
+        "en": "It enters the codebook with a date, and the quotes behind it become codes."
+      },
+      "picture": {
+        "motif": "before-after",
+        "labels": {
+          "es": [
+            "propuesta",
+            "aceptada",
+            "libro de códigos"
+          ],
+          "en": [
+            "proposed",
+            "accepted",
+            "codebook"
+          ]
+        },
+        "shows": "before: a dashed category box with a question mark; after: the same box solid inside the codebook"
+      },
+      "covers": [
+        "qualitative-session-coder"
+      ]
     },
     {
       "id": "change-the-codebook",
       "kind": "feature",
-      "title": {"es": "Cambia el libro de códigos", "en": "Change the codebook"},
-      "phrase": {"es": "retira la categoría X, la partimos en Y y Z", "en": "retire category X, we are splitting it into Y and Z"},
-      "appears": {"es": "El cambio queda en el historial del libro, y lo que usaba la categoría queda por recodificar.", "en": "The change goes to the codebook's history, and what used the category is marked to recode."},
-      "picture": {"motif": "before-after", "labels": {"es": ["antes", "después", "historial"], "en": ["before", "after", "history"]}, "shows": "before: a codebook with category X; after: X crossed as retired, Y and Z added, and a history line"},
-      "covers": ["qualitative-session-coder"]
+      "title": {
+        "es": "Cambia el libro de códigos",
+        "en": "Change the codebook"
+      },
+      "phrase": {
+        "es": "retira la categoría X, la partimos en Y y Z",
+        "en": "retire category X, we are splitting it into Y and Z"
+      },
+      "appears": {
+        "es": "El cambio queda en el historial del libro, y lo que usaba la categoría queda por recodificar.",
+        "en": "The change goes to the codebook's history, and what used the category is marked to recode."
+      },
+      "picture": {
+        "motif": "before-after",
+        "labels": {
+          "es": [
+            "antes",
+            "después",
+            "historial"
+          ],
+          "en": [
+            "before",
+            "after",
+            "history"
+          ]
+        },
+        "shows": "before: a codebook with category X; after: X crossed as retired, Y and Z added, and a history line"
+      },
+      "covers": [
+        "qualitative-session-coder"
+      ]
     },
     {
       "id": "fidelity-test",
       "kind": "feature",
-      "title": {"es": "Mide si codifica como tú", "en": "Check it codes like you"},
-      "phrase": {"es": "corre la prueba de fidelidad", "en": "run the fidelity test"},
-      "appears": {"es": "Codifica una sesión que ya codificaron a mano, sin mirarla, y te muestra cada diferencia.", "en": "It codes a session you already coded by hand, without looking, and shows you every difference."},
-      "picture": {"motif": "before-after", "labels": {"es": ["a mano", "el codificador", "coinciden"], "en": ["by hand", "the coder", "match"]}, "shows": "two columns of rows side by side, matching rows joined by lines, one difference marked"},
-      "covers": ["qualitative-session-coder"]
+      "title": {
+        "es": "Mide si codifica como tú",
+        "en": "Check it codes like you"
+      },
+      "phrase": {
+        "es": "corre la prueba de fidelidad",
+        "en": "run the fidelity test"
+      },
+      "appears": {
+        "es": "Codifica una sesión que ya codificaron a mano, sin mirarla, y te muestra cada diferencia.",
+        "en": "It codes a session you already coded by hand, without looking, and shows you every difference."
+      },
+      "picture": {
+        "motif": "before-after",
+        "labels": {
+          "es": [
+            "a mano",
+            "el codificador",
+            "coinciden"
+          ],
+          "en": [
+            "by hand",
+            "the coder",
+            "match"
+          ]
+        },
+        "shows": "two columns of rows side by side, matching rows joined by lines, one difference marked"
+      },
+      "covers": [
+        "qualitative-session-coder"
+      ]
     },
     {
       "id": "try-the-sample-study",
       "kind": "feature",
-      "title": {"es": "Prueba el estudio de ejemplo", "en": "Try the sample study"},
-      "phrase": {"es": "puebla el codificador con el estudio de ejemplo", "en": "seed the coder with the sample study"},
-      "appears": {"es": "Una carpeta de un equipo inventado, con una sesión esperando en la entrada para que la pruebes.", "en": "A folder of an invented team, with one session waiting in the inbox for you to try."},
-      "picture": {"motif": "folder", "labels": {"es": ["Investigación (demo)", "ejemplo", "entrada"], "en": ["Research (demo)", "example", "inbox"]}, "shows": "a folder named for the demo next to a real one, with an example study and an inbox file inside"},
-      "covers": ["codificador-sesiones-setup"]
+      "title": {
+        "es": "Prueba el estudio de ejemplo",
+        "en": "Try the sample study"
+      },
+      "phrase": {
+        "es": "puebla el codificador con el estudio de ejemplo",
+        "en": "seed the coder with the sample study"
+      },
+      "appears": {
+        "es": "Una carpeta de un equipo inventado, con una sesión esperando en la entrada para que la pruebes.",
+        "en": "A folder of an invented team, with one session waiting in the inbox for you to try."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "Investigación (demo)",
+            "ejemplo",
+            "entrada"
+          ],
+          "en": [
+            "Research (demo)",
+            "example",
+            "inbox"
+          ]
+        },
+        "shows": "a folder named for the demo next to a real one, with an example study and an inbox file inside"
+      },
+      "covers": [
+        "codificador-sesiones-setup"
+      ]
     },
     {
       "id": "rehearse-the-install",
       "kind": "feature",
-      "title": {"es": "Ensaya la instalación", "en": "Rehearse the install"},
-      "phrase": {"es": "prueba la instalación del codificador con el material de ejemplo", "en": "try the coder's install with the sample material"},
-      "appears": {"es": "La instalación completa con archivos de ejemplo en Excel y Word, incluido un nombre que detecta sin anonimizar.", "en": "The full install with sample Excel and Word files, including an unanonymized name it catches."},
-      "picture": {"motif": "folder", "labels": {"es": ["Excel", "Word", "nombre", "Investigación (prueba)"], "en": ["Excel", "Word", "name", "Research (trial)"]}, "shows": "an Excel and a Word file going into a folder, one with a name flagged before it enters"},
-      "covers": ["codificador-sesiones-setup"]
+      "title": {
+        "es": "Ensaya la instalación",
+        "en": "Rehearse the install"
+      },
+      "phrase": {
+        "es": "prueba la instalación del codificador con el material de ejemplo",
+        "en": "try the coder's install with the sample material"
+      },
+      "appears": {
+        "es": "La instalación completa con archivos de ejemplo en Excel y Word, incluido un nombre que detecta sin anonimizar.",
+        "en": "The full install with sample Excel and Word files, including an unanonymized name it catches."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "Excel",
+            "Word",
+            "nombre",
+            "Investigación (prueba)"
+          ],
+          "en": [
+            "Excel",
+            "Word",
+            "name",
+            "Research (trial)"
+          ]
+        },
+        "shows": "an Excel and a Word file going into a folder, one with a name flagged before it enters"
+      },
+      "covers": [
+        "codificador-sesiones-setup"
+      ]
     },
     {
       "id": "what-it-never-does",
       "kind": "limits",
-      "title": {"es": "Lo que nunca hace", "en": "What it never does"},
+      "title": {
+        "es": "Lo que nunca hace",
+        "en": "What it never does"
+      },
       "limits": [
-        {"es": "No redacta el informe ni decide qué hallazgos le importan al cliente.", "en": "It does not write the report or decide which findings matter to the client."},
-        {"es": "No modera sesiones ni reemplaza tu criterio.", "en": "It does not moderate sessions or replace your judgment."},
-        {"es": "No mete una categoría nueva al libro sin que una persona la acepte.", "en": "It adds no new category to the codebook until a person accepts it."},
-        {"es": "No escribe un código sin su cita y su minuto.", "en": "It writes no code without its quote and minute."},
-        {"es": "No habla de causas: dice lo que coincide y en cuántas personas.", "en": "It claims no causes: it says what coincides and in how many people."},
-        {"es": "No escribe fuera de la carpeta ni pone nombres de participantes en la matriz.", "en": "It writes nothing outside the folder and puts no participant names in the matrix."}
+        {
+          "es": "No redacta el informe ni decide qué hallazgos le importan al cliente.",
+          "en": "It does not write the report or decide which findings matter to the client."
+        },
+        {
+          "es": "No modera sesiones ni reemplaza tu criterio.",
+          "en": "It does not moderate sessions or replace your judgment."
+        },
+        {
+          "es": "No mete una categoría nueva al libro sin que una persona la acepte.",
+          "en": "It adds no new category to the codebook until a person accepts it."
+        },
+        {
+          "es": "No escribe un código sin su cita y su minuto.",
+          "en": "It writes no code without its quote and minute."
+        },
+        {
+          "es": "No habla de causas: dice lo que coincide y en cuántas personas.",
+          "en": "It claims no causes: it says what coincides and in how many people."
+        },
+        {
+          "es": "No escribe fuera de la carpeta ni pone nombres de participantes en la matriz.",
+          "en": "It writes nothing outside the folder and puts no participant names in the matrix."
+        }
       ],
-      "picture": {"motif": "stop", "labels": {"es": ["informe", "sin cita", "fuera"], "en": ["report", "no quote", "outside"]}, "shows": "a closed door with a report, a quote-less row and an envelope stopped in front of it"},
+      "picture": {
+        "motif": "stop",
+        "labels": {
+          "es": [
+            "informe",
+            "sin cita",
+            "fuera"
+          ],
+          "en": [
+            "report",
+            "no quote",
+            "outside"
+          ]
+        },
+        "shows": "a closed door with a report, a quote-less row and an envelope stopped in front of it"
+      },
       "covers": []
     }
   ],
   "walkthrough": {
-    "title": {"es": "Guía completa", "en": "Complete guide"},
-    "line": {"es": "Capítulos en orden, de la instalación a la última función. Cada paso dice qué hacer, qué aparece y cómo comprobarlo.", "en": "Chapters in order, from the install to the last feature. Each step says what to do, what appears and how to check it."},
+    "title": {
+      "es": "Guía completa",
+      "en": "Complete guide"
+    },
+    "line": {
+      "es": "Capítulos en orden, de la instalación a la última función. Cada paso dice qué hacer, qué aparece y cómo comprobarlo.",
+      "en": "Chapters in order, from the install to the last feature. Each step says what to do, what appears and how to check it."
+    },
     "chapters": [
       {
         "id": "install",
-        "title": {"es": "Instala el codificador", "en": "Install the coder"},
-        "goal": {"es": "Al terminar, el codificador está instalado y tu carpeta de investigación existe en Drive, con tus formatos y el estudio de ahora.", "en": "When you finish, the coder is installed and your research folder exists in Drive, with your formats and the current study."},
-        "cards": ["getting-started"],
+        "title": {
+          "es": "Instala el codificador",
+          "en": "Install the coder"
+        },
+        "goal": {
+          "es": "Al terminar, la carpeta de investigación existe en Drive, el codificador está instalado en ella con tus formatos y el estudio de ahora, y el equipo tiene acceso.",
+          "en": "When you finish, the research folder exists in Drive, the coder is installed in it with your formats and the current study, and the team has access."
+        },
+        "cards": [
+          "getting-started"
+        ],
         "before": [
-          {"es": "Una cuenta de Claude con acceso a Code, abierta en la app de escritorio.", "en": "A Claude account with Code access, signed in on the desktop app."},
-          {"es": "Google Drive para escritorio instalado y con tu cuenta abierta.", "en": "Google Drive for desktop installed and signed in to your account."},
-          {"es": "A mano: el Excel donde vacían las respuestas, un estudio que ya codificaron y el libro de códigos del estudio de ahora.", "en": "At hand: the spreadsheet where you log answers, a study you already coded and the current study's codebook."}
+          {
+            "es": "Una cuenta de Claude con acceso a Code, abierta en la app de escritorio.",
+            "en": "A Claude account with Code access, signed in on the desktop app."
+          },
+          {
+            "es": "La cuenta de Google del equipo, donde va a vivir la carpeta.",
+            "en": "The team's Google account, where the folder will live."
+          },
+          {
+            "es": "A mano: el Excel donde vacían las respuestas, un estudio que ya codificaron y el libro de códigos del estudio de ahora.",
+            "en": "At hand: the spreadsheet where you log answers, a study you already coded and the current study's codebook."
+          }
         ],
         "steps": [
           {
-            "do": {"es": "Crea en tu Drive una carpeta vacía para la investigación. Abre la app de escritorio, entra a Code y abre esa carpeta como proyecto.", "en": "Create an empty research folder in your Drive. Open the desktop app, go to Code and open that folder as the project."},
-            "appears": {"es": "Un chat vacío con el nombre de la carpeta.", "en": "An empty chat with the folder's name."},
-            "check": {"es": "El nombre de la carpeta aparece arriba del chat.", "en": "The folder's name shows above the chat."}
+            "drive": "drive-install",
+            "do": {
+              "es": "Descarga e instala Google Drive para computadoras desde la ayuda de Google: GoogleDriveSetup.exe en Windows, GoogleDrive.dmg en Mac. Sigue las instrucciones en pantalla.",
+              "en": "Download and install Google Drive for desktop from Google's help: GoogleDriveSetup.exe on Windows, GoogleDrive.dmg on Mac. Follow the on-screen steps."
+            },
+            "appears": {
+              "es": "El ícono de Drive aparece en la bandeja del sistema (Windows, abajo a la derecha) o en la barra de menú (Mac, arriba a la derecha).",
+              "en": "The Drive icon shows in the system tray (Windows, bottom right) or the menu bar (Mac, top right)."
+            },
+            "check": {
+              "es": "Ves el ícono de Drive junto al reloj o en la barra de menú.",
+              "en": "You see the Drive icon next to the clock or in the menu bar."
+            }
           },
           {
-            "do": {"es": "Pega este mensaje y aprueba los permisos que te pida.", "en": "Paste this message and approve the permissions it asks for."},
-            "say": {"es": "Instala el codificador de sesiones de investigación. Viene del marketplace AlgortimoTD/molt-agents, plugin codificador-sesiones. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.", "en": "Install the research session coder. It comes from the marketplace AlgortimoTD/molt-agents, plugin codificador-sesiones. Get everything it needs ready and tell me when it is done, without explaining the technical details."},
-            "appears": {"es": "Instala lo que necesita y responde \"listo\".", "en": "It installs what it needs and answers \"done\"."},
-            "check": {"es": "Respondió \"listo\" sin pedirte ningún comando.", "en": "It answered \"done\" without asking you for any command."}
+            "drive": "drive-sign-in",
+            "do": {
+              "es": "Abre Google Drive para computadoras, haz clic en Comenzar y luego en Acceder, y entra con la cuenta de Google donde va a vivir la carpeta.",
+              "en": "Open Google Drive for desktop, click Get started and then Sign in, and use the Google account where the folder will live."
+            },
+            "appears": {
+              "es": "El menú de Drive muestra tu foto y tu correo.",
+              "en": "The Drive menu shows your photo and email."
+            },
+            "check": {
+              "es": "El correo del menú de Drive es el de la cuenta del equipo, no uno personal.",
+              "en": "The email in the Drive menu is the team account, not a personal one."
+            }
           },
           {
-            "do": {"es": "Si todavía no tienes el material de tu equipo, salta al capítulo 2. Si lo tienes, dile esto.", "en": "If you do not have your team's material yet, go to chapter 2. If you do, say this."},
-            "say": {"es": "instala el codificador", "en": "install the session coder"},
-            "appears": {"es": "Te dice que todo quedará en español y empieza la entrevista: el nombre del equipo, quién hace qué y dónde graban las sesiones.", "en": "It says everything will be in Spanish and starts the interview: the team's name, who does what and where you record sessions."},
-            "check": {"es": "Te preguntó quién lidera la investigación.", "en": "It asked who leads the research."}
+            "drive": "drive-locate",
+            "do": {
+              "es": "Abre el Explorador de archivos (Windows) o Finder (Mac) y busca Google Drive; adentro está Mi unidad.",
+              "en": "Open File Explorer (Windows) or Finder (Mac) and find Google Drive; My Drive is inside."
+            },
+            "appears": {
+              "es": "Mi unidad con tus carpetas de Drive.",
+              "en": "My Drive with your Drive folders."
+            },
+            "check": {
+              "es": "Las carpetas de Mi unidad son las mismas que ves en drive.google.com.",
+              "en": "The folders in My Drive are the same ones you see at drive.google.com."
+            }
           },
           {
-            "do": {"es": "Cuando te lo pida, arrastra al chat el Excel de descarga y el estudio que ya codificaron: su matriz, sus transcripciones y los hallazgos.", "en": "When it asks, drag into the chat your quick-download spreadsheet and the study you already coded: its matrix, transcripts and findings."},
-            "appears": {"es": "Te dice qué columnas tomó de tu Excel y, si encuentra un nombre de participante o del cliente, te pregunta antes de guardarlo.", "en": "It tells you which columns it took from your spreadsheet and, if it finds a participant's or the client's name, asks before storing it."},
-            "check": {"es": "En la carpeta hay un archivo formato-de-salida.md con tus columnas.", "en": "The folder holds a formato-de-salida.md file with your columns."}
+            "drive": "folder-create",
+            "do": {
+              "es": "Dentro de Mi unidad, o de una unidad compartida del equipo si tienen, crea la carpeta del agente, por ejemplo \"Investigación <Equipo>\".",
+              "en": "Inside My Drive, or a team shared drive if you have one, create the agent's folder, for example \"<Team> research\"."
+            },
+            "appears": {
+              "es": "Una carpeta vacía con ese nombre.",
+              "en": "An empty folder with that name."
+            },
+            "check": {
+              "es": "La carpeta aparece también en drive.google.com, en el mismo lugar.",
+              "en": "The folder also shows at drive.google.com, in the same place."
+            }
           },
           {
-            "do": {"es": "Responde las preguntas sobre cómo codifican: cuándo dos respuestas son la misma categoría, un código bueno y uno malo, y el mínimo para un cruce.", "en": "Answer the questions on how you code: when two answers are the same category, one good code and one bad, and the minimum for a cross."},
-            "appears": {"es": "Escribe tus criterios con tus palabras.", "en": "It writes your criteria in your words."},
-            "check": {"es": "En la carpeta hay un archivo criterios-de-calidad.md con tus ejemplos.", "en": "The folder holds a criteria file, criterios-de-calidad.md, with your examples."}
+            "drive": "folder-offline",
+            "do": {
+              "es": "Haz clic derecho sobre la carpeta y márcala como disponible sin conexión, en el menú de Drive del clic derecho.",
+              "en": "Right-click the folder and make it available offline, from the Drive options of the right-click menu."
+            },
+            "appears": {
+              "es": "La carpeta queda guardada también en tu computador.",
+              "en": "The folder is kept on your computer too."
+            },
+            "check": {
+              "es": "La carpeta muestra la marca de disponible sin conexión.",
+              "en": "The folder shows the available-offline mark."
+            }
           },
           {
-            "do": {"es": "Arrastra el libro de códigos del estudio de ahora y, si la tienes, la guía del moderador.", "en": "Drag in the current study's codebook and, if you have it, the moderator guide."},
-            "appears": {"es": "Crea la carpeta del estudio con sus variables, sus categorías y sus grupos.", "en": "It creates the study's folder with its variables, categories and groups."},
-            "check": {"es": "Dentro de estudios hay una carpeta con un libro-de-codigos.md que lista tus variables.", "en": "Inside estudios there is a folder with a libro-de-codigos.md listing your variables."}
+            "drive": "folder-open",
+            "do": {
+              "es": "Abre la app de escritorio de Claude, entra a Code, elige abrir una carpeta y busca la tuya en Google Drive, Mi unidad. Si el computador pregunta si Claude puede acceder a la carpeta, elige Permitir.",
+              "en": "Open the Claude desktop app, go to Code, choose to open a folder and find yours in Google Drive, My Drive. If the computer asks whether Claude can access the folder, choose Allow."
+            },
+            "appears": {
+              "es": "Un chat vacío con el nombre de la carpeta.",
+              "en": "An empty chat with the folder's name."
+            },
+            "check": {
+              "es": "El nombre de la carpeta aparece arriba del chat.",
+              "en": "The folder's name shows above the chat."
+            }
           },
           {
-            "do": {"es": "Deja que codifique la última sesión del estudio y revísala como revisas hoy.", "en": "Let it code the latest session of the study and review it the way you do today."},
-            "appears": {"es": "La sesión codificada y una lista de lo que la carpeta ya sabe y lo que le falta.", "en": "The coded session and a list of what the folder knows and what it is missing."},
-            "check": {"es": "Hay un archivo nuevo en la carpeta sesiones del estudio.", "en": "There is a new file in the study's sesiones folder."}
+            "do": {
+              "es": "Pega este mensaje y aprueba los permisos que te pida.",
+              "en": "Paste this message and approve the permissions it asks for."
+            },
+            "say": {
+              "es": "Instala el codificador de sesiones de investigación. Viene del marketplace AlgortimoTD/molt-agents, plugin codificador-sesiones. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.",
+              "en": "Install the research session coder. It comes from the marketplace AlgortimoTD/molt-agents, plugin codificador-sesiones. Get everything it needs ready and tell me when it is done, without explaining the technical details."
+            },
+            "appears": {
+              "es": "Instala lo que necesita y responde \"listo\".",
+              "en": "It installs what it needs and answers \"done\"."
+            },
+            "check": {
+              "es": "Respondió \"listo\" sin pedirte ningún comando.",
+              "en": "It answered \"done\" without asking you for any command."
+            }
+          },
+          {
+            "do": {
+              "es": "Si todavía no tienes el material de tu equipo, salta al capítulo 3. Si lo tienes, dile esto.",
+              "en": "If you do not have your team's material yet, go to chapter 3. If you do, say this."
+            },
+            "say": {
+              "es": "instala el codificador",
+              "en": "install the session coder"
+            },
+            "appears": {
+              "es": "Te dice que todo quedará en español y empieza la entrevista: el nombre del equipo, quién hace qué y dónde graban las sesiones.",
+              "en": "It says everything will be in Spanish and starts the interview: the team's name, who does what and where you record sessions."
+            },
+            "check": {
+              "es": "Te preguntó quién lidera la investigación.",
+              "en": "It asked who leads the research."
+            }
+          },
+          {
+            "do": {
+              "es": "Cuando te lo pida, arrastra al chat el Excel de descarga y el estudio que ya codificaron: su matriz, sus transcripciones y los hallazgos.",
+              "en": "When it asks, drag into the chat your quick-download spreadsheet and the study you already coded: its matrix, transcripts and findings."
+            },
+            "appears": {
+              "es": "Te dice qué columnas tomó de tu Excel y, si encuentra un nombre de participante o del cliente, te pregunta antes de guardarlo.",
+              "en": "It tells you which columns it took from your spreadsheet and, if it finds a participant's or the client's name, asks before storing it."
+            },
+            "check": {
+              "es": "En la carpeta hay un archivo formato-de-salida.md con tus columnas.",
+              "en": "The folder holds a formato-de-salida.md file with your columns."
+            }
+          },
+          {
+            "do": {
+              "es": "Responde cómo codifican (cuándo dos respuestas son la misma categoría, un código bueno y uno malo, el mínimo para un cruce) y arrastra el libro de códigos del estudio de ahora.",
+              "en": "Answer how you code (when two answers are the same category, one good code and one bad, the minimum for a cross) and drag in the current study's codebook."
+            },
+            "appears": {
+              "es": "Escribe tus criterios con tus palabras y crea la carpeta del estudio con sus variables.",
+              "en": "It writes your criteria in your words and creates the study's folder with its variables."
+            },
+            "check": {
+              "es": "Hay un criterios-de-calidad.md con tus ejemplos y, dentro de estudios, un libro-de-codigos.md con tus variables.",
+              "en": "There is a criterios-de-calidad.md with your examples and, inside estudios, a libro-de-codigos.md with your variables."
+            }
+          },
+          {
+            "do": {
+              "es": "Deja que codifique la última sesión del estudio y revísala como revisas hoy.",
+              "en": "Let it code the latest session of the study and review it the way you do today."
+            },
+            "appears": {
+              "es": "La sesión codificada y una lista de lo que la carpeta ya sabe y lo que le falta.",
+              "en": "The coded session and a list of what the folder knows and what it is missing."
+            },
+            "check": {
+              "es": "Hay un archivo nuevo en la carpeta sesiones del estudio.",
+              "en": "There is a new file in the study's sesiones folder."
+            }
+          },
+          {
+            "drive": "folder-share",
+            "do": {
+              "es": "En drive.google.com, selecciona la carpeta y haz clic en Compartir. Escribe el correo de cada persona del equipo y dale Editor a quien trabaja en la carpeta y Lector a quien solo consulta. Envía.",
+              "en": "At drive.google.com, select the folder and click Share. Type each teammate's email and give Editor to whoever works in the folder and Viewer to whoever only consults. Send."
+            },
+            "appears": {
+              "es": "Cada persona recibe un correo con la carpeta compartida.",
+              "en": "Each person gets an email with the shared folder."
+            },
+            "check": {
+              "es": "En la ventana Compartir, cada persona aparece con su rol.",
+              "en": "In the Share window, each person shows with their role."
+            }
           }
         ],
         "if_not": [
-          {"when": {"es": "Te pide correr un comando o nombra una herramienta.", "en": "It asks you to run a command or names a tool."}, "then": {"es": "Vuelve a decir la frase en el mismo chat, con la carpeta abierta como proyecto.", "en": "Say the phrase again in the same chat, with the folder open as the project."}},
-          {"when": {"es": "No puede abrir uno de tus archivos.", "en": "It cannot open one of your files."}, "then": {"es": "Guárdalo desde Excel o Word como CSV o PDF y vuelve a arrastrarlo.", "en": "Save it from Excel or Word as CSV or PDF and drag it in again."}},
-          {"when": {"es": "No ves la carpeta en Drive desde otro computador.", "en": "You do not see the folder in Drive from another computer."}, "then": {"es": "Revisa que la carpeta esté compartida con esa cuenta y que Drive para escritorio esté abierto en ese computador.", "en": "Check that the folder is shared with that account and that Drive for desktop is running on that computer."}}
+          {
+            "when": {
+              "es": "Te pide correr un comando o nombra una herramienta.",
+              "en": "It asks you to run a command or names a tool."
+            },
+            "then": {
+              "es": "Vuelve a decir la frase en el mismo chat, con la carpeta abierta como proyecto.",
+              "en": "Say the phrase again in the same chat, with the folder open as the project."
+            }
+          },
+          {
+            "when": {
+              "es": "No puede abrir uno de tus archivos.",
+              "en": "It cannot open one of your files."
+            },
+            "then": {
+              "es": "Guárdalo desde Excel o Word como CSV o PDF y vuelve a arrastrarlo.",
+              "en": "Save it from Excel or Word as CSV or PDF and drag it in again."
+            }
+          },
+          {
+            "when": {
+              "es": "Claude no puede abrir la carpeta.",
+              "en": "Claude cannot open the folder."
+            },
+            "then": {
+              "es": "Ábrela de nuevo desde Code y elige Permitir cuando el computador pregunte; en Mac, revisa que Claude tenga acceso a archivos en Configuración del sistema.",
+              "en": "Open it again from Code and choose Allow when the computer asks; on Mac, check Claude has file access in System Settings."
+            }
+          },
+          {
+            "when": {
+              "es": "La carpeta no aparece en Google Drive, Mi unidad, del computador.",
+              "en": "The folder does not show in Google Drive, My Drive, on the computer."
+            },
+            "then": {
+              "es": "Revisa que Drive esté abierto con la cuenta del equipo y espera a que termine de sincronizar.",
+              "en": "Check that Drive is running with the team account and wait for it to finish syncing."
+            }
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "kind": "join",
+        "title": {
+          "es": "Súmate al equipo",
+          "en": "Join the team"
+        },
+        "goal": {
+          "es": "Al terminar, tienes la carpeta del equipo en tu computador y el codificador funciona en ella, igual que para quien la creó.",
+          "en": "When you finish, the team's folder is on your computer and the coder works in it, as it does for whoever created it."
+        },
+        "cards": [
+          "getting-started"
+        ],
+        "before": [
+          {
+            "es": "Que la persona que instaló te haya compartido la carpeta a tu correo.",
+            "en": "The person who installed has shared the folder with your email."
+          },
+          {
+            "es": "Una cuenta de Claude con acceso a Code, abierta en la app de escritorio.",
+            "en": "A Claude account with Code access, signed in on the desktop app."
+          }
+        ],
+        "steps": [
+          {
+            "drive": "share-accept",
+            "do": {
+              "es": "Abre el correo con la carpeta compartida, o ve a drive.google.com y entra a Compartidos conmigo.",
+              "en": "Open the email with the shared folder, or go to drive.google.com and open Shared with me."
+            },
+            "appears": {
+              "es": "La carpeta del equipo en Compartidos conmigo.",
+              "en": "The team's folder in Shared with me."
+            },
+            "check": {
+              "es": "Ves la carpeta con el nombre que te dijeron.",
+              "en": "You see the folder with the name you were told."
+            }
+          },
+          {
+            "drive": "share-shortcut",
+            "do": {
+              "es": "Haz clic derecho sobre la carpeta, luego Organizar y Agregar acceso directo, y elige Mi unidad. Si está en una unidad compartida, sáltate este paso.",
+              "en": "Right-click the folder, then Organize and Add shortcut, and choose My Drive. If it is in a shared drive, skip this step."
+            },
+            "appears": {
+              "es": "La carpeta aparece en tu Mi unidad con el ícono de acceso directo.",
+              "en": "The folder shows in your My Drive with the shortcut icon."
+            },
+            "check": {
+              "es": "La ves en Mi unidad. Sin este paso no llega a tu computador.",
+              "en": "You see it in My Drive. Without this step it never reaches your computer."
+            }
+          },
+          {
+            "drive": "drive-install",
+            "do": {
+              "es": "Instala Google Drive para computadoras: GoogleDriveSetup.exe en Windows, GoogleDrive.dmg en Mac.",
+              "en": "Install Google Drive for desktop: GoogleDriveSetup.exe on Windows, GoogleDrive.dmg on Mac."
+            },
+            "appears": {
+              "es": "El ícono de Drive en la bandeja del sistema o en la barra de menú.",
+              "en": "The Drive icon in the system tray or the menu bar."
+            },
+            "check": {
+              "es": "Ves el ícono de Drive junto al reloj o en la barra de menú.",
+              "en": "You see the Drive icon next to the clock or in the menu bar."
+            }
+          },
+          {
+            "drive": "drive-sign-in",
+            "do": {
+              "es": "Abre Drive, haz clic en Comenzar y en Acceder, y entra con la cuenta a la que te compartieron la carpeta.",
+              "en": "Open Drive, click Get started and Sign in, and use the account the folder was shared with."
+            },
+            "appears": {
+              "es": "En el Explorador de archivos o en Finder, Google Drive con Mi unidad.",
+              "en": "In File Explorer or Finder, Google Drive with My Drive."
+            },
+            "check": {
+              "es": "La carpeta del equipo está dentro de Mi unidad en tu computador.",
+              "en": "The team's folder is inside My Drive on your computer."
+            }
+          },
+          {
+            "drive": "plugin-install",
+            "do": {
+              "es": "En la app de escritorio de Claude, entra a Code, abre la carpeta del equipo desde Google Drive, Mi unidad, eligiendo Permitir si el computador pregunta, y pega este mensaje.",
+              "en": "In the Claude desktop app, go to Code, open the team's folder from Google Drive, My Drive, choosing Allow if the computer asks, and paste this message."
+            },
+            "say": {
+              "es": "Instala el codificador de sesiones de investigación. Viene del marketplace AlgortimoTD/molt-agents, plugin codificador-sesiones. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.",
+              "en": "Install the research session coder. It comes from the marketplace AlgortimoTD/molt-agents, plugin codificador-sesiones. Get everything it needs ready and tell me when it is done, without explaining the technical details."
+            },
+            "appears": {
+              "es": "Instala lo que necesita y responde \"listo\".",
+              "en": "It installs what it needs and answers \"done\"."
+            },
+            "check": {
+              "es": "Respondió \"listo\" sin pedirte ningún comando.",
+              "en": "It answered \"done\" without asking you for any command."
+            }
+          },
+          {
+            "drive": "folder-open",
+            "do": {
+              "es": "Pregúntale algo sobre lo que ya hay en la carpeta, para comprobar que ve la del equipo.",
+              "en": "Ask it something about what is already in the folder, to check it sees the team's one."
+            },
+            "appears": {
+              "es": "Te responde con lo que hay en la carpeta, por ejemplo las variables del estudio.",
+              "en": "It answers with what is in the folder, for example the study's variables."
+            },
+            "check": {
+              "es": "La respuesta nombra archivos que están en la carpeta compartida.",
+              "en": "The answer names files that are in the shared folder."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "La carpeta no aparece en tu computador.",
+              "en": "The folder does not show on your computer."
+            },
+            "then": {
+              "es": "Revisa el acceso directo en Mi unidad y que Drive esté abierto con la cuenta a la que te compartieron la carpeta.",
+              "en": "Check the shortcut in My Drive and that Drive is running with the account the folder was shared with."
+            }
+          },
+          {
+            "when": {
+              "es": "No puedes cambiar nada en la carpeta.",
+              "en": "You cannot change anything in the folder."
+            },
+            "then": {
+              "es": "Pide a quien la compartió que en Compartir te cambie el rol a Editor.",
+              "en": "Ask whoever shared it to change your role to Editor in Share."
+            }
+          },
+          {
+            "when": {
+              "es": "Aparece un archivo repetido con (1) en el nombre.",
+              "en": "A file shows twice, one with (1) in its name."
+            },
+            "then": {
+              "es": "Dos personas cambiaron el mismo archivo a la vez. Dile al agente cuál quedó bien y deja una sola versión.",
+              "en": "Two people changed the same file at once. Tell the agent which one is right and keep a single version."
+            }
+          }
         ]
       },
       {
         "id": "rehearse",
-        "title": {"es": "Ensaya la instalación", "en": "Rehearse the install"},
-        "goal": {"es": "Al terminar, viste la instalación completa con archivos de ejemplo, sin usar nada real de tu equipo.", "en": "When you finish, you have seen the full install with sample files, using nothing real from your team."},
-        "cards": ["rehearse-the-install"],
+        "title": {
+          "es": "Ensaya la instalación",
+          "en": "Rehearse the install"
+        },
+        "goal": {
+          "es": "Al terminar, viste la instalación completa con archivos de ejemplo, sin usar nada real de tu equipo.",
+          "en": "When you finish, you have seen the full install with sample files, using nothing real from your team."
+        },
+        "cards": [
+          "rehearse-the-install"
+        ],
         "steps": [
           {
-            "do": {"es": "Con el codificador instalado, abre un chat nuevo en Code y di esto.", "en": "With the coder installed, open a new chat in Code and say this."},
-            "say": {"es": "prueba la instalación del codificador con el material de ejemplo", "en": "try the coder's install with the sample material"},
-            "appears": {"es": "Crea una carpeta Investigación (prueba) en tu Drive y empieza la entrevista.", "en": "It creates a folder Investigación (prueba) in your Drive and starts the interview."},
-            "check": {"es": "La carpeta Investigación (prueba) aparece en tu Drive, al lado de las tuyas.", "en": "The folder Investigación (prueba) shows in your Drive, next to yours."}
+            "do": {
+              "es": "Con el codificador instalado, abre un chat nuevo en Code y di esto.",
+              "en": "With the coder installed, open a new chat in Code and say this."
+            },
+            "say": {
+              "es": "prueba la instalación del codificador con el material de ejemplo",
+              "en": "try the coder's install with the sample material"
+            },
+            "appears": {
+              "es": "Crea una carpeta Investigación (prueba) en tu Drive y empieza la entrevista.",
+              "en": "It creates a folder Investigación (prueba) in your Drive and starts the interview."
+            },
+            "check": {
+              "es": "La carpeta Investigación (prueba) aparece en tu Drive, al lado de las tuyas.",
+              "en": "The folder Investigación (prueba) shows in your Drive, next to yours."
+            }
           },
           {
-            "do": {"es": "Responde como el equipo de ejemplo: Lucía lidera, Sara y Andrés investigan y moderan, Tomás solo consulta; graban en Fathom.", "en": "Answer as the sample team: Lucía leads, Sara and Andrés research and moderate, Tomás only consults; they record in Fathom."},
-            "appears": {"es": "Toma los archivos de ejemplo uno por uno y te dice cuál usó.", "en": "It takes the sample files one by one and tells you which one it used."},
-            "check": {"es": "Nombró la plantilla de Excel y la matriz del estudio anterior.", "en": "It named the Excel template and the previous study's matrix."}
+            "do": {
+              "es": "Responde como el equipo de ejemplo: Lucía lidera, Sara y Andrés investigan y moderan, Tomás solo consulta; graban en Fathom.",
+              "en": "Answer as the sample team: Lucía leads, Sara and Andrés research and moderate, Tomás only consults; they record in Fathom."
+            },
+            "appears": {
+              "es": "Toma los archivos de ejemplo uno por uno y te dice cuál usó.",
+              "en": "It takes the sample files one by one and tells you which one it used."
+            },
+            "check": {
+              "es": "Nombró la plantilla de Excel y la matriz del estudio anterior.",
+              "en": "It named the Excel template and the previous study's matrix."
+            }
           },
           {
-            "do": {"es": "Espera a que revise el estudio anterior.", "en": "Wait while it checks the previous study."},
-            "appears": {"es": "Te avisa que una participante aparece con nombre y que el cliente está en el título de los hallazgos, y te pregunta.", "en": "It warns that a participant appears by name and the client is in the findings' title, and asks you."},
-            "check": {"es": "Te mostró dónde estaba cada nombre antes de guardar nada.", "en": "It showed where each name was before storing anything."}
+            "do": {
+              "es": "Espera a que revise el estudio anterior.",
+              "en": "Wait while it checks the previous study."
+            },
+            "appears": {
+              "es": "Te avisa que una participante aparece con nombre y que el cliente está en el título de los hallazgos, y te pregunta.",
+              "en": "It warns that a participant appears by name and the client is in the findings' title, and asks you."
+            },
+            "check": {
+              "es": "Te mostró dónde estaba cada nombre antes de guardar nada.",
+              "en": "It showed where each name was before storing anything."
+            }
           },
           {
-            "do": {"es": "Dile que sí, que los cambie por sus códigos, y deja que termine.", "en": "Tell it yes, to replace them with their codes, and let it finish."},
-            "say": {"es": "Sí, cámbialo por su código.", "en": "Yes, replace it with its code."},
-            "appears": {"es": "Guarda el estudio anonimizado, codifica la sesión nueva y ofrece la prueba de fidelidad.", "en": "It stores the anonymized study, codes the new session and offers the fidelity test."},
-            "check": {"es": "Buscas el nombre de la participante en Investigación (prueba) y no aparece.", "en": "You search for the participant's name in Investigación (prueba) and it is not there."}
+            "do": {
+              "es": "Dile que sí, que los cambie por sus códigos, y deja que termine.",
+              "en": "Tell it yes, to replace them with their codes, and let it finish."
+            },
+            "say": {
+              "es": "Sí, cámbialo por su código.",
+              "en": "Yes, replace it with its code."
+            },
+            "appears": {
+              "es": "Guarda el estudio anonimizado, codifica la sesión nueva y ofrece la prueba de fidelidad.",
+              "en": "It stores the anonymized study, codes the new session and offers the fidelity test."
+            },
+            "check": {
+              "es": "Buscas el nombre de la participante en Investigación (prueba) y no aparece.",
+              "en": "You search for the participant's name in Investigación (prueba) and it is not there."
+            }
           }
         ],
         "if_not": [
-          {"when": {"es": "No encuentra el material de ejemplo.", "en": "It cannot find the sample material."}, "then": {"es": "Actualiza el plugin con \"actualiza el plugin codificador-sesiones\" y vuelve a decir la frase.", "en": "Update the plugin with \"update the codificador-sesiones plugin\" and say the phrase again."}}
+          {
+            "when": {
+              "es": "No encuentra el material de ejemplo.",
+              "en": "It cannot find the sample material."
+            },
+            "then": {
+              "es": "Actualiza el plugin con \"actualiza el plugin codificador-sesiones\" y vuelve a decir la frase.",
+              "en": "Update the plugin with \"update the codificador-sesiones plugin\" and say the phrase again."
+            }
+          }
         ]
       },
       {
         "id": "seed",
-        "title": {"es": "Pon el estudio de ejemplo", "en": "Seed the sample study"},
-        "goal": {"es": "Al terminar, tienes una carpeta de ejemplo abierta, con una sesión esperando para codificar en los capítulos que siguen.", "en": "When you finish, you have a sample folder open, with one session waiting to be coded in the next chapters."},
-        "cards": ["try-the-sample-study"],
+        "title": {
+          "es": "Pon el estudio de ejemplo",
+          "en": "Seed the sample study"
+        },
+        "goal": {
+          "es": "Al terminar, tienes una carpeta de ejemplo abierta, con una sesión esperando para codificar en los capítulos que siguen.",
+          "en": "When you finish, you have a sample folder open, with one session waiting to be coded in the next chapters."
+        },
+        "cards": [
+          "try-the-sample-study"
+        ],
         "steps": [
           {
-            "do": {"es": "En un chat nuevo de Code, di esto.", "en": "In a new Code chat, say this."},
-            "say": {"es": "puebla el codificador con el estudio de ejemplo", "en": "seed the coder with the sample study"},
-            "appears": {"es": "Copia una carpeta Investigación (demo) en tu Drive y te dice qué probar.", "en": "It copies a folder Investigación (demo) into your Drive and tells you what to try."},
-            "check": {"es": "La carpeta Investigación (demo) aparece en tu Drive.", "en": "The folder Investigación (demo) shows in your Drive."}
+            "do": {
+              "es": "En un chat nuevo de Code, di esto.",
+              "en": "In a new Code chat, say this."
+            },
+            "say": {
+              "es": "puebla el codificador con el estudio de ejemplo",
+              "en": "seed the coder with the sample study"
+            },
+            "appears": {
+              "es": "Copia una carpeta Investigación (demo) en tu Drive y te dice qué probar.",
+              "en": "It copies a folder Investigación (demo) into your Drive and tells you what to try."
+            },
+            "check": {
+              "es": "La carpeta Investigación (demo) aparece en tu Drive.",
+              "en": "The folder Investigación (demo) shows in your Drive."
+            }
           },
           {
-            "do": {"es": "Abre Investigación (demo) como proyecto en Code.", "en": "Open Investigación (demo) as the project in Code."},
-            "appears": {"es": "Un chat nuevo con el nombre de la carpeta de ejemplo.", "en": "A new chat with the sample folder's name."},
-            "check": {"es": "En estudios/ocio-familias-2026/sesiones/entrada hay un archivo del grupo G2.", "en": "In estudios/ocio-familias-2026/sesiones/entrada there is a G2 file."}
+            "do": {
+              "es": "Abre Investigación (demo) como proyecto en Code.",
+              "en": "Open Investigación (demo) as the project in Code."
+            },
+            "appears": {
+              "es": "Un chat nuevo con el nombre de la carpeta de ejemplo.",
+              "en": "A new chat with the sample folder's name."
+            },
+            "check": {
+              "es": "En estudios/ocio-familias-2026/sesiones/entrada hay un archivo del grupo G2.",
+              "en": "In estudios/ocio-familias-2026/sesiones/entrada there is a G2 file."
+            }
           }
         ]
       },
       {
         "id": "code-and-ask",
-        "title": {"es": "Codifica y pregunta", "en": "Code and ask"},
-        "goal": {"es": "Al terminar, codificaste una sesión, viste sus citas en la matriz y le preguntaste qué dijo un grupo.", "en": "When you finish, you have coded a session, seen its quotes in the matrix and asked what a group said."},
-        "cards": ["paste-a-transcript", "code-a-session", "ask-what-they-said"],
+        "title": {
+          "es": "Codifica y pregunta",
+          "en": "Code and ask"
+        },
+        "goal": {
+          "es": "Al terminar, codificaste una sesión, viste sus citas en la matriz y le preguntaste qué dijo un grupo.",
+          "en": "When you finish, you have coded a session, seen its quotes in the matrix and asked what a group said."
+        },
+        "cards": [
+          "paste-a-transcript",
+          "code-a-session",
+          "ask-what-they-said"
+        ],
         "before": [
-          {"es": "La carpeta Investigación (demo) abierta como proyecto, del capítulo anterior.", "en": "The folder Investigación (demo) open as the project, from the previous chapter."}
+          {
+            "es": "La carpeta Investigación (demo) abierta como proyecto, del capítulo anterior.",
+            "en": "The folder Investigación (demo) open as the project, from the previous chapter."
+          }
         ],
         "steps": [
           {
-            "do": {"es": "Di esto.", "en": "Say this."},
-            "say": {"es": "codifica el transcript que está en entrada", "en": "code the transcript in the inbox"},
-            "appears": {"es": "Te dice cuántas filas escribió por variable, qué dejó sin categoría y qué categoría nueva propone.", "en": "It tells you how many rows it wrote per variable, what it left uncategorized and which new category it proposes."},
-            "check": {"es": "Hay un archivo 2026-09-26-g2-grupo-focal.md en sesiones, y la carpeta entrada solo tiene su README.", "en": "There is a 2026-09-26-g2-grupo-focal.md file in sesiones, and the entrada folder holds only its README."}
+            "do": {
+              "es": "Di esto.",
+              "en": "Say this."
+            },
+            "say": {
+              "es": "codifica el transcript que está en entrada",
+              "en": "code the transcript in the inbox"
+            },
+            "appears": {
+              "es": "Te dice cuántas filas escribió por variable, qué dejó sin categoría y qué categoría nueva propone.",
+              "en": "It tells you how many rows it wrote per variable, what it left uncategorized and which new category it proposes."
+            },
+            "check": {
+              "es": "Hay un archivo 2026-09-26-g2-grupo-focal.md en sesiones, y la carpeta entrada solo tiene su README.",
+              "en": "There is a 2026-09-26-g2-grupo-focal.md file in sesiones, and the entrada folder holds only its README."
+            }
           },
           {
-            "do": {"es": "Abre la sesión y mira la tabla de codificación.", "en": "Open the session and look at the coding table."},
-            "appears": {"es": "Una fila por código, con participante, variable, categoría, cita y minuto.", "en": "One row per code, with participant, variable, category, quote and minute."},
-            "check": {"es": "Ninguna fila tiene el nombre de una persona, y la frase dicha sin nombre aparece como participante no identificado.", "en": "No row carries a person's name, and the turn with no speaker shows as participante no identificado."}
+            "do": {
+              "es": "Abre la sesión y mira la tabla de codificación.",
+              "en": "Open the session and look at the coding table."
+            },
+            "appears": {
+              "es": "Una fila por código, con participante, variable, categoría, cita y minuto.",
+              "en": "One row per code, with participant, variable, category, quote and minute."
+            },
+            "check": {
+              "es": "Ninguna fila tiene el nombre de una persona, y la frase dicha sin nombre aparece como participante no identificado.",
+              "en": "No row carries a person's name, and the turn with no speaker shows as participante no identificado."
+            }
           },
           {
-            "do": {"es": "Abre matriz/matriz-codificada.csv en Excel.", "en": "Open matriz/matriz-codificada.csv in Excel."},
-            "appears": {"es": "Las filas de las dos sesiones del estudio, con sus citas.", "en": "The rows of both sessions of the study, with their quotes."},
-            "check": {"es": "La matriz tiene las filas del grupo G1 y las del grupo G2.", "en": "The matrix has the G1 rows and the G2 rows."}
+            "do": {
+              "es": "Abre matriz/matriz-codificada.csv en Excel.",
+              "en": "Open matriz/matriz-codificada.csv in Excel."
+            },
+            "appears": {
+              "es": "Las filas de las dos sesiones del estudio, con sus citas.",
+              "en": "The rows of both sessions of the study, with their quotes."
+            },
+            "check": {
+              "es": "La matriz tiene las filas del grupo G1 y las del grupo G2.",
+              "en": "The matrix has the G1 rows and the G2 rows."
+            }
           },
           {
-            "do": {"es": "Pregúntale por un grupo y un tema.", "en": "Ask about one group and one topic."},
-            "say": {"es": "¿qué dijo la gente del grupo 2 sobre el dinero?", "en": "what did people in group 2 say about money?"},
-            "appears": {"es": "Cuántas personas lo dijeron y sus citas, cada una con su sesión y su minuto.", "en": "How many people said it and their quotes, each with its session and minute."},
-            "check": {"es": "Cada cita trae un minuto que puedes buscar en la transcripción.", "en": "Every quote carries a minute you can find in the transcript."}
+            "do": {
+              "es": "Pregúntale por un grupo y un tema.",
+              "en": "Ask about one group and one topic."
+            },
+            "say": {
+              "es": "¿qué dijo la gente del grupo 2 sobre el dinero?",
+              "en": "what did people in group 2 say about money?"
+            },
+            "appears": {
+              "es": "Cuántas personas lo dijeron y sus citas, cada una con su sesión y su minuto.",
+              "en": "How many people said it and their quotes, each with its session and minute."
+            },
+            "check": {
+              "es": "Cada cita trae un minuto que puedes buscar en la transcripción.",
+              "en": "Every quote carries a minute you can find in the transcript."
+            }
           },
           {
-            "do": {"es": "Pídele otra vez que codifique lo que hay en entrada.", "en": "Ask it again to code what is in the inbox."},
-            "say": {"es": "codifica el transcript que está en entrada", "en": "code the transcript in the inbox"},
-            "appears": {"es": "Te dice que no hay nada esperando.", "en": "It tells you nothing is waiting."},
-            "check": {"es": "La matriz tiene el mismo número de filas que antes.", "en": "The matrix has the same number of rows as before."}
+            "do": {
+              "es": "Pídele otra vez que codifique lo que hay en entrada.",
+              "en": "Ask it again to code what is in the inbox."
+            },
+            "say": {
+              "es": "codifica el transcript que está en entrada",
+              "en": "code the transcript in the inbox"
+            },
+            "appears": {
+              "es": "Te dice que no hay nada esperando.",
+              "en": "It tells you nothing is waiting."
+            },
+            "check": {
+              "es": "La matriz tiene el mismo número de filas que antes.",
+              "en": "The matrix has the same number of rows as before."
+            }
           },
           {
-            "do": {"es": "Con tu equipo real, si graban en Fathom, pide la sesión por su grupo en vez de pegarla.", "en": "With your real team, if you record in Fathom, ask for the session by its group instead of pasting it."},
-            "say": {"es": "codifica la sesión de hoy del grupo 3", "en": "code today's session of group 3"},
-            "appears": {"es": "Trae la grabación de Fathom y la codifica igual.", "en": "It brings the recording from Fathom and codes it the same way."},
-            "check": {"es": "El encabezado de la sesión dice que el origen es Fathom.", "en": "The session's header says its origin is Fathom."}
+            "do": {
+              "es": "Con tu equipo real, si graban en Fathom, pide la sesión por su grupo en vez de pegarla.",
+              "en": "With your real team, if you record in Fathom, ask for the session by its group instead of pasting it."
+            },
+            "say": {
+              "es": "codifica la sesión de hoy del grupo 3",
+              "en": "code today's session of group 3"
+            },
+            "appears": {
+              "es": "Trae la grabación de Fathom y la codifica igual.",
+              "en": "It brings the recording from Fathom and codes it the same way."
+            },
+            "check": {
+              "es": "El encabezado de la sesión dice que el origen es Fathom.",
+              "en": "The session's header says its origin is Fathom."
+            }
           }
         ],
         "if_not": [
-          {"when": {"es": "No encuentra la sesión en Fathom.", "en": "It cannot find the session in Fathom."}, "then": {"es": "Revisa que la grabación esté compartida con tu cuenta y que su título empiece por el código del estudio; si no, pégala en entrada.", "en": "Check the recording is shared with your account and its title starts with the study code; if not, paste it in the inbox."}},
-          {"when": {"es": "La matriz no cuadra con las sesiones.", "en": "The matrix does not match the sessions."}, "then": {"es": "Di \"regenera la matriz\": se rehace desde los archivos de las sesiones.", "en": "Say \"regenera la matriz\": it is rebuilt from the session files."}}
+          {
+            "when": {
+              "es": "No encuentra la sesión en Fathom.",
+              "en": "It cannot find the session in Fathom."
+            },
+            "then": {
+              "es": "Revisa que la grabación esté compartida con tu cuenta y que su título empiece por el código del estudio; si no, pégala en entrada.",
+              "en": "Check the recording is shared with your account and its title starts with the study code; if not, paste it in the inbox."
+            }
+          },
+          {
+            "when": {
+              "es": "La matriz no cuadra con las sesiones.",
+              "en": "The matrix does not match the sessions."
+            },
+            "then": {
+              "es": "Di \"regenera la matriz\": se rehace desde los archivos de las sesiones.",
+              "en": "Say \"regenera la matriz\": it is rebuilt from the session files."
+            }
+          }
         ]
       },
       {
         "id": "categories",
-        "title": {"es": "Decide las categorías", "en": "Decide the categories"},
-        "goal": {"es": "Al terminar, aceptaste una categoría nueva y viste cómo un cambio al libro de códigos queda con su historial.", "en": "When you finish, you have accepted a new category and seen how a codebook change keeps its history."},
-        "cards": ["accept-a-new-category", "change-the-codebook"],
+        "title": {
+          "es": "Decide las categorías",
+          "en": "Decide the categories"
+        },
+        "goal": {
+          "es": "Al terminar, aceptaste una categoría nueva y viste cómo un cambio al libro de códigos queda con su historial.",
+          "en": "When you finish, you have accepted a new category and seen how a codebook change keeps its history."
+        },
+        "cards": [
+          "accept-a-new-category",
+          "change-the-codebook"
+        ],
         "steps": [
           {
-            "do": {"es": "Abre matriz/propuestas-de-categoria.md.", "en": "Open matriz/propuestas-de-categoria.md."},
-            "appears": {"es": "Una propuesta pendiente de recreación al aire libre, con dos citas de dos personas distintas.", "en": "A pending proposal for outdoor recreation, with two quotes from two different people."},
-            "check": {"es": "Cada cita trae su sesión y su minuto.", "en": "Each quote carries its session and minute."}
+            "do": {
+              "es": "Abre matriz/propuestas-de-categoria.md.",
+              "en": "Open matriz/propuestas-de-categoria.md."
+            },
+            "appears": {
+              "es": "Una propuesta pendiente de recreación al aire libre, con dos citas de dos personas distintas.",
+              "en": "A pending proposal for outdoor recreation, with two quotes from two different people."
+            },
+            "check": {
+              "es": "Cada cita trae su sesión y su minuto.",
+              "en": "Each quote carries its session and minute."
+            }
           },
           {
-            "do": {"es": "Acéptala.", "en": "Accept it."},
-            "say": {"es": "acepta la propuesta de recreación al aire libre", "en": "accept the outdoor recreation proposal"},
-            "appears": {"es": "Te confirma que entró al libro y te ofrece revisar las sesiones anteriores para esa variable.", "en": "It confirms it entered the codebook and offers to review earlier sessions for that variable."},
-            "check": {"es": "El libro de códigos tiene la categoría como emergente aceptada y una línea nueva en su Historial.", "en": "The codebook shows the category as emergente aceptada with a new line in its Historial."}
+            "do": {
+              "es": "Acéptala.",
+              "en": "Accept it."
+            },
+            "say": {
+              "es": "acepta la propuesta de recreación al aire libre",
+              "en": "accept the outdoor recreation proposal"
+            },
+            "appears": {
+              "es": "Te confirma que entró al libro y te ofrece revisar las sesiones anteriores para esa variable.",
+              "en": "It confirms it entered the codebook and offers to review earlier sessions for that variable."
+            },
+            "check": {
+              "es": "El libro de códigos tiene la categoría como emergente aceptada y una línea nueva en su Historial.",
+              "en": "The codebook shows the category as emergente aceptada with a new line in its Historial."
+            }
           },
           {
-            "do": {"es": "Abre la matriz otra vez.", "en": "Open the matrix again."},
-            "appears": {"es": "Dos filas nuevas con la categoría aceptada, una de cada grupo.", "en": "Two new rows with the accepted category, one from each group."},
-            "check": {"es": "La matriz tiene dos filas más que en el capítulo anterior.", "en": "The matrix has two more rows than in the previous chapter."}
+            "do": {
+              "es": "Abre la matriz otra vez.",
+              "en": "Open the matrix again."
+            },
+            "appears": {
+              "es": "Dos filas nuevas con la categoría aceptada, una de cada grupo.",
+              "en": "Two new rows with the accepted category, one from each group."
+            },
+            "check": {
+              "es": "La matriz tiene dos filas más que en el capítulo anterior.",
+              "en": "The matrix has two more rows than in the previous chapter."
+            }
           },
           {
-            "do": {"es": "Pide un cambio al libro con su razón, por ejemplo retirar una categoría.", "en": "Ask for a codebook change with its reason, for example retiring a category."},
-            "say": {"es": "retira la categoría distancia de freno principal, casi nadie la usa", "en": "retire the category distancia from freno principal, almost nobody uses it"},
-            "appears": {"es": "Te dice cuántas filas quedan por recodificar.", "en": "It tells you how many rows are left to recode."},
-            "check": {"es": "En el libro la categoría dice retirada, con la fecha y tu razón en el Historial.", "en": "In the codebook the category says retirada, with the date and your reason in the Historial."}
+            "do": {
+              "es": "Pide un cambio al libro con su razón, por ejemplo retirar una categoría.",
+              "en": "Ask for a codebook change with its reason, for example retiring a category."
+            },
+            "say": {
+              "es": "retira la categoría distancia de freno principal, casi nadie la usa",
+              "en": "retire the category distancia from freno principal, almost nobody uses it"
+            },
+            "appears": {
+              "es": "Te dice cuántas filas quedan por recodificar.",
+              "en": "It tells you how many rows are left to recode."
+            },
+            "check": {
+              "es": "En el libro la categoría dice retirada, con la fecha y tu razón en el Historial.",
+              "en": "In the codebook the category says retirada, with the date and your reason in the Historial."
+            }
           }
         ]
       },
       {
         "id": "cross",
-        "title": {"es": "Cruza dos variables", "en": "Cross two variables"},
-        "goal": {"es": "Al terminar, hiciste un cruce en sus tres pasos y viste que se detiene en cada uno.", "en": "When you finish, you have run a cross through its three steps and seen it stop at each one."},
-        "cards": ["cross-two-variables"],
+        "title": {
+          "es": "Cruza dos variables",
+          "en": "Cross two variables"
+        },
+        "goal": {
+          "es": "Al terminar, hiciste un cruce en sus tres pasos y viste que se detiene en cada uno.",
+          "en": "When you finish, you have run a cross through its three steps and seen it stop at each one."
+        },
+        "cards": [
+          "cross-two-variables"
+        ],
         "steps": [
           {
-            "do": {"es": "Pide el cruce, aunque sea todo de una vez.", "en": "Ask for the cross, even all at once."},
-            "say": {"es": "cruza actividades de tiempo libre con quién decide por grupo, dame todo de una vez", "en": "cross leisure activities with who decides by group, give me everything at once"},
-            "appears": {"es": "Solo el paso 1, las frecuencias por grupo con su tamaño, y una pausa con la razón.", "en": "Only step 1, frequencies by group with their size, and a pause with the reason."},
-            "check": {"es": "En la carpeta cruces hay un archivo nuevo que termina en una pausa.", "en": "The cruces folder holds a new file that ends in a pause."}
+            "do": {
+              "es": "Pide el cruce, aunque sea todo de una vez.",
+              "en": "Ask for the cross, even all at once."
+            },
+            "say": {
+              "es": "cruza actividades de tiempo libre con quién decide por grupo, dame todo de una vez",
+              "en": "cross leisure activities with who decides by group, give me everything at once"
+            },
+            "appears": {
+              "es": "Solo el paso 1, las frecuencias por grupo con su tamaño, y una pausa con la razón.",
+              "en": "Only step 1, frequencies by group with their size, and a pause with the reason."
+            },
+            "check": {
+              "es": "En la carpeta cruces hay un archivo nuevo que termina en una pausa.",
+              "en": "The cruces folder holds a new file that ends in a pause."
+            }
           },
           {
-            "do": {"es": "Responde en la pausa.", "en": "Answer at the pause."},
-            "say": {"es": "sigue", "en": "go on"},
-            "appears": {"es": "El paso 2: las relaciones con su conteo y tres citas, o las que no alcanzan el mínimo.", "en": "Step 2: relations with their count and three quotes, or the ones under the minimum."},
-            "check": {"es": "Tu respuesta quedó escrita bajo la pausa, con tus palabras.", "en": "Your answer is written under the pause, in your words."}
+            "do": {
+              "es": "Responde en la pausa.",
+              "en": "Answer at the pause."
+            },
+            "say": {
+              "es": "sigue",
+              "en": "go on"
+            },
+            "appears": {
+              "es": "El paso 2: las relaciones con su conteo y tres citas, o las que no alcanzan el mínimo.",
+              "en": "Step 2: relations with their count and three quotes, or the ones under the minimum."
+            },
+            "check": {
+              "es": "Tu respuesta quedó escrita bajo la pausa, con tus palabras.",
+              "en": "Your answer is written under the pause, in your words."
+            }
           },
           {
-            "do": {"es": "Responde otra vez para llegar al resumen.", "en": "Answer again to reach the summary."},
-            "say": {"es": "sigue", "en": "go on"},
-            "appears": {"es": "El paso 3: qué se sostiene, qué no alcanza y qué hipótesis del estudio toca.", "en": "Step 3: what holds, what falls short and which study hypothesis it touches."},
-            "check": {"es": "Ninguna frase del resumen habla de causas.", "en": "No sentence of the summary claims a cause."}
+            "do": {
+              "es": "Responde otra vez para llegar al resumen.",
+              "en": "Answer again to reach the summary."
+            },
+            "say": {
+              "es": "sigue",
+              "en": "go on"
+            },
+            "appears": {
+              "es": "El paso 3: qué se sostiene, qué no alcanza y qué hipótesis del estudio toca.",
+              "en": "Step 3: what holds, what falls short and which study hypothesis it touches."
+            },
+            "check": {
+              "es": "Ninguna frase del resumen habla de causas.",
+              "en": "No sentence of the summary claims a cause."
+            }
           }
         ]
       },
       {
         "id": "fidelity",
-        "title": {"es": "Mide si codifica como tú", "en": "Check it codes like you"},
-        "goal": {"es": "Al terminar, tienes un informe que compara la codificación del codificador con la hecha a mano.", "en": "When you finish, you have a report comparing the coder's coding with the one done by hand."},
-        "cards": ["fidelity-test"],
+        "title": {
+          "es": "Mide si codifica como tú",
+          "en": "Check it codes like you"
+        },
+        "goal": {
+          "es": "Al terminar, tienes un informe que compara la codificación del codificador con la hecha a mano.",
+          "en": "When you finish, you have a report comparing the coder's coding with the one done by hand."
+        },
+        "cards": [
+          "fidelity-test"
+        ],
         "steps": [
           {
-            "do": {"es": "Di esto.", "en": "Say this."},
-            "say": {"es": "corre la prueba de fidelidad", "en": "run the fidelity test"},
-            "appears": {"es": "El porcentaje de coincidencia, el umbral y cada diferencia con las dos citas lado a lado.", "en": "The match percentage, the threshold and every difference with both quotes side by side."},
-            "check": {"es": "Hay un archivo fidelidad con la fecha de hoy en _ejemplos, dentro de salidas.", "en": "There is a fidelidad file with today's date in _ejemplos, inside salidas."}
+            "do": {
+              "es": "Di esto.",
+              "en": "Say this."
+            },
+            "say": {
+              "es": "corre la prueba de fidelidad",
+              "en": "run the fidelity test"
+            },
+            "appears": {
+              "es": "El porcentaje de coincidencia, el umbral y cada diferencia con las dos citas lado a lado.",
+              "en": "The match percentage, the threshold and every difference with both quotes side by side."
+            },
+            "check": {
+              "es": "Hay un archivo fidelidad con la fecha de hoy en _ejemplos, dentro de salidas.",
+              "en": "There is a fidelidad file with today's date in _ejemplos, inside salidas."
+            }
           },
           {
-            "do": {"es": "Lee las diferencias y marca cada una como error del codificador, criterio no escrito o mejora aceptable.", "en": "Read the differences and mark each as a coder error, an unwritten criterion or an acceptable improvement."},
-            "appears": {"es": "Si falta un criterio, te propone el texto para agregarlo.", "en": "If a criterion is missing, it proposes the text to add."},
-            "check": {"es": "El libro y la matriz del ejemplo no cambiaron.", "en": "The example's codebook and matrix did not change."}
+            "do": {
+              "es": "Lee las diferencias y marca cada una como error del codificador, criterio no escrito o mejora aceptable.",
+              "en": "Read the differences and mark each as a coder error, an unwritten criterion or an acceptable improvement."
+            },
+            "appears": {
+              "es": "Si falta un criterio, te propone el texto para agregarlo.",
+              "en": "If a criterion is missing, it proposes the text to add."
+            },
+            "check": {
+              "es": "El libro y la matriz del ejemplo no cambiaron.",
+              "en": "The example's codebook and matrix did not change."
+            }
           }
         ]
       },
       {
         "id": "limits",
-        "title": {"es": "Mira lo que no hace", "en": "See what it will not do"},
-        "goal": {"es": "Al terminar, le pediste algo que no hace y viste cómo lo rechaza.", "en": "When you finish, you have asked for something it does not do and seen how it declines."},
-        "cards": ["what-it-never-does"],
+        "title": {
+          "es": "Mira lo que no hace",
+          "en": "See what it will not do"
+        },
+        "goal": {
+          "es": "Al terminar, le pediste algo que no hace y viste cómo lo rechaza.",
+          "en": "When you finish, you have asked for something it does not do and seen how it declines."
+        },
+        "cards": [
+          "what-it-never-does"
+        ],
         "steps": [
           {
-            "do": {"es": "Pídele que escriba los hallazgos del estudio.", "en": "Ask it to write the study's findings."},
-            "say": {"es": "redacta los cinco hallazgos principales del estudio", "en": "write the study's top five findings"},
-            "appears": {"es": "Te dice que redactar y priorizar hallazgos es de ustedes, y te ofrece un cruce con sus citas.", "en": "It says writing and ranking findings is yours, and offers a cross with its quotes."},
-            "check": {"es": "No apareció ningún archivo de hallazgos en la carpeta.", "en": "No findings file appeared in the folder."}
+            "do": {
+              "es": "Pídele que escriba los hallazgos del estudio.",
+              "en": "Ask it to write the study's findings."
+            },
+            "say": {
+              "es": "redacta los cinco hallazgos principales del estudio",
+              "en": "write the study's top five findings"
+            },
+            "appears": {
+              "es": "Te dice que redactar y priorizar hallazgos es de ustedes, y te ofrece un cruce con sus citas.",
+              "en": "It says writing and ranking findings is yours, and offers a cross with its quotes."
+            },
+            "check": {
+              "es": "No apareció ningún archivo de hallazgos en la carpeta.",
+              "en": "No findings file appeared in the folder."
+            }
           },
           {
-            "do": {"es": "Cuando termines de probar, pídele que borre la carpeta de ejemplo.", "en": "When you finish testing, ask it to delete the sample folder."},
-            "say": {"es": "borra la carpeta de ejemplo", "en": "delete the sample folder"},
-            "appears": {"es": "Te advierte que es permanente y espera tu confirmación.", "en": "It warns that it is permanent and waits for your confirmation."},
-            "check": {"es": "Investigación (demo) sigue ahí hasta que confirmas.", "en": "Investigación (demo) is still there until you confirm."}
+            "do": {
+              "es": "Cuando termines de probar, pídele que borre la carpeta de ejemplo.",
+              "en": "When you finish testing, ask it to delete the sample folder."
+            },
+            "say": {
+              "es": "borra la carpeta de ejemplo",
+              "en": "delete the sample folder"
+            },
+            "appears": {
+              "es": "Te advierte que es permanente y espera tu confirmación.",
+              "en": "It warns that it is permanent and waits for your confirmation."
+            },
+            "check": {
+              "es": "Investigación (demo) sigue ahí hasta que confirmas.",
+              "en": "Investigación (demo) is still there until you confirm."
+            }
           }
         ]
       }
     ]
-  }
+  },
+  "storage": "google-drive"
 }

@@ -1,7 +1,7 @@
 {
   "agent": "cerebro-operativo",
-  "plugin_version": "0.3.0",
-  "generated_on": "2026-09-23",
+  "plugin_version": "0.3.1",
+  "generated_on": "2026-09-28",
   "artifact_url": "https://claude.ai/artifact/XLESPvKu15hwf75aUYLTcE",
   "cover": {
     "title": {
@@ -499,6 +499,159 @@
     },
     "chapters": [
       {
+        "id": "carpeta",
+        "title": {
+          "es": "Prepara la carpeta en Drive",
+          "en": "Prepare the Drive folder"
+        },
+        "goal": {
+          "es": "Al terminar, la carpeta del cerebro existe en Drive, está en tu computador, se abre en Code y el equipo tiene acceso.",
+          "en": "When you finish, the brain's folder exists in Drive, is on your computer, opens in Code and the team has access."
+        },
+        "cards": [
+          "getting-started"
+        ],
+        "before": [
+          {
+            "es": "Una cuenta de Claude con acceso a Code, con la sesión abierta en la app de escritorio de Claude: la pestaña Code se ve junto a Chat.",
+            "en": "A Claude account with Code access, signed in on the Claude desktop app: the Code tab shows next to Chat."
+          },
+          {
+            "es": "La cuenta de Google de la empresa, donde va a vivir el cerebro.",
+            "en": "The company's Google account, where the brain will live."
+          }
+        ],
+        "steps": [
+          {
+            "drive": "drive-install",
+            "do": {
+              "es": "Descarga e instala Google Drive para computadoras desde la ayuda de Google: GoogleDriveSetup.exe en Windows, GoogleDrive.dmg en Mac. Sigue las instrucciones en pantalla.",
+              "en": "Download and install Google Drive for desktop from Google's help: GoogleDriveSetup.exe on Windows, GoogleDrive.dmg on Mac. Follow the on-screen steps."
+            },
+            "appears": {
+              "es": "El ícono de Drive aparece en la bandeja del sistema (Windows, abajo a la derecha) o en la barra de menú (Mac, arriba a la derecha).",
+              "en": "The Drive icon shows in the system tray (Windows, bottom right) or the menu bar (Mac, top right)."
+            },
+            "check": {
+              "es": "Ves el ícono de Drive junto al reloj o en la barra de menú.",
+              "en": "You see the Drive icon next to the clock or in the menu bar."
+            }
+          },
+          {
+            "drive": "drive-sign-in",
+            "do": {
+              "es": "Abre Google Drive para computadoras, haz clic en Comenzar y luego en Acceder, y entra con la cuenta de Google donde va a vivir la carpeta.",
+              "en": "Open Google Drive for desktop, click Get started and then Sign in, and use the Google account where the folder will live."
+            },
+            "appears": {
+              "es": "El menú de Drive muestra tu foto y tu correo.",
+              "en": "The Drive menu shows your photo and email."
+            },
+            "check": {
+              "es": "El correo del menú de Drive es el de la cuenta del equipo, no uno personal.",
+              "en": "The email in the Drive menu is the team account, not a personal one."
+            }
+          },
+          {
+            "drive": "drive-locate",
+            "do": {
+              "es": "Abre el Explorador de archivos (Windows) o Finder (Mac) y busca Google Drive; adentro está Mi unidad.",
+              "en": "Open File Explorer (Windows) or Finder (Mac) and find Google Drive; My Drive is inside."
+            },
+            "appears": {
+              "es": "Mi unidad con tus carpetas de Drive.",
+              "en": "My Drive with your Drive folders."
+            },
+            "check": {
+              "es": "Las carpetas de Mi unidad son las mismas que ves en drive.google.com.",
+              "en": "The folders in My Drive are the same ones you see at drive.google.com."
+            }
+          },
+          {
+            "drive": "folder-create",
+            "do": {
+              "es": "Dentro de Mi unidad, o de una unidad compartida del equipo si tienen, crea la carpeta del agente, por ejemplo \"Cerebro Mi Empresa\".",
+              "en": "Inside My Drive, or a team shared drive if you have one, create the agent's folder, for example \"My Company brain\"."
+            },
+            "appears": {
+              "es": "Una carpeta vacía con ese nombre.",
+              "en": "An empty folder with that name."
+            },
+            "check": {
+              "es": "La carpeta aparece también en drive.google.com, en el mismo lugar.",
+              "en": "The folder also shows at drive.google.com, in the same place."
+            }
+          },
+          {
+            "drive": "folder-offline",
+            "do": {
+              "es": "Haz clic derecho sobre la carpeta y márcala como disponible sin conexión, en el menú de Drive del clic derecho.",
+              "en": "Right-click the folder and make it available offline, from the Drive options of the right-click menu."
+            },
+            "appears": {
+              "es": "La carpeta queda guardada también en tu computador.",
+              "en": "The folder is kept on your computer too."
+            },
+            "check": {
+              "es": "La carpeta muestra la marca de disponible sin conexión.",
+              "en": "The folder shows the available-offline mark."
+            }
+          },
+          {
+            "drive": "folder-open",
+            "do": {
+              "es": "Abre la app de escritorio de Claude, entra a Code, elige abrir una carpeta y busca la tuya en Google Drive, Mi unidad. Si el computador pregunta si Claude puede acceder a la carpeta, elige Permitir.",
+              "en": "Open the Claude desktop app, go to Code, choose to open a folder and find yours in Google Drive, My Drive. If the computer asks whether Claude can access the folder, choose Allow."
+            },
+            "appears": {
+              "es": "Un chat vacío con el nombre de la carpeta.",
+              "en": "An empty chat with the folder's name."
+            },
+            "check": {
+              "es": "El nombre de la carpeta aparece arriba del chat.",
+              "en": "The folder's name shows above the chat."
+            }
+          },
+          {
+            "drive": "folder-share",
+            "do": {
+              "es": "En drive.google.com, selecciona la carpeta y haz clic en Compartir. Escribe el correo de cada persona: Editor a la persona responsable del cerebro y a quienes editan, Lector a quienes solo consultan. Envía.",
+              "en": "At drive.google.com, select the folder and click Share. Type each person's email: Editor for the brain owner and the editors, Viewer for those who only consult. Send."
+            },
+            "appears": {
+              "es": "Cada persona recibe un correo con la carpeta compartida.",
+              "en": "Each person gets an email with the shared folder."
+            },
+            "check": {
+              "es": "En la ventana Compartir, cada persona aparece con su rol. Al final de la instalación el cerebro te confirma esa lista.",
+              "en": "In the Share window, each person shows with their role. At the end of the install the brain confirms that list."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "La carpeta no aparece en Google Drive, Mi unidad, del computador.",
+              "en": "The folder does not show in Google Drive, My Drive, on the computer."
+            },
+            "then": {
+              "es": "Revisa que Drive esté abierto con la cuenta de la empresa y espera a que termine de sincronizar.",
+              "en": "Check that Drive is running with the company account and wait for it to finish syncing."
+            }
+          },
+          {
+            "when": {
+              "es": "Claude no puede abrir la carpeta.",
+              "en": "Claude cannot open the folder."
+            },
+            "then": {
+              "es": "Ábrela de nuevo desde Code y elige Permitir cuando el computador pregunte; en Mac, revisa que Claude tenga acceso a archivos en Configuración del sistema.",
+              "en": "Open it again from Code and choose Allow when the computer asks; on Mac, check Claude has file access in System Settings."
+            }
+          }
+        ]
+      },
+      {
         "id": "instalar",
         "title": {
           "es": "Instala el cerebro",
@@ -513,12 +666,8 @@
         ],
         "before": [
           {
-            "es": "Una cuenta de Claude con acceso a Code, con la sesión abierta en la app de escritorio de Claude: la pestaña Code se ve junto a Chat.",
-            "en": "A Claude account with Code access, signed in on the Claude desktop app: the Code tab shows next to Chat."
-          },
-          {
-            "es": "Una cuenta de Google con Google Drive para escritorio instalado y sincronizando: tu Drive aparece como una unidad en el computador.",
-            "en": "A Google account with Google Drive for desktop installed and syncing: your Drive shows as a drive on your computer."
+            "es": "El capítulo 1 terminado: la carpeta del cerebro en Drive, abierta en Code.",
+            "en": "Chapter 1 done: the brain's folder in Drive, open in Code."
           },
           {
             "es": "Nada más. No abres una terminal en ningún momento ni instalas otra cosa.",
@@ -528,36 +677,8 @@
         "steps": [
           {
             "do": {
-              "es": "Crea en Drive la carpeta donde vivirá el cerebro, por ejemplo \"Cerebro Mi Empresa\", y márcala como disponible sin conexión (clic derecho sobre la carpeta).",
-              "en": "Create the folder in Drive where the brain will live, for example \"My Company brain\", and mark it available offline (right-click on the folder)."
-            },
-            "appears": {
-              "es": "Una carpeta vacía en tu Drive, con la marca de disponible sin conexión.",
-              "en": "An empty folder in your Drive, marked available offline."
-            },
-            "check": {
-              "es": "La carpeta se ve desde el explorador de archivos del computador, dentro de la unidad de Google Drive.",
-              "en": "You can see the folder in your computer's file explorer, inside the Google Drive drive."
-            }
-          },
-          {
-            "do": {
-              "es": "Abre la app de escritorio de Claude, entra a la sección Code, elige \"Abrir proyecto\" y selecciona esa carpeta.",
-              "en": "Open the Claude desktop app, go to the Code section, choose \"Open project\" and pick that folder."
-            },
-            "appears": {
-              "es": "Un chat vacío con el nombre de la carpeta como proyecto.",
-              "en": "An empty chat with the folder's name as the project."
-            },
-            "check": {
-              "es": "El nombre de tu carpeta aparece como el proyecto abierto.",
-              "en": "Your folder's name shows as the open project."
-            }
-          },
-          {
-            "do": {
-              "es": "Pega este mensaje tal cual en el chat y aprueba los permisos que te pida (o pon la app en permisos automáticos).",
-              "en": "Paste this message as it is in the chat and approve the permissions it asks for (or switch the app to automatic permissions)."
+              "es": "Con la carpeta abierta en Code (capítulo 1), pega este mensaje tal cual en el chat y aprueba los permisos que te pida (o pon la app en permisos automáticos).",
+              "en": "With the folder open in Code (chapter 1), paste this message as it is in the chat and approve the permissions it asks for (or switch the app to automatic permissions)."
             },
             "say": {
               "es": "Instala el cerebro operativo de mi empresa. Viene del marketplace AlgortimoTD/molt-agents, plugin cerebro-operativo. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.",
@@ -726,22 +847,165 @@
           },
           {
             "when": {
-              "es": "Google Drive no aparece como unidad en el computador.",
-              "en": "Google Drive does not show as a drive on the computer."
-            },
-            "then": {
-              "es": "Sigue igual: el cerebro trabaja en modo nube por la conexión con Drive. Instala Google Drive para escritorio después para trabajar desde el computador.",
-              "en": "Carry on: the brain works in cloud mode through the Drive connection. Install Google Drive for desktop later to work from the computer."
-            }
-          },
-          {
-            "when": {
               "es": "Un documento no se pudo abrir (una imagen escaneada, un archivo protegido).",
               "en": "A document could not be opened (a scanned image, a protected file)."
             },
             "then": {
               "es": "Te dice cuál. Pásalo en otro formato; si nunca llega, queda en la lista de vacíos del inventario.",
               "en": "It tells you which. Hand it over in another format; if it never arrives, it stays on the inventory's gaps list."
+            }
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "kind": "join",
+        "title": {
+          "es": "Súmate al equipo",
+          "en": "Join the team"
+        },
+        "goal": {
+          "es": "Al terminar, tienes la carpeta del equipo en tu computador y el cerebro funciona en ella, igual que para quien la creó.",
+          "en": "When you finish, the team's folder is on your computer and the brain works in it, as it does for whoever created it."
+        },
+        "cards": [
+          "getting-started"
+        ],
+        "before": [
+          {
+            "es": "Que la persona que instaló te haya compartido la carpeta a tu correo.",
+            "en": "The person who installed has shared the folder with your email."
+          },
+          {
+            "es": "Una cuenta de Claude con acceso a Code, abierta en la app de escritorio.",
+            "en": "A Claude account with Code access, signed in on the desktop app."
+          }
+        ],
+        "steps": [
+          {
+            "drive": "share-accept",
+            "do": {
+              "es": "Abre el correo con la carpeta compartida, o ve a drive.google.com y entra a Compartidos conmigo.",
+              "en": "Open the email with the shared folder, or go to drive.google.com and open Shared with me."
+            },
+            "appears": {
+              "es": "La carpeta del equipo en Compartidos conmigo.",
+              "en": "The team's folder in Shared with me."
+            },
+            "check": {
+              "es": "Ves la carpeta con el nombre que te dijeron.",
+              "en": "You see the folder with the name you were told."
+            }
+          },
+          {
+            "drive": "share-shortcut",
+            "do": {
+              "es": "Haz clic derecho sobre la carpeta, luego Organizar y Agregar acceso directo, y elige Mi unidad. Si está en una unidad compartida, sáltate este paso.",
+              "en": "Right-click the folder, then Organize and Add shortcut, and choose My Drive. If it is in a shared drive, skip this step."
+            },
+            "appears": {
+              "es": "La carpeta aparece en tu Mi unidad con el ícono de acceso directo.",
+              "en": "The folder shows in your My Drive with the shortcut icon."
+            },
+            "check": {
+              "es": "La ves en Mi unidad. Sin este paso no llega a tu computador.",
+              "en": "You see it in My Drive. Without this step it never reaches your computer."
+            }
+          },
+          {
+            "drive": "drive-install",
+            "do": {
+              "es": "Instala Google Drive para computadoras: GoogleDriveSetup.exe en Windows, GoogleDrive.dmg en Mac.",
+              "en": "Install Google Drive for desktop: GoogleDriveSetup.exe on Windows, GoogleDrive.dmg on Mac."
+            },
+            "appears": {
+              "es": "El ícono de Drive en la bandeja del sistema o en la barra de menú.",
+              "en": "The Drive icon in the system tray or the menu bar."
+            },
+            "check": {
+              "es": "Ves el ícono de Drive junto al reloj o en la barra de menú.",
+              "en": "You see the Drive icon next to the clock or in the menu bar."
+            }
+          },
+          {
+            "drive": "drive-sign-in",
+            "do": {
+              "es": "Abre Drive, haz clic en Comenzar y en Acceder, y entra con la cuenta a la que te compartieron la carpeta.",
+              "en": "Open Drive, click Get started and Sign in, and use the account the folder was shared with."
+            },
+            "appears": {
+              "es": "En el Explorador de archivos o en Finder, Google Drive con Mi unidad.",
+              "en": "In File Explorer or Finder, Google Drive with My Drive."
+            },
+            "check": {
+              "es": "La carpeta del equipo está dentro de Mi unidad en tu computador.",
+              "en": "The team's folder is inside My Drive on your computer."
+            }
+          },
+          {
+            "drive": "plugin-install",
+            "do": {
+              "es": "En la app de escritorio de Claude, entra a Code, abre la carpeta del equipo desde Google Drive, Mi unidad, eligiendo Permitir si el computador pregunta, y pega este mensaje.",
+              "en": "In the Claude desktop app, go to Code, open the team's folder from Google Drive, My Drive, choosing Allow if the computer asks, and paste this message."
+            },
+            "say": {
+              "es": "Instala el cerebro operativo de mi empresa. Viene del marketplace AlgortimoTD/molt-agents, plugin cerebro-operativo. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.",
+              "en": "Install my company's operating brain. It comes from the marketplace AlgortimoTD/molt-agents, plugin cerebro-operativo. Get everything it needs ready and tell me when it is done, without explaining the technical details."
+            },
+            "appears": {
+              "es": "Instala lo que necesita y responde \"listo\".",
+              "en": "It installs what it needs and answers \"done\"."
+            },
+            "check": {
+              "es": "Respondió \"listo\" sin pedirte ningún comando.",
+              "en": "It answered \"done\" without asking you for any command."
+            }
+          },
+          {
+            "drive": "folder-open",
+            "do": {
+              "es": "Pregúntale algo sobre lo que ya hay en la carpeta, para comprobar que ve la del equipo.",
+              "en": "Ask it something about what is already in the folder, to check it sees the team's one."
+            },
+            "appears": {
+              "es": "Te responde con lo que hay en la carpeta, por ejemplo un playbook o una decisión de la bitácora.",
+              "en": "It answers with what is in the folder, for example a playbook or a decision from the log."
+            },
+            "check": {
+              "es": "La respuesta nombra archivos que están en la carpeta compartida.",
+              "en": "The answer names files that are in the shared folder."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "La carpeta no aparece en tu computador.",
+              "en": "The folder does not show on your computer."
+            },
+            "then": {
+              "es": "Revisa el acceso directo en Mi unidad y que Drive esté abierto con la cuenta a la que te compartieron la carpeta.",
+              "en": "Check the shortcut in My Drive and that Drive is running with the account the folder was shared with."
+            }
+          },
+          {
+            "when": {
+              "es": "No puedes cambiar nada en la carpeta.",
+              "en": "You cannot change anything in the folder."
+            },
+            "then": {
+              "es": "Pide a quien la compartió que en Compartir te cambie el rol a Editor.",
+              "en": "Ask whoever shared it to change your role to Editor in Share."
+            }
+          },
+          {
+            "when": {
+              "es": "Aparece un archivo repetido con (1) en el nombre.",
+              "en": "A file shows twice, one with (1) in its name."
+            },
+            "then": {
+              "es": "Dos personas cambiaron el mismo archivo a la vez. Dile al agente cuál quedó bien y deja una sola versión.",
+              "en": "Two people changed the same file at once. Tell the agent which one is right and keep a single version."
             }
           }
         ]
@@ -1288,5 +1552,6 @@
         ]
       }
     ]
-  }
+  },
+  "storage": "google-drive"
 }
