@@ -7,7 +7,7 @@
 | Persona | Cargo | Rol | Modera sesiones |
 |---|---|---|---|
 | <Nombre> | <Cargo> | líder de investigación | <sí o no> |
-| <Nombre> | <Cargo> | investigadora | <sí o no> |
+| <Nombre> | <Cargo> | persona investigadora | <sí o no> |
 
 ## Idioma
 

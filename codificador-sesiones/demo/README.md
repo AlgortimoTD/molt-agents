@@ -5,7 +5,18 @@ study**. Every person, client, study and quote here is invented; every Markdown 
 carries a fictional-document notice ("DOCUMENTO FICTICIO"; the CSV and JSON files carry none). A privacy grep of this folder must return no real
 person, company or client.
 
-## What is inside
+## Two demos
+
+- **The installed demo** (`es/investigacion/`): the folder as it looks after an install, to show the
+  coder at work. Say "puebla el codificador con el estudio de ejemplo".
+- **The installation trial** (`es/material-para-subir/`): the files a team would hand over, in real
+  formats (Excel, Word, Fathom text exports), to show the install itself: the format derived from
+  their spreadsheet, the anonymization check catching a name, the fidelity test on a held-out
+  session. Say "prueba la instalación del codificador con el material de ejemplo"; the interview
+  answers are in its README. Regenerate the files with `es/build-material-para-subir.py` (the command
+  is in its header, it runs in a container).
+
+## What is inside the installed demo
 
 `es/investigacion/`, copied to Drive as `Investigación (demo)`: the research folder of **Brújula**,
 a fictional four-person research team (Lucía is the lead, Sara and Andrés researchers, Tomás

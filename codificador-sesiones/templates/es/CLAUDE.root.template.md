@@ -16,14 +16,14 @@ inventarlo.
 | Persona | Cargo | Rol |
 |---|---|---|
 | <Nombre> | <Cargo> | líder de investigación |
-| <Nombre> | <Cargo> | investigadora |
+| <Nombre> | <Cargo> | persona investigadora |
 
 Los tres roles:
 
 - **Líder de investigación.** Cambia cualquier cosa de esta carpeta, incluido este archivo, el
   formato de salida y los criterios de calidad. Responde por el libro de códigos de cada
   estudio. Siempre hay al menos una persona en este rol.
-- **Investigadora.** Codifica, cruza, acepta o rechaza categorías propuestas y edita el libro de
+- **Persona investigadora.** Codifica, cruza, acepta o rechaza categorías propuestas y edita el libro de
   códigos de los estudios en los que trabaja.
 - **Consulta.** Pregunta. Lo que pida cambiar queda anotado para la líder de investigación.
 
@@ -128,7 +128,7 @@ proposal-pending: pendiente
 proposal-accepted: aceptada
 proposal-rejected: rechazada
 role-lead: líder de investigación
-role-researcher: investigadora
+role-researcher: persona investigadora
 role-viewer: consulta
 gap: Hueco:
 -->

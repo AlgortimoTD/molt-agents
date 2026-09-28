@@ -1,22 +1,22 @@
 ---
 name: codificador-sesiones-setup
 description: >-
-  v1.0.0 · Zero-command installation of the research session coder for a research team. Creates the
-  team's research folder on Google Drive, interviews them (people and roles, how they code today),
-  takes the formats and a previous study they coded by hand and turns them into the folder's
-  output format, quality criteria and calibration example, loads the current study with its
-  codebook from their own spreadsheet, checks the Fathom connector, codes a first session as a
-  heartbeat and offers the fidelity test. Also seeds a fictional demo study. The person never
-  runs a command. Use it whenever someone wants to install, set up or try the session coder,
-  or when another skill of the plugin cannot find a research folder. Triggers: "instala el
-  codificador", "quiero instalarlo", "configura el codificador de sesiones", "puebla el
-  codificador con el estudio de ejemplo", "install the session coder", "seed the demo study".
-  [v1.0.0]
+  v1.1.0 · Zero-command installation of the research session coder for a research team. Creates
+  the team's research folder on Google Drive, interviews them on roles and how they code, turns
+  their formats and a study they coded by hand into the folder's output format, criteria and
+  calibration example (checking it is anonymized), loads the current study and its codebook from
+  their spreadsheet, checks Fathom, codes a first session and offers the fidelity test. Two demo
+  modes: a ready-made fictional study, or the whole install run on sample files in real formats.
+  The person never runs a command. Use it whenever someone wants to install, set up or try the
+  session coder, or another skill of the plugin cannot find a research folder. Triggers: "instala
+  el codificador", "quiero instalarlo", "puebla el codificador con el estudio de ejemplo", "prueba
+  la instalación del codificador con el material de ejemplo", "install the session coder".
+  [v1.1.0]
 ---
 
 # codificador-sesiones-setup
 
-## Version 1.0.0
+## Version 1.1.0
 
 A research team already knows how to code: they have done it for years in spreadsheets and on
 whiteboards. What they do not have is a folder where the agent can learn how they do it and then
@@ -35,9 +35,9 @@ language: say what a thing does, not the name of a tool, package or protocol. Th
 apps the person sees and clicks (Google Drive, Cowork, Claude Code, Fathom) are fine.
 
 **Their way of working is the specification.** The team's formats, criteria and a study they
-already coded are worth more than any rule you could write. Ask for them early, keep the
-originals untouched in `{templates}` and `{examples}`, and derive the folder's configuration from
-them, citing the file each rule came from.
+already coded are worth more than any rule you could write. Ask for them early, keep their templates untouched in `{templates}`, store the example study only
+anonymized in `{examples}`, and derive the folder's configuration from them, citing the file each
+rule came from.
 
 **Idempotent.** Phase 0 detects what exists and skips it; running this skill on an installed
 folder never creates a second one.
@@ -94,6 +94,7 @@ Fill `{team}` and the table of `CLAUDE.md`:
 
 | Ask | Fills |
 |---|---|
+| the team's name (it names the folder and `CLAUDE.md`) | `CLAUDE.md`, `{team}` |
 | each person, title, and who moderates sessions | the people table |
 | who is **lead** (changes anything, owns each study's codebook), who are **researchers** (code, cross, accept or reject categories, edit the codebook), who only **consults** | roles |
 | where sessions are recorded (the Fathom team or account) and how a research recording is told apart from any other call (a code in the title, a naming rule) | Fathom section |
@@ -109,22 +110,35 @@ hacen hoy? Me sirven la plantilla o el Excel donde vacían las respuestas despu�
 la matriz de un estudio que ya hayan codificado, y si pueden, ese estudio completo: su libro de
 códigos, dos o tres transcripciones y los hallazgos. No importa que esté desordenado."
 
+They arrive in the formats teams actually use: Excel (`.xlsx`), CSV, Word (`.docx`), PDF, and the
+plain text a recorder exports (`.txt`). Read each with what the surface offers; if one cannot be
+opened (a scanned image, a protected file), say which and ask for another format. Keep the team's
+templates as they came, and write the folder's own files (the matrix as CSV, the codebook as
+Markdown) from them. When the team's own format and a default of the folder's templates disagree
+(a column's content, how a category is capitalized), the team's format wins: it is what they will
+review against.
+
 1. **Formats.** Save what they hand over, as is, in `{templates}`. Derive `{output-format}` from
    them: the matrix columns in their order and with their headers, each mapped to its role key
    (group, participant, variable, category, quote, minute, session, state, note); how they write
    a quote; how they name a category; how they code participants. Cite the file each rule came
    from. When their spreadsheet lacks a column the agent needs (minute, state), add it at the end
    and say so.
-2. **The previous study.** Before it enters the folder, **check that it is anonymized**: no
-   participant names, no client, no brand that identifies the client. Read it; if you find a name,
-   do not store it, say what you found and ask them to remove it or authorize you to replace it
-   with codes. Then store it in `{examples}<study>/`: its codebook (reconstruct it from the hand
-   matrix when they have none, and show it to them: categories, how many rows each), the
+2. **The previous study.** First choose the session you will keep aside for the fidelity test
+   (step 3 says how), so the check below does not read its answers. Then, before it enters the
+   folder, **check that it is anonymized**, looking only where names live: the participant
+   column, the speaker labels of the transcripts, titles and headers. That is a scan for names,
+   not a reading of how they coded, and it keeps the test blind. What must not be there: participant names, the client, a brand
+   that identifies the client. If you find one, do not store it, say what you found and ask them to remove it or authorize you to replace it
+   with codes. What enters the folder is the anonymized copy, never the file with the name: the
+   original stays with the team. Then store it in `{examples}<study>/`: its codebook (reconstruct
+   it from the hand matrix when they have none, and show it to them: categories, how many rows each), the
    transcripts, their matrix as `matriz-a-mano.csv`, and the findings if any. Update the examples
    README with what was anonymized.
 3. **Criteria.** With the example open, interview the lead for `{quality-criteria}`: when two
    answers are the same category, when something deserves a new one, one code they consider good
-   and one they would correct, and the minimums for a cross (default 3 participants). Quote them.
+   and one they would correct, the minimums for a cross (default 3 participants), and the
+   fidelity threshold (default 80 percent of their hand-coded rows). Quote them.
    Keep one hand-coded session of the example aside for the fidelity test and take the criteria's
    good and bad examples from the other sessions: an example quoted in the criteria is an answer
    the test already gives away.
@@ -133,7 +147,7 @@ códigos, dos o tres transcripciones y los hallazgos. No importa que esté desor
 
 ## Phase 4: the current study
 
-Create `{studies}<study-code>/` with `{study}` (objectives, client hypotheses, target groups,
+Create `{studies}<study-code>/` (the study code in lower case, no spaces: `ocio26`) with `{study}` (objectives, client hypotheses, target groups,
 field dates, lead), the `{codebook}` from their own spreadsheet (every variable with its fixed
 categories, a definition and an example quote when they give one, the first `{history}` line
 saying where it came from), the moderator guides in `{guides}` if they have them, the empty
@@ -158,7 +172,8 @@ those are research sessions. The connector is read only. Without Fathom, explain
 1. **Code one real session** of the current study with `qualitative-session-coder`, the latest
    one or the one they choose. Open the session file with them: the coding table with its quotes
    and minutes, what went to uncategorized, any proposal. Ask one researcher to review it the way
-   they review today.
+   they review today, and write the review in the session header as a line with the date, who
+   reviewed and what they corrected ("sin correcciones" is a valid review).
 2. **Offer the fidelity test** when there is an example: the agent codes a session of the example
    and compares it with their hand coding. Say what the number means (how often it chose the same
    category they did) and that the differences are the useful part.
@@ -178,10 +193,10 @@ Tell each researcher what to install on their own machine: Drive for desktop sig
 account with access, and the plugin from the same message. Several researchers can code at the
 same time: each session is its own file and the matrix is rebuilt from them.
 
-## Demo mode
+## Demo mode: the installed demo
 
-Trigger: "puebla el codificador con el estudio de ejemplo", or someone who wants to try it before
-bringing their own material. Everything in `demo/es/` is invented.
+Trigger: "puebla el codificador con el estudio de ejemplo", or someone who wants to see the coder
+at work before bringing their own material. Everything in `demo/es/` is invented.
 
 Phase 0's check runs, but its six-step overview does not: it describes a real install.
 
@@ -202,6 +217,32 @@ Phase 0's check runs, but its six-step overview does not: it describes a real in
 6. When they say they are done with it, offer to delete it, saying that deleting is permanent,
    and delete only after they confirm.
 
+## Demo mode: the installation trial
+
+Trigger: "prueba la instalación del codificador con el material de ejemplo", or someone who wants to
+see the installation itself, the moment the team hands over its files and the coder learns from
+them. `demo/es/material-para-subir/` holds what a team would hand over, all invented and in real
+formats: the quick-download template (`.xlsx`), a previous study coded by hand (matrix `.xlsx`, three
+transcripts `.txt`, findings `.docx`), the current study (codebook `.xlsx`, design `.docx`, a
+moderator guide `.docx`) and one new session (`.txt`). Its `README.md` carries the interview answers
+for whoever presents.
+
+1. Create `Investigación (prueba)` in the person's Drive, next to any real folder, never inside it.
+   If it already exists, ask whether to start over (a fresh folder) or keep it.
+2. Run Phase 0's check (without its overview), then Phases 2 to 7 exactly as for a real team: the
+   folder of step 1 replaces Phase 1's root folder, and Phase 1's other steps apply as usual. Take each file from the material when the phase
+   asks for it, as if the person had dragged it into the chat, and naming the file you took. Do not
+   read the material's README to answer the interview: ask, and let the person answer, because
+   the interview is part of what is being shown.
+3. The previous study is deliberately **not anonymized** (a participant appears by name, the client
+   in the findings' title). Phase 3 has to catch it before storing it, exactly as it would with a
+   real team: say what you found and where, and store it with codes only after the person agrees.
+4. Keep one session of the previous study aside for the fidelity test, choosing one whose quotes do
+   not appear in the criteria the interview produced, and run the test in Phase 6.
+5. Do not save `Investigación (prueba)` to memory, for the same reason as the installed demo.
+6. When they are done, offer to delete it, saying that deleting is permanent, and delete only after
+   they confirm.
+
 ## Done means
 
 - One folder, marker on line 1 of its `CLAUDE.md`, vocabulary block complete, every name in
@@ -216,6 +257,6 @@ Phase 0's check runs, but its six-step overview does not: it describes a real in
 - The inventory said, the gaps in `{memory}`, the permissions list given, the folder in memory.
 - The person never typed a command or heard the name of a tool.
 
-In demo mode, done means: the demo copied next to (never inside) any real folder, byte-identical
-to the plugin's copy; the person told to open it as the project and what to try; nothing saved
-to memory.
+In either demo mode, done means: the folder created next to (never inside) any real folder (the installed demo
+byte-identical to the plugin's copy; the trial built through the phases, with the anonymization
+caught); the person told to open it as the project and what to try; nothing saved to memory.

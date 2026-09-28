@@ -1,10 +1,10 @@
 {
-  "stamped_at": "2026-09-28T18:01:20Z",
+  "stamped_at": "2026-09-28T19:45:48Z",
   "source": "catalogs/global/<slug>/skill in the platform monorepo",
   "skills": {
     "codificador-sesiones-setup": {
-      "version": "1.0.0",
-      "skill_md_sha256": "ad9ee78772bc06d943c3628e8f6c16484889a9d63ee456e917b1fc9478c8ebd6"
+      "version": "1.1.0",
+      "skill_md_sha256": "df8d04535bbd805e1ff9b046309280ef93c0b35c244b6fc2ba7ee51c3c7dccb6"
     },
     "qualitative-session-coder": {
       "version": "1.0.0",
