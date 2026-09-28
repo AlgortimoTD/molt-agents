@@ -38,6 +38,10 @@ Say **"puebla el codificador con el estudio de ejemplo"**: a fully fictional tea
 
 To show the installation itself, say **"prueba la instalación del codificador con el material de ejemplo"**: the install runs on sample files in real formats (Excel, Word, Fathom exports) from [demo/es/material-para-subir/](demo/es/material-para-subir/README.md), including a previous study left unanonymized on purpose so the check is visible. The presenter's interview answers are in that README.
 
+## User guide
+
+For the researchers who use the coder: [docs/user-guide.html](docs/user-guide.html), in Spanish and English, with two views. The quick guide: one card per feature with the exact phrase to say. The complete guide: eight chapters from installing the coder (Claude desktop app, Code section, the message above) to testing every feature on the sample study, each step with what to do, what appears and how to check it. Its source is [docs/user-guide.json](docs/user-guide.json), built with the `orb-agent-user-guide` skill; regenerate it with that skill, never by hand.
+
 ## Operating guide
 
 [docs/es/como-operar-el-codificador.md](docs/es/como-operar-el-codificador.md): coding a session, pasting a transcript, changing the codebook, crossing variables, running the fidelity test.
