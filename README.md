@@ -24,6 +24,7 @@ claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repo
 | Agent | What it does | Status |
 |---|---|---|
 | [`cerebro-operativo`](cerebro-operativo/) | Operating brain for an organization: playbooks and a decision log kept current from recorded meetings, answers to "how do we handle this" with sources, drafts in the company's voice | Engine scaffolded (templates, docs, demo); skills pending their first release |
+| [`codificador-sesiones`](codificador-sesiones/) | Qualitative session coder for a research team: sessions coded by participant and variable with the quote and minute, in the team's format, calibrated on their own hand coding; variables crossed step by step | Internal pilot with Molt's design and research team (0.1.0) |
 
 ## Conventions
 

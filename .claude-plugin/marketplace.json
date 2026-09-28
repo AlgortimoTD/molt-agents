@@ -12,6 +12,11 @@
       "name": "cerebro-operativo",
       "source": "./cerebro-operativo",
       "description": "Operating brain for an organization on Google Drive: playbooks and a decision log kept current from recorded meetings, answers to \"how do we handle this\" with sources, drafts in the company's voice, a daily routine and a weekly audit."
+    },
+    {
+      "name": "codificador-sesiones",
+      "source": "./codificador-sesiones",
+      "description": "Qualitative session coder for a research team on Google Drive: interviews and focus groups coded by participant and variable with the verbatim quote and minute, in the team's own format and calibrated on a study they coded by hand; emergent categories proposed with evidence; variables crossed step by step with a pause for the researcher."
     }
   ]
 }
