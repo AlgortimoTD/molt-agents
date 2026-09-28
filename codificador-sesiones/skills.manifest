@@ -1,0 +1,5 @@
+# Skills of the codificador-sesiones plugin, one slug per line.
+# scripts/release.sh copies each one from catalogs/global/<slug>/skill/ in the platform monorepo.
+codificador-sesiones-setup
+qualitative-session-coder
+cross-variable-analyzer

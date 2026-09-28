@@ -1,0 +1,8 @@
+{
+  "name": "codificador-sesiones",
+  "description": "Qualitative session coder for a research team, on Google Drive: codes interviews and focus groups by participant and variable with the verbatim quote and minute, in the team's own format and calibrated on a study they coded by hand; proposes emergent categories with evidence; keeps the codebook in the team's hands; crosses variables step by step with a pause for the researcher.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Molt Solutions"
+  }
+}
