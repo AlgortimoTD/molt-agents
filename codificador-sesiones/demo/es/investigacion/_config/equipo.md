@@ -7,8 +7,8 @@
 | Persona | Cargo | Rol | Modera sesiones |
 |---|---|---|---|
 | Lucía Mora | Directora de investigación | líder de investigación | no |
-| Sara Quintero | Investigadora UX | investigadora | sí |
-| Andrés Pardo | Investigador UX | investigadora | sí |
+| Sara Quintero | Investigadora UX | persona investigadora | sí |
+| Andrés Pardo | Investigador UX | persona investigadora | sí |
 | Tomás Rey | Estratega | consulta | no |
 
 ## Idioma

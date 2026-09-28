@@ -36,6 +36,8 @@ Each researcher installs the plugin on their own machine with the same message; 
 
 Say **"puebla el codificador con el estudio de ejemplo"**: a fully fictional team and study ([demo/](demo/README.md)) with an example coded by hand, one coded focus group and one waiting in the inbox. Coding it adds rows with their quotes, raises one category proposal and shows an unattributed turn handled honestly. Delete the folder when done.
 
+To show the installation itself, say **"prueba la instalación del codificador con el material de ejemplo"**: the install runs on sample files in real formats (Excel, Word, Fathom exports) from [demo/es/material-para-subir/](demo/es/material-para-subir/README.md), including a previous study left unanonymized on purpose so the check is visible. The presenter's interview answers are in that README.
+
 ## Operating guide
 
 [docs/es/como-operar-el-codificador.md](docs/es/como-operar-el-codificador.md): coding a session, pasting a transcript, changing the codebook, crossing variables, running the fidelity test.

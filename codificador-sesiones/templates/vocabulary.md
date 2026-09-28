@@ -77,6 +77,6 @@ folder before it knows its language) and the keys of `{state}` and the role keys
 | `proposal-accepted` | `aceptada` | proposal state |
 | `proposal-rejected` | `rechazada` | proposal state |
 | `role-lead` | `líder de investigación` | role: changes anything, decides the codebook, owns the study |
-| `role-researcher` | `investigadora` | role: codes, crosses, accepts or rejects proposals, edits the codebook |
+| `role-researcher` | `persona investigadora` | role: codes, crosses, accepts or rejects proposals, edits the codebook |
 | `role-viewer` | `consulta` | role: asks; a change it requests waits for the lead |
 | `gap` | `Hueco:` | prefix of a memory line the installation inventory writes |
