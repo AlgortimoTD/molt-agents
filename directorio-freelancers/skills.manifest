@@ -1,0 +1,7 @@
+# Skills of the directorio-freelancers plugin, one slug per line.
+# scripts/release.sh copies each one from catalogs/global/<slug>/skill/ in the platform monorepo.
+directorio-freelancers-setup
+directorio-freelancers-audit
+production-pool-roster
+certification-expiry-tracker
+availability-request-drafter

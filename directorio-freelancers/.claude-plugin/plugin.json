@@ -1,0 +1,8 @@
+{
+  "name": "directorio-freelancers",
+  "description": "Production freelancer directory for a small production company or agency, on Google Drive: one card per freelancer (specialties, assignment limits, certifications with expiry, dated reliability facts, channel and language), availability requests drafted per person in priority order with the answers logged, and a weekly sweep of certifications about to expire. It never writes to the freelancers, books or pays anyone, or rates a person on its own.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Molt Solutions"
+  }
+}
