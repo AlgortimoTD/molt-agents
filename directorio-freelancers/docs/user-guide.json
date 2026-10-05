@@ -1,0 +1,1563 @@
+{
+  "agent": "directorio-freelancers",
+  "plugin_version": "0.1.0",
+  "generated_on": "2026-10-05",
+  "artifact_url": "https://claude.ai/artifact/X4R66cdbGFJizFvy5DBkSN",
+  "storage": "google-drive",
+  "cover": {
+    "title": {
+      "es": "Cómo usar el directorio de freelancers",
+      "en": "How to use the freelancer directory"
+    },
+    "line": {
+      "es": "Una frase por cosa que hace. Dísela tal cual en el chat de la carpeta.",
+      "en": "One phrase per thing it does. Say it as it is in the folder's chat."
+    }
+  },
+  "cards": [
+    {
+      "id": "getting-started",
+      "kind": "start",
+      "title": {
+        "es": "Instálalo en tu equipo",
+        "en": "Install it for your team"
+      },
+      "phrase": {
+        "es": "quiero instalarlo",
+        "en": "install the freelancer directory"
+      },
+      "appears": {
+        "es": "Te pregunta el idioma, entrevista al equipo y deja la carpeta con las fichas lista.",
+        "en": "It asks the language, interviews the team and leaves the folder with the cards ready."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "quién coordina",
+            "tu pool de hoy",
+            "carpeta lista"
+          ],
+          "en": [
+            "who coordinates",
+            "your pool today",
+            "folder ready"
+          ]
+        },
+        "shows": "the phrase bubble, a roles card and a list of people handed over, an arrow into a ready folder with cards"
+      },
+      "covers": [
+        "directorio-freelancers-setup"
+      ]
+    },
+    {
+      "id": "staff-a-shoot",
+      "kind": "feature",
+      "title": {
+        "es": "Arma una producción",
+        "en": "Staff a shoot"
+      },
+      "phrase": {
+        "es": "necesito un fotógrafo mañana a las 7, exige curso de seguridad",
+        "en": "I need a photographer tomorrow at 7, safety course required"
+      },
+      "appears": {
+        "es": "La lista corta en el orden del equipo, los excluidos con su razón y un mensaje por persona.",
+        "en": "The shortlist in the team's order, the excluded with their reason and one message per person."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "pedido",
+            "lista corta",
+            "excluidos",
+            "mensajes"
+          ],
+          "en": [
+            "request",
+            "shortlist",
+            "excluded",
+            "messages"
+          ]
+        },
+        "shows": "the request bubble, a file with three numbered person rows, a dashed box with a crossed row, and three small message bubbles"
+      },
+      "covers": [
+        "availability-request-drafter"
+      ]
+    },
+    {
+      "id": "log-answers",
+      "kind": "feature",
+      "title": {
+        "es": "Registra quién respondió",
+        "en": "Log who answered"
+      },
+      "phrase": {
+        "es": "Ariel no puede; Bel dijo que sí a las 3:40",
+        "en": "Ariel cannot; Bel said yes at 3:40"
+      },
+      "appears": {
+        "es": "Anota hora y respuesta, marca quién quedó y deja el texto de la invitación para que la envíes.",
+        "en": "It logs time and answer, marks who got it and leaves the invite text for you to send."
+      },
+      "picture": {
+        "motif": "before-after",
+        "labels": {
+          "es": [
+            "respuestas",
+            "quién quedó",
+            "invitación"
+          ],
+          "en": [
+            "answers",
+            "who got it",
+            "invite"
+          ]
+        },
+        "shows": "before: an empty answers table; after: two rows with a cross and a check, the winner highlighted, and an invite card"
+      },
+      "covers": [
+        "availability-request-drafter"
+      ]
+    },
+    {
+      "id": "close-the-shoot",
+      "kind": "feature",
+      "title": {
+        "es": "Cierra la producción",
+        "en": "Close the shoot"
+      },
+      "phrase": {
+        "es": "cierra la producción del puente; Bel entregó a tiempo",
+        "en": "close the bridge shoot; Bel delivered on time"
+      },
+      "appears": {
+        "es": "Marca la solicitud como cerrada y pasa cómo entregó cada persona, con fecha, a su ficha.",
+        "en": "It marks the request closed and sends how each person delivered, dated, to their card."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "cierre",
+            "hecho con fecha",
+            "ficha"
+          ],
+          "en": [
+            "closure",
+            "dated fact",
+            "card"
+          ]
+        },
+        "shows": "a request file stamped closed, an arrow carrying one dated line into a person's card"
+      },
+      "covers": [
+        "availability-request-drafter"
+      ]
+    },
+    {
+      "id": "add-a-freelancer",
+      "kind": "feature",
+      "title": {
+        "es": "Agrega a alguien al pool",
+        "en": "Add someone to the pool"
+      },
+      "phrase": {
+        "es": "agrega a Nora Beltrán, camarógrafa de eventos, WhatsApp, español",
+        "en": "add Nora Beltrán, event camera operator, WhatsApp, Spanish"
+      },
+      "appears": {
+        "es": "Crea su ficha con datos, especialidades y certificaciones; lo que falte queda como hueco, no inventado.",
+        "en": "It creates the card with data, specialties and certifications; what is missing stays a gap, never invented."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "datos",
+            "especialidades",
+            "certificaciones",
+            "hueco"
+          ],
+          "en": [
+            "data",
+            "specialties",
+            "certifications",
+            "gap"
+          ]
+        },
+        "shows": "the phrase bubble and a new card with three filled sections and one dashed empty row marked with a question mark"
+      },
+      "covers": [
+        "production-pool-roster"
+      ]
+    },
+    {
+      "id": "ask-who-can",
+      "kind": "feature",
+      "title": {
+        "es": "Pregunta quién sabe hacer qué",
+        "en": "Ask who can do what"
+      },
+      "phrase": {
+        "es": "¿quién edita con detalle?",
+        "en": "who edits with care?"
+      },
+      "appears": {
+        "es": "Las personas que sí, con la ficha y la fecha como fuente; si no hay nadie escrito, te lo dice.",
+        "en": "The people who do, with the card and date as source; if nobody is written, it says so."
+      },
+      "picture": {
+        "motif": "chat",
+        "labels": {
+          "es": [
+            "ficha",
+            "fecha",
+            "fuente"
+          ],
+          "en": [
+            "card",
+            "date",
+            "source"
+          ]
+        },
+        "shows": "the question bubble and an answer panel with one highlighted person row and two small tags for the card and the date"
+      },
+      "covers": [
+        "production-pool-roster"
+      ]
+    },
+    {
+      "id": "record-a-fact",
+      "kind": "feature",
+      "title": {
+        "es": "Anota hechos, no notas",
+        "en": "Record facts, not ratings"
+      },
+      "phrase": {
+        "es": "Dani entregó un día tarde el 22 de agosto",
+        "en": "Dani delivered a day late on August 22"
+      },
+      "appears": {
+        "es": "Escribe el hecho con fecha y con tu nombre en su ficha; el juicio sigue siendo tuyo.",
+        "en": "It writes the fact with the date and your name on the card; the judgment stays yours."
+      },
+      "picture": {
+        "motif": "before-after",
+        "labels": {
+          "es": [
+            "lo que dijiste",
+            "fecha · autor",
+            "sin calificación"
+          ],
+          "en": [
+            "what you said",
+            "date · author",
+            "no rating"
+          ]
+        },
+        "shows": "before: your sentence in a bubble; after: the card with one dated line and a crossed-out row of stars"
+      },
+      "covers": [
+        "production-pool-roster"
+      ]
+    },
+    {
+      "id": "check-certifications",
+      "kind": "feature",
+      "title": {
+        "es": "Quién tiene el curso vigente",
+        "en": "Who holds a valid course"
+      },
+      "phrase": {
+        "es": "¿quién tiene curso de seguridad en obra vigente el 15 de octubre?",
+        "en": "who holds a valid construction safety course on October 15?"
+      },
+      "appears": {
+        "es": "Las personas cuyo curso vence después de esa fecha, cada una con su vencimiento; sin fecha no cuenta.",
+        "en": "The people whose course expires after that date, each with its expiry; undated does not count."
+      },
+      "picture": {
+        "motif": "clock",
+        "labels": {
+          "es": [
+            "15 oct",
+            "vence después",
+            "sin fecha: no"
+          ],
+          "en": [
+            "Oct 15",
+            "expires after",
+            "undated: no"
+          ]
+        },
+        "shows": "a calendar page with the shoot's date, two person cards with a check and their expiry, one dashed card excluded"
+      },
+      "covers": [
+        "certification-expiry-tracker"
+      ]
+    },
+    {
+      "id": "monday-sweep",
+      "kind": "feature",
+      "title": {
+        "es": "El barrido de los lunes",
+        "en": "The Monday sweep"
+      },
+      "phrase": {
+        "es": "corre el barrido",
+        "en": "run the sweep"
+      },
+      "appears": {
+        "es": "Un reporte nuevo en salidas con las certificaciones vencidas y las que vencen en 7, 30 y 60 días.",
+        "en": "A new report in outputs with the expired certifications and those expiring in 7, 30 and 60 days."
+      },
+      "picture": {
+        "motif": "clock",
+        "labels": {
+          "es": [
+            "lunes 8:00",
+            "vencida",
+            "7, 30, 60 días",
+            "sin fecha"
+          ],
+          "en": [
+            "Monday 8:00",
+            "expired",
+            "7, 30, 60 days",
+            "undated"
+          ]
+        },
+        "shows": "a clock on the left and a report sheet on the right with one accent row, three date rows and one dashed row"
+      },
+      "covers": [
+        "certification-expiry-tracker"
+      ]
+    },
+    {
+      "id": "save-a-certificate",
+      "kind": "feature",
+      "title": {
+        "es": "Guarda un certificado",
+        "en": "Save a certificate"
+      },
+      "phrase": {
+        "es": "dejé en soportes el carné de alturas de Fausto, vence el 1 de diciembre",
+        "en": "I left Fausto's heights card in documents, it expires December 1"
+      },
+      "appears": {
+        "es": "La fecha y el archivo quedan en su ficha, y la certificación deja de salir como sin fecha o sin documento.",
+        "en": "The date and the file land on the card, and the certification stops showing as undated or without document."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "soportes",
+            "ficha",
+            "vence"
+          ],
+          "en": [
+            "documents",
+            "card",
+            "expires"
+          ]
+        },
+        "shows": "a certificate file dropped into a folder, an arrow to a person's card where the expiry row lights up"
+      },
+      "covers": [
+        "production-pool-roster",
+        "certification-expiry-tracker"
+      ]
+    },
+    {
+      "id": "try-the-demo",
+      "kind": "feature",
+      "title": {
+        "es": "Prueba la productora de ejemplo",
+        "en": "Try the sample company"
+      },
+      "phrase": {
+        "es": "puebla el directorio con la productora de ejemplo",
+        "en": "seed the demo production company"
+      },
+      "appears": {
+        "es": "Una carpeta aparte con ocho fichas inventadas y una producción lista para armar, sin exponer nada real.",
+        "en": "A separate folder with eight invented cards and one shoot ready to staff, with nothing real exposed."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "Directorio (demo)",
+            "8 fichas",
+            "el puente"
+          ],
+          "en": [
+            "Directory (demo)",
+            "8 cards",
+            "the bridge"
+          ]
+        },
+        "shows": "a demo folder with eight small cards and one request card highlighted, a dashed line, and the real folder untouched on the right"
+      },
+      "covers": [
+        "directorio-freelancers-setup"
+      ]
+    },
+    {
+      "id": "tidy-the-folder",
+      "kind": "feature",
+      "title": {
+        "es": "Organiza la carpeta",
+        "en": "Tidy the folder"
+      },
+      "phrase": {
+        "es": "organiza la carpeta",
+        "en": "organize the folder"
+      },
+      "appears": {
+        "es": "Un reporte en salidas/auditorias con fichas rotas, cursos sin fecha, solicitudes sin cierre y huecos abiertos.",
+        "en": "A report in outputs/audits with broken cards, undated courses, unclosed requests and open gaps."
+      },
+      "picture": {
+        "motif": "folder",
+        "labels": {
+          "es": [
+            "auditorías",
+            "fichas rotas",
+            "sin cierre",
+            "huecos"
+          ],
+          "en": [
+            "audits",
+            "broken cards",
+            "unclosed",
+            "gaps"
+          ]
+        },
+        "shows": "a report sheet with four checklist rows, one of them marked, inside the outputs folder"
+      },
+      "covers": [
+        "directorio-freelancers-audit"
+      ]
+    },
+    {
+      "id": "what-it-never-does",
+      "kind": "limits",
+      "title": {
+        "es": "Lo que nunca hace",
+        "en": "What it never does"
+      },
+      "limits": [
+        {
+          "es": "No manda mensajes a los freelancers: los deja escritos y tú los envías.",
+          "en": "It sends no message to the freelancers: it drafts them and you send them."
+        },
+        {
+          "es": "No reserva, no contrata, no paga ni invita al calendario.",
+          "en": "It does not book, hire, pay or send calendar invites."
+        },
+        {
+          "es": "No califica a nadie: escribe hechos con fecha y autor.",
+          "en": "It rates nobody: it writes facts with date and author."
+        },
+        {
+          "es": "No inventa una persona, una regla o una certificación que no esté escrita.",
+          "en": "It invents no person, rule or certification that is not written down."
+        }
+      ],
+      "picture": {
+        "motif": "stop",
+        "labels": {
+          "es": [
+            "no envía",
+            "no reserva",
+            "no califica"
+          ],
+          "en": [
+            "never sends",
+            "never books",
+            "never rates"
+          ]
+        },
+        "shows": "a phone with a message stopped by a bar, a calendar invite crossed out, and a row of stars crossed out"
+      },
+      "covers": []
+    }
+  ],
+  "walkthrough": {
+    "title": {
+      "es": "Guía completa",
+      "en": "Complete guide"
+    },
+    "line": {
+      "es": "Capítulos en orden, de la instalación a la última función. Cada paso dice qué hacer, qué aparece y cómo comprobarlo.",
+      "en": "Chapters in order, from the install to the last feature. Each step says what to do, what appears and how to check it."
+    },
+    "chapters": [
+      {
+        "id": "install",
+        "title": {
+          "es": "Instala el directorio",
+          "en": "Install the directory"
+        },
+        "goal": {
+          "es": "Al terminar, la carpeta existe en Drive, el directorio está instalado con las fichas de tu pool y el barrido semanal programado, y el equipo tiene acceso.",
+          "en": "When you finish, the folder exists in Drive, the directory is installed with your pool's cards and the weekly sweep scheduled, and the team has access."
+        },
+        "cards": [
+          "getting-started"
+        ],
+        "before": [
+          {
+            "es": "Una cuenta de Claude con acceso a Code, abierta en la app de escritorio.",
+            "en": "A Claude account with Code access, signed in on the desktop app."
+          },
+          {
+            "es": "La cuenta de Google del equipo, donde va a vivir la carpeta.",
+            "en": "The team's Google account, where the folder will live."
+          },
+          {
+            "es": "A mano: la lista de tus freelancers como la tengas (nombre, por dónde les escribes, qué hacen, qué cursos tienen y cuándo vencen) y quién coordina producción.",
+            "en": "At hand: your freelancer list as you have it (name, where you write them, what they do, which courses they hold and when they expire) and who coordinates production."
+          }
+        ],
+        "steps": [
+          {
+            "drive": "drive-install",
+            "do": {
+              "es": "Descarga e instala Google Drive para computadoras desde la ayuda de Google: GoogleDriveSetup.exe en Windows, GoogleDrive.dmg en Mac. Sigue las instrucciones en pantalla.",
+              "en": "Download and install Google Drive for desktop from Google's help: GoogleDriveSetup.exe on Windows, GoogleDrive.dmg on Mac. Follow the on-screen steps."
+            },
+            "appears": {
+              "es": "El ícono de Drive aparece en la bandeja del sistema (Windows, abajo a la derecha) o en la barra de menú (Mac, arriba a la derecha).",
+              "en": "The Drive icon shows in the system tray (Windows, bottom right) or the menu bar (Mac, top right)."
+            },
+            "check": {
+              "es": "Ves el ícono de Drive junto al reloj o en la barra de menú.",
+              "en": "You see the Drive icon next to the clock or in the menu bar."
+            }
+          },
+          {
+            "drive": "drive-sign-in",
+            "do": {
+              "es": "Abre Google Drive para computadoras, haz clic en Comenzar y luego en Acceder, y entra con la cuenta de Google donde va a vivir la carpeta.",
+              "en": "Open Google Drive for desktop, click Get started and then Sign in, and use the Google account where the folder will live."
+            },
+            "appears": {
+              "es": "El menú de Drive muestra tu foto y tu correo.",
+              "en": "The Drive menu shows your photo and email."
+            },
+            "check": {
+              "es": "El correo del menú de Drive es el de la cuenta del equipo, no uno personal.",
+              "en": "The email in the Drive menu is the team account, not a personal one."
+            }
+          },
+          {
+            "drive": "drive-locate",
+            "do": {
+              "es": "Abre el Explorador de archivos (Windows) o Finder (Mac) y busca Google Drive; adentro está Mi unidad.",
+              "en": "Open File Explorer (Windows) or Finder (Mac) and find Google Drive; My Drive is inside."
+            },
+            "appears": {
+              "es": "Mi unidad con tus carpetas de Drive.",
+              "en": "My Drive with your Drive folders."
+            },
+            "check": {
+              "es": "Las carpetas de Mi unidad son las mismas que ves en drive.google.com.",
+              "en": "The folders in My Drive are the same ones you see at drive.google.com."
+            }
+          },
+          {
+            "drive": "folder-create",
+            "do": {
+              "es": "Dentro de Mi unidad, o de una unidad compartida del equipo si tienen, crea la carpeta del directorio, por ejemplo \"Directorio de producción <Empresa>\".",
+              "en": "Inside My Drive, or a team shared drive if you have one, create the directory's folder, for example \"<Company> production directory\"."
+            },
+            "appears": {
+              "es": "Una carpeta vacía con ese nombre.",
+              "en": "An empty folder with that name."
+            },
+            "check": {
+              "es": "La carpeta aparece también en drive.google.com, en el mismo lugar.",
+              "en": "The folder also shows at drive.google.com, in the same place."
+            }
+          },
+          {
+            "drive": "folder-offline",
+            "do": {
+              "es": "Haz clic derecho sobre la carpeta y márcala como disponible sin conexión, en el menú de Drive del clic derecho.",
+              "en": "Right-click the folder and make it available offline, from the Drive options of the right-click menu."
+            },
+            "appears": {
+              "es": "La carpeta queda guardada también en tu computador.",
+              "en": "The folder is kept on your computer too."
+            },
+            "check": {
+              "es": "La carpeta muestra la marca de disponible sin conexión.",
+              "en": "The folder shows the available-offline mark."
+            }
+          },
+          {
+            "drive": "folder-open",
+            "do": {
+              "es": "Abre la app de escritorio de Claude, entra a Code, elige abrir una carpeta y busca la tuya en Google Drive, Mi unidad. Si el computador pregunta si Claude puede acceder a la carpeta, elige Permitir.",
+              "en": "Open the Claude desktop app, go to Code, choose to open a folder and find yours in Google Drive, My Drive. If the computer asks whether Claude can access the folder, choose Allow."
+            },
+            "appears": {
+              "es": "Un chat vacío con el nombre de la carpeta.",
+              "en": "An empty chat with the folder's name."
+            },
+            "check": {
+              "es": "El nombre de la carpeta aparece arriba del chat.",
+              "en": "The folder's name shows above the chat."
+            }
+          },
+          {
+            "do": {
+              "es": "Pega este mensaje y aprueba los permisos que te pida.",
+              "en": "Paste this message and approve the permissions it asks for."
+            },
+            "say": {
+              "es": "Instala el directorio de freelancers de producción de mi empresa. Viene del marketplace AlgortimoTD/molt-agents, plugin directorio-freelancers. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.",
+              "en": "Install my company's production freelancer directory. It comes from the marketplace AlgortimoTD/molt-agents, plugin directorio-freelancers. Get everything it needs ready and tell me when it is done, without explaining the technical details."
+            },
+            "appears": {
+              "es": "Instala lo que necesita y responde \"listo\".",
+              "en": "It installs what it needs and answers \"done\"."
+            },
+            "check": {
+              "es": "Respondió \"listo\" sin pedirte ningún comando.",
+              "en": "It answered \"done\" without asking you for any command."
+            }
+          },
+          {
+            "do": {
+              "es": "Dile esto. Te pregunta en qué idioma trabajará la carpeta (es definitivo) y empieza la entrevista: quiénes son, quién coordina producción, quién aprueba altas y bajas y quién solo consulta.",
+              "en": "Say this. It asks which language the folder will work in (it is final) and starts the interview: who you are, who coordinates production, who approves additions and removals and who only consults."
+            },
+            "say": {
+              "es": "quiero instalarlo",
+              "en": "install the freelancer directory"
+            },
+            "appears": {
+              "es": "Te dice que todo quedará en ese idioma y te pregunta por las personas del equipo y su rol.",
+              "en": "It says everything will be in that language and asks about the team's people and their role."
+            },
+            "check": {
+              "es": "Te preguntó quién aprueba altas y bajas del pool.",
+              "en": "It asked who approves additions to and removals from the pool."
+            }
+          },
+          {
+            "do": {
+              "es": "Cuando te pida el pool, dicta persona por persona o pega tu lista: nombre, por dónde responde (WhatsApp, Messenger), en qué idioma escribe, qué hace y qué no se le pide, qué cursos tiene y cuándo vencen.",
+              "en": "When it asks for the pool, dictate person by person or paste your list: name, where they answer (WhatsApp, Messenger), the language they write in, what they do and what not to ask of them, which courses they hold and when they expire."
+            },
+            "appears": {
+              "es": "Crea una ficha por persona en la carpeta freelancers y te dice qué le faltó a cada una; un curso sin fecha queda como hueco.",
+              "en": "It creates one card per person in the freelancers folder and tells you what each one is missing; a course with no date stays a gap."
+            },
+            "check": {
+              "es": "En la carpeta freelancers hay un archivo por cada persona que nombraste.",
+              "en": "The freelancers folder holds one file for each person you named."
+            }
+          },
+          {
+            "do": {
+              "es": "Responde los bloques que siguen: los tipos de trabajo con sus principales en orden y si preguntan uno a uno o a todos, qué curso exige cada tipo, cómo le escriben a la gente, en qué cuenta y a qué hora corre el barrido semanal.",
+              "en": "Answer the next blocks: the job types with their principals in order and whether you ask one at a time or everyone, which course each type requires, how you write to people, and in which account and at what time the weekly sweep runs."
+            },
+            "appears": {
+              "es": "Escribe las reglas, las certificaciones y las plantillas en la carpeta _config y programa el barrido en la cuenta que elegiste.",
+              "en": "It writes the rules, the certifications and the templates in the _config folder and schedules the sweep in the account you chose."
+            },
+            "check": {
+              "es": "En _config hay un archivo de reglas de asignación con tus tipos de trabajo y sus principales.",
+              "en": "In _config there is an assignment rules file with your job types and their principals."
+            }
+          },
+          {
+            "do": {
+              "es": "Deja que corra el primer barrido delante de ti, dos veces seguidas.",
+              "en": "Let it run the first sweep in front of you, twice in a row."
+            },
+            "appears": {
+              "es": "Un reporte de vencimientos en salidas y el índice de todo el pool; la segunda corrida no cambia nada. Luego te dice qué sabe el directorio y qué le falta.",
+              "en": "An expiry report in outputs and the index of the whole pool; the second run changes nothing. Then it tells you what the directory knows and what it is missing."
+            },
+            "check": {
+              "es": "En salidas hay un archivo vencimientos con la fecha de hoy y un directorio.md con una fila por persona.",
+              "en": "In outputs there is an expiries file with today's date and a directory.md with one row per person."
+            }
+          },
+          {
+            "drive": "folder-share",
+            "do": {
+              "es": "En drive.google.com, selecciona la carpeta y haz clic en Compartir. Escribe el correo de cada persona del equipo y dale Editor a coordinación y a quien aprueba altas y bajas, y Lector a quien solo consulta. Envía.",
+              "en": "At drive.google.com, select the folder and click Share. Type each teammate's email and give Editor to the coordinator and the approver, and Viewer to whoever only consults. Send."
+            },
+            "appears": {
+              "es": "Cada persona recibe un correo con la carpeta compartida.",
+              "en": "Each person gets an email with the shared folder."
+            },
+            "check": {
+              "es": "En la ventana Compartir, cada persona aparece con su rol.",
+              "en": "In the Share window, each person shows with their role."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "Te pide correr un comando o nombra una herramienta.",
+              "en": "It asks you to run a command or names a tool."
+            },
+            "then": {
+              "es": "Vuelve a decir la frase en el mismo chat, con la carpeta abierta como proyecto.",
+              "en": "Say the phrase again in the same chat, with the folder open as the project."
+            }
+          },
+          {
+            "when": {
+              "es": "No puede abrir tu lista de freelancers.",
+              "en": "It cannot open your freelancer list."
+            },
+            "then": {
+              "es": "Pégala como texto en el chat, una persona por línea, o guárdala como CSV o PDF y arrástrala de nuevo.",
+              "en": "Paste it as text in the chat, one person per line, or save it as CSV or PDF and drag it in again."
+            }
+          },
+          {
+            "when": {
+              "es": "Claude no puede abrir la carpeta.",
+              "en": "Claude cannot open the folder."
+            },
+            "then": {
+              "es": "Ábrela de nuevo desde Code y elige Permitir cuando el computador pregunte; en Mac, revisa que Claude tenga acceso a archivos en Configuración del sistema.",
+              "en": "Open it again from Code and choose Allow when the computer asks; on Mac, check Claude has file access in System Settings."
+            }
+          },
+          {
+            "when": {
+              "es": "La carpeta no aparece en Google Drive, Mi unidad, del computador.",
+              "en": "The folder does not show in Google Drive, My Drive, on the computer."
+            },
+            "then": {
+              "es": "Revisa que Drive esté abierto con la cuenta del equipo y espera a que termine de sincronizar.",
+              "en": "Check that Drive is running with the team account and wait for it to finish syncing."
+            }
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "kind": "join",
+        "title": {
+          "es": "Súmate al equipo",
+          "en": "Join the team"
+        },
+        "goal": {
+          "es": "Al terminar, tienes la carpeta del equipo en tu computador y el directorio funciona en ella, igual que para quien la creó.",
+          "en": "When you finish, the team's folder is on your computer and the directory works in it, as it does for whoever created it."
+        },
+        "cards": [
+          "getting-started"
+        ],
+        "before": [
+          {
+            "es": "Que la persona que instaló te haya compartido la carpeta a tu correo.",
+            "en": "The person who installed has shared the folder with your email."
+          },
+          {
+            "es": "Una cuenta de Claude con acceso a Code, abierta en la app de escritorio.",
+            "en": "A Claude account with Code access, signed in on the desktop app."
+          }
+        ],
+        "steps": [
+          {
+            "drive": "share-accept",
+            "do": {
+              "es": "Abre el correo con la carpeta compartida, o ve a drive.google.com y entra a Compartidos conmigo.",
+              "en": "Open the email with the shared folder, or go to drive.google.com and open Shared with me."
+            },
+            "appears": {
+              "es": "La carpeta del equipo en Compartidos conmigo.",
+              "en": "The team's folder in Shared with me."
+            },
+            "check": {
+              "es": "Ves la carpeta con el nombre que te dijeron.",
+              "en": "You see the folder with the name you were told."
+            }
+          },
+          {
+            "drive": "share-shortcut",
+            "do": {
+              "es": "Haz clic derecho sobre la carpeta, luego Organizar y Agregar acceso directo, y elige Mi unidad. Si está en una unidad compartida, sáltate este paso.",
+              "en": "Right-click the folder, then Organize and Add shortcut, and choose My Drive. If it is in a shared drive, skip this step."
+            },
+            "appears": {
+              "es": "La carpeta aparece en tu Mi unidad con el ícono de acceso directo.",
+              "en": "The folder shows in your My Drive with the shortcut icon."
+            },
+            "check": {
+              "es": "La ves en Mi unidad. Sin este paso no llega a tu computador.",
+              "en": "You see it in My Drive. Without this step it never reaches your computer."
+            }
+          },
+          {
+            "drive": "drive-install",
+            "do": {
+              "es": "Instala Google Drive para computadoras: GoogleDriveSetup.exe en Windows, GoogleDrive.dmg en Mac.",
+              "en": "Install Google Drive for desktop: GoogleDriveSetup.exe on Windows, GoogleDrive.dmg on Mac."
+            },
+            "appears": {
+              "es": "El ícono de Drive en la bandeja del sistema o en la barra de menú.",
+              "en": "The Drive icon in the system tray or the menu bar."
+            },
+            "check": {
+              "es": "Ves el ícono de Drive junto al reloj o en la barra de menú.",
+              "en": "You see the Drive icon next to the clock or in the menu bar."
+            }
+          },
+          {
+            "drive": "drive-sign-in",
+            "do": {
+              "es": "Abre Drive, haz clic en Comenzar y en Acceder, y entra con la cuenta a la que te compartieron la carpeta.",
+              "en": "Open Drive, click Get started and Sign in, and use the account the folder was shared with."
+            },
+            "appears": {
+              "es": "En el Explorador de archivos o en Finder, Google Drive con Mi unidad.",
+              "en": "In File Explorer or Finder, Google Drive with My Drive."
+            },
+            "check": {
+              "es": "La carpeta del equipo está dentro de Mi unidad en tu computador.",
+              "en": "The team's folder is inside My Drive on your computer."
+            }
+          },
+          {
+            "drive": "plugin-install",
+            "do": {
+              "es": "En la app de escritorio de Claude, entra a Code, abre la carpeta del equipo desde Google Drive, Mi unidad, eligiendo Permitir si el computador pregunta, y pega este mensaje.",
+              "en": "In the Claude desktop app, go to Code, open the team's folder from Google Drive, My Drive, choosing Allow if the computer asks, and paste this message."
+            },
+            "say": {
+              "es": "Instala el directorio de freelancers de producción de mi empresa. Viene del marketplace AlgortimoTD/molt-agents, plugin directorio-freelancers. Deja listo todo lo que necesite para funcionar y avísame cuando esté, sin explicarme los detalles técnicos.",
+              "en": "Install my company's production freelancer directory. It comes from the marketplace AlgortimoTD/molt-agents, plugin directorio-freelancers. Get everything it needs ready and tell me when it is done, without explaining the technical details."
+            },
+            "appears": {
+              "es": "Instala lo que necesita y responde \"listo\".",
+              "en": "It installs what it needs and answers \"done\"."
+            },
+            "check": {
+              "es": "Respondió \"listo\" sin pedirte ningún comando.",
+              "en": "It answered \"done\" without asking you for any command."
+            }
+          },
+          {
+            "drive": "folder-open",
+            "do": {
+              "es": "Pregúntale algo sobre lo que ya hay en la carpeta, para comprobar que ve la del equipo.",
+              "en": "Ask it something about what is already in the folder, to check it sees the team's one."
+            },
+            "say": {
+              "es": "¿quién hace fotografía de obra?",
+              "en": "who does construction photography?"
+            },
+            "appears": {
+              "es": "Te responde con las personas de las fichas del equipo y la fecha de cada ficha.",
+              "en": "It answers with the people on the team's cards and each card's date."
+            },
+            "check": {
+              "es": "La respuesta nombra personas que están en la carpeta freelancers compartida.",
+              "en": "The answer names people who are in the shared freelancers folder."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "La carpeta no aparece en tu computador.",
+              "en": "The folder does not show on your computer."
+            },
+            "then": {
+              "es": "Revisa el acceso directo en Mi unidad y que Drive esté abierto con la cuenta a la que te compartieron la carpeta.",
+              "en": "Check the shortcut in My Drive and that Drive is running with the account the folder was shared with."
+            }
+          },
+          {
+            "when": {
+              "es": "No puedes cambiar nada en la carpeta.",
+              "en": "You cannot change anything in the folder."
+            },
+            "then": {
+              "es": "Pídele a quien la compartió que en drive.google.com, Compartir, te cambie el rol a Editor.",
+              "en": "Ask whoever shared it to change your role to Editor at drive.google.com, Share."
+            }
+          },
+          {
+            "when": {
+              "es": "Un archivo aparece dos veces, uno con \"(1)\".",
+              "en": "A file appears twice, one with \"(1)\"."
+            },
+            "then": {
+              "es": "Dos personas cambiaron el mismo archivo a la vez; dile al directorio cuál es el bueno y se queda con uno.",
+              "en": "Two people changed the same file at the same time; tell the directory which one is right and it keeps one."
+            }
+          }
+        ]
+      },
+      {
+        "id": "demo",
+        "title": {
+          "es": "Prueba con la productora de ejemplo",
+          "en": "Try the sample company"
+        },
+        "goal": {
+          "es": "Al terminar, tienes una carpeta de ejemplo con ocho fichas inventadas y una producción por armar, para probar cada función sin tocar tus datos.",
+          "en": "When you finish, you have a sample folder with eight invented cards and one shoot to staff, to test every feature without touching your data."
+        },
+        "cards": [
+          "try-the-demo"
+        ],
+        "steps": [
+          {
+            "do": {
+              "es": "En el chat de tu carpeta, dile esto.",
+              "en": "In your folder's chat, say this."
+            },
+            "say": {
+              "es": "puebla el directorio con la productora de ejemplo",
+              "en": "seed the demo production company"
+            },
+            "appears": {
+              "es": "Crea una carpeta nueva al lado de la tuya, nunca adentro, y te dice qué probar en orden.",
+              "en": "It creates a new folder next to yours, never inside it, and tells you what to try in order."
+            },
+            "check": {
+              "es": "En Drive hay una carpeta \"Directorio (demo)\" con ocho archivos en freelancers y uno en solicitudes.",
+              "en": "In Drive there is a \"Directory (demo)\" folder with eight files in freelancers and one in requests."
+            }
+          },
+          {
+            "do": {
+              "es": "Abre la carpeta de ejemplo en Code como proyecto, igual que abriste la tuya.",
+              "en": "Open the sample folder in Code as the project, the way you opened yours."
+            },
+            "appears": {
+              "es": "Un chat con el nombre de la carpeta de ejemplo.",
+              "en": "A chat with the sample folder's name."
+            },
+            "check": {
+              "es": "El nombre \"Directorio (demo)\" aparece arriba del chat. Los capítulos que siguen se hacen aquí.",
+              "en": "The name \"Directory (demo)\" shows above the chat. The next chapters are done here."
+            }
+          },
+          {
+            "do": {
+              "es": "Pregúntale qué sabe de la productora de ejemplo.",
+              "en": "Ask it what it knows about the sample company."
+            },
+            "say": {
+              "es": "¿quiénes están en el pool y quién coordina?",
+              "en": "who is in the pool and who coordinates?"
+            },
+            "appears": {
+              "es": "Ocho personas con sus especialidades y la coordinadora de producción, leídas de las fichas y de la configuración.",
+              "en": "Eight people with their specialties and the production coordinator, read from the cards and the configuration."
+            },
+            "check": {
+              "es": "Nombra ocho personas y dice de qué archivo sale cada dato.",
+              "en": "It names eight people and says which file each fact comes from."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "Dice que ya existe un directorio y no crea la carpeta de ejemplo.",
+              "en": "It says a directory already exists and does not create the sample folder."
+            },
+            "then": {
+              "es": "Repite la frase completa, con la palabra \"ejemplo\": la carpeta de ejemplo va al lado de la tuya y nunca la reemplaza.",
+              "en": "Repeat the full phrase, with the word \"demo\": the sample folder goes next to yours and never replaces it."
+            }
+          }
+        ]
+      },
+      {
+        "id": "staff",
+        "title": {
+          "es": "Una producción de principio a fin",
+          "en": "A shoot from start to finish"
+        },
+        "goal": {
+          "es": "Al terminar, viste una solicitud nacer, recibir respuestas, quedar asignada y cerrarse, y cada paso dejó su rastro en las fichas.",
+          "en": "When you finish, you watched a request get created, receive answers, get assigned and close, and every step left its trail on the cards."
+        },
+        "cards": [
+          "staff-a-shoot",
+          "log-answers",
+          "close-the-shoot"
+        ],
+        "before": [
+          {
+            "es": "La carpeta de ejemplo abierta como proyecto (capítulo 3).",
+            "en": "The sample folder open as the project (chapter 3)."
+          }
+        ],
+        "steps": [
+          {
+            "do": {
+              "es": "Pide la producción del puente, como la pediría la coordinadora.",
+              "en": "Ask for the bridge shoot, as the coordinator would."
+            },
+            "say": {
+              "es": "necesito un fotógrafo mañana a las 7:00 para las vigas del puente nuevo en la vía norte, de 7:00 a 11:00, exige curso de seguridad en obra",
+              "en": "I need a photographer tomorrow at 7:00 for the beams of the new bridge on the north road, 7:00 to 11:00, construction safety course required"
+            },
+            "appears": {
+              "es": "Un archivo nuevo en solicitudes con la lista corta (Ariel, Bel, Greta) y la razón de cada posición, los excluidos (Dani con el curso vencido, Fausto sin fecha) y tres mensajes.",
+              "en": "A new file in requests with the shortlist (Ariel, Bel, Greta) and the reason for each position, the excluded (Dani with the expired course, Fausto undated) and three messages."
+            },
+            "check": {
+              "es": "El archivo tiene tres personas en Lista corta y a Dani en Excluidos con la fecha en que venció su curso.",
+              "en": "The file has three people in the Shortlist and Dani in Excluded with the date his course expired."
+            }
+          },
+          {
+            "do": {
+              "es": "Lee los tres mensajes. Cada uno empieza con la línea de borrador y está en el canal y el idioma de su ficha.",
+              "en": "Read the three messages. Each opens with the draft line and is in the channel and language of its card."
+            },
+            "appears": {
+              "es": "El de Ariel en español para Messenger, el de Bel en inglés para WhatsApp, el de Greta en español para WhatsApp, y una frase que dice cuál mandar primero.",
+              "en": "Ariel's in Spanish for Messenger, Bel's in English for WhatsApp, Greta's in Spanish for WhatsApp, and one sentence saying which to send first."
+            },
+            "check": {
+              "es": "El mensaje de Bel está en inglés y los otros dos en español.",
+              "en": "Bel's message is in English and the other two in Spanish."
+            }
+          },
+          {
+            "do": {
+              "es": "Cuéntale las respuestas como si acabaran de llegar a tu teléfono.",
+              "en": "Tell it the answers as if they had just arrived on your phone."
+            },
+            "say": {
+              "es": "Ariel no puede; Bel dijo que sí a las 3:40",
+              "en": "Ariel cannot; Bel said yes at 3:40"
+            },
+            "appears": {
+              "es": "Dos filas en Respuestas con la hora, Bel en Quién quedó, el Texto de la invitación redactado, y un hecho con fecha en las fichas de Ariel y de Bel.",
+              "en": "Two rows in Answers with the time, Bel under Who got it, the Invite text drafted, and a dated fact on Ariel's and Bel's cards."
+            },
+            "check": {
+              "es": "La ficha de Bel tiene una línea nueva bajo Confiabilidad (hechos) con la fecha de hoy.",
+              "en": "Bel's card has a new line under Reliability (facts) with today's date."
+            }
+          },
+          {
+            "do": {
+              "es": "Pregunta en qué va la solicitud, para ver cómo responde desde el archivo.",
+              "en": "Ask how the request stands, to see how it answers from the file."
+            },
+            "say": {
+              "es": "¿en qué va la solicitud del puente?",
+              "en": "how is the bridge request going?"
+            },
+            "appears": {
+              "es": "Estado asignada, Bel confirmada a las 3:40, y la última fila de respuestas.",
+              "en": "State assigned, Bel confirmed at 3:40, and the last answers row."
+            },
+            "check": {
+              "es": "Dice \"asignada\" y nombra a Bel.",
+              "en": "It says \"assigned\" and names Bel."
+            }
+          },
+          {
+            "do": {
+              "es": "Cierra la producción como si ya hubiera pasado.",
+              "en": "Close the shoot as if it had already happened."
+            },
+            "say": {
+              "es": "cierra la producción del puente; Bel entregó las fotos el mismo día, a tiempo",
+              "en": "close the bridge shoot; Bel delivered the photos the same day, on time"
+            },
+            "appears": {
+              "es": "La tabla de Cierre llena, el estado en cerrada y el hecho de la entrega en la ficha de Bel.",
+              "en": "The Closure table filled, the state set to closed and the delivery fact on Bel's card."
+            },
+            "check": {
+              "es": "El archivo dice \"Estado: cerrada\" y la ficha de Bel tiene la línea de la entrega con la fecha.",
+              "en": "The file says \"State: closed\" and Bel's card has the delivery line with the date."
+            }
+          },
+          {
+            "do": {
+              "es": "Pide la misma producción para una fecha después del 10 de octubre y mira qué cambia.",
+              "en": "Ask for the same shoot for a date after October 10 and watch what changes."
+            },
+            "say": {
+              "es": "necesito un fotógrafo el 15 de noviembre a las 7:00 para las vigas del puente, exige curso de seguridad en obra",
+              "en": "I need a photographer on November 15 at 7:00 for the bridge beams, construction safety course required"
+            },
+            "appears": {
+              "es": "Bel pasa a Excluidos: su curso vence el 10 de octubre, antes de la producción.",
+              "en": "Bel moves to Excluded: her course expires on October 10, before the shoot."
+            },
+            "check": {
+              "es": "Bel está en Excluidos con la fecha de vencimiento de su curso como razón.",
+              "en": "Bel is in Excluded with her course's expiry date as the reason."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "Te ofrece enviar los mensajes.",
+              "en": "It offers to send the messages."
+            },
+            "then": {
+              "es": "No debe hacerlo: cada mensaje lo pegas y lo envías tú. Si lo ofrece, es la señal de que la carpeta no está abierta como proyecto.",
+              "en": "It must not: you paste and send every message yourself. If it offers, the folder is not open as the project."
+            }
+          },
+          {
+            "when": {
+              "es": "No encuentra a qué tipo de trabajo corresponde el pedido.",
+              "en": "It cannot tell which job type the request belongs to."
+            },
+            "then": {
+              "es": "Dile el tipo con las palabras de tus reglas (\"es fotografía de obra\") o pídele que agregue la fila.",
+              "en": "Name the type in the words of your rules (\"it is construction photography\") or ask it to add the row."
+            }
+          }
+        ]
+      },
+      {
+        "id": "cards",
+        "title": {
+          "es": "Las fichas: agregar, preguntar, anotar",
+          "en": "The cards: add, ask, record"
+        },
+        "goal": {
+          "es": "Al terminar, agregaste una persona, preguntaste quién sabe hacer algo y anotaste un hecho, y viste que el directorio no califica ni inventa.",
+          "en": "When you finish, you added a person, asked who can do something and recorded a fact, and saw that the directory neither rates nor invents."
+        },
+        "cards": [
+          "add-a-freelancer",
+          "ask-who-can",
+          "record-a-fact"
+        ],
+        "before": [
+          {
+            "es": "La carpeta de ejemplo abierta como proyecto (capítulo 3).",
+            "en": "The sample folder open as the project (chapter 3)."
+          }
+        ],
+        "steps": [
+          {
+            "do": {
+              "es": "Agrega a una persona nueva en una frase.",
+              "en": "Add a new person in one sentence."
+            },
+            "say": {
+              "es": "agrega a Nora Beltrán, camarógrafa de eventos, WhatsApp en el grupo de producción, escribe en español, curso de seguridad en obra vence en marzo de 2027",
+              "en": "add Nora Beltrán, event camera operator, WhatsApp in the production group, writes in Spanish, construction safety course expires March 2027"
+            },
+            "appears": {
+              "es": "Una ficha nueva en freelancers con Datos, Especialidades y Certificaciones, y una pregunta: qué día de marzo vence el curso. Si no lo sabes, queda sin fecha y como hueco.",
+              "en": "A new card in freelancers with Data, Specialties and Certifications, and a question: which day in March the course expires. If you do not know, it stays undated and becomes a gap."
+            },
+            "check": {
+              "es": "Existe nora-beltran.md en freelancers y el índice de salidas tiene nueve filas.",
+              "en": "nora-beltran.md exists in freelancers and the index in outputs has nine rows."
+            }
+          },
+          {
+            "do": {
+              "es": "Pregunta quién sabe hacer algo.",
+              "en": "Ask who can do something."
+            },
+            "say": {
+              "es": "¿quién edita con detalle?",
+              "en": "who edits with care?"
+            },
+            "appears": {
+              "es": "Emma Loiza, con su ficha y los dos hechos de septiembre que lo respaldan.",
+              "en": "Emma Loiza, with her card and the two September facts that back it."
+            },
+            "check": {
+              "es": "La respuesta nombra el archivo emma-loiza.md y una fecha.",
+              "en": "The answer names the file emma-loiza.md and a date."
+            }
+          },
+          {
+            "do": {
+              "es": "Pregunta por algo que una ficha dice que no se le pide a alguien.",
+              "en": "Ask about something a card says not to ask of someone."
+            },
+            "say": {
+              "es": "¿quién hace gráficas con texto?",
+              "en": "who does text graphics?"
+            },
+            "appears": {
+              "es": "No propone a Ariel y cita su límite de asignación con la fecha, sin repetir cómo se dijo la primera vez.",
+              "en": "It does not propose Ariel and cites his assignment limit with its date, without repeating how it was first said."
+            },
+            "check": {
+              "es": "Ariel no está en la respuesta y la razón es su límite de asignación.",
+              "en": "Ariel is not in the answer and the reason is his assignment limit."
+            }
+          },
+          {
+            "do": {
+              "es": "Cuéntale un hecho sobre una entrega.",
+              "en": "Tell it a fact about a delivery."
+            },
+            "say": {
+              "es": "Dani entregó dos días tarde el 3 de octubre, lo dijo Mateo",
+              "en": "Dani delivered two days late on October 3, Mateo said so"
+            },
+            "appears": {
+              "es": "Una línea nueva bajo Confiabilidad (hechos) en la ficha de Dani, con la fecha y el nombre de Mateo. Nada más cambia.",
+              "en": "A new line under Reliability (facts) on Dani's card, with the date and Mateo's name. Nothing else changes."
+            },
+            "check": {
+              "es": "La línea dice el hecho con fecha y autor; no hay ningún adjetivo ni calificación.",
+              "en": "The line states the fact with date and author; there is no adjective or rating."
+            }
+          },
+          {
+            "do": {
+              "es": "Intenta ponerle una nota a alguien y mira qué hace.",
+              "en": "Try to rate someone and watch what it does."
+            },
+            "say": {
+              "es": "ponle que Dani es poco confiable",
+              "en": "write that Dani is unreliable"
+            },
+            "appears": {
+              "es": "Te pide el hecho concreto (qué pasó y cuándo) en vez de escribir el adjetivo.",
+              "en": "It asks for the concrete fact (what happened and when) instead of writing the adjective."
+            },
+            "check": {
+              "es": "La ficha de Dani no cambió hasta que le diste un hecho con fecha.",
+              "en": "Dani's card did not change until you gave it a dated fact."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "Escribió una ficha con una fecha que tú no le diste.",
+              "en": "It wrote a card with a date you did not give it."
+            },
+            "then": {
+              "es": "Dile \"esa fecha no la di yo\": la quita, deja la certificación sin fecha y anota el hueco. Es exactamente lo que no debe hacer.",
+              "en": "Say \"I did not give that date\": it removes it, leaves the certification undated and records the gap. That is exactly what it must not do."
+            }
+          }
+        ]
+      },
+      {
+        "id": "certifications",
+        "title": {
+          "es": "Certificaciones y el barrido",
+          "en": "Certifications and the sweep"
+        },
+        "goal": {
+          "es": "Al terminar, preguntaste quién está vigente para una fecha, corriste el barrido dos veces y registraste una renovación y un certificado guardado.",
+          "en": "When you finish, you asked who is valid on a date, ran the sweep twice and recorded a renewal and a saved certificate."
+        },
+        "cards": [
+          "check-certifications",
+          "monday-sweep",
+          "save-a-certificate"
+        ],
+        "before": [
+          {
+            "es": "La carpeta de ejemplo abierta como proyecto (capítulo 3).",
+            "en": "The sample folder open as the project (chapter 3)."
+          }
+        ],
+        "steps": [
+          {
+            "do": {
+              "es": "Pregunta quién puede ir a una obra en una fecha.",
+              "en": "Ask who can go to a site on a date."
+            },
+            "say": {
+              "es": "¿quién tiene curso de seguridad en obra vigente el 15 de octubre?",
+              "en": "who holds a valid construction safety course on October 15?"
+            },
+            "appears": {
+              "es": "Ariel (vence el 30 de noviembre) y Greta (vence en enero, sin documento); Bel queda fuera porque vence el 10, Dani porque venció y Fausto porque no tiene fecha.",
+              "en": "Ariel (expires November 30) and Greta (expires in January, no document); Bel is out because hers expires on the 10th, Dani because his expired and Fausto because he has no date."
+            },
+            "check": {
+              "es": "Bel no está en la lista y la razón es su fecha de vencimiento.",
+              "en": "Bel is not on the list and the reason is her expiry date."
+            }
+          },
+          {
+            "do": {
+              "es": "Corre el barrido a mano, sin esperar al lunes.",
+              "en": "Run the sweep by hand, without waiting for Monday."
+            },
+            "say": {
+              "es": "corre el barrido",
+              "en": "run the sweep"
+            },
+            "appears": {
+              "es": "Un reporte nuevo en salidas con la fecha de hoy: Dani vencido, Bel en 7 días, los cursos de Ariel y Fausto en 60 días, el de Fausto sin fecha, el de Greta sin documento. El índice se regenera.",
+              "en": "A new report in outputs with today's date: Dani expired, Bel within 7 days, Ariel's and Fausto's courses within 60 days, Fausto's undated, Greta's without document. The index is regenerated."
+            },
+            "check": {
+              "es": "En salidas hay un vencimientos con la fecha de hoy y la tabla de resumen suma siete certificaciones.",
+              "en": "In outputs there is an expiries file with today's date and the summary table adds up to seven certifications."
+            }
+          },
+          {
+            "do": {
+              "es": "Córrelo otra vez, enseguida.",
+              "en": "Run it again, right away."
+            },
+            "say": {
+              "es": "corre el barrido",
+              "en": "run the sweep"
+            },
+            "appears": {
+              "es": "El mismo archivo, con el mismo contenido; no aparece un segundo reporte para hoy.",
+              "en": "The same file, with the same content; no second report appears for today."
+            },
+            "check": {
+              "es": "En salidas sigue habiendo un solo vencimientos con la fecha de hoy.",
+              "en": "In outputs there is still a single expiries file with today's date."
+            }
+          },
+          {
+            "do": {
+              "es": "Registra una renovación.",
+              "en": "Record a renewal."
+            },
+            "say": {
+              "es": "Dani renovó su curso de seguridad en obra, vence el 28 de septiembre de 2027",
+              "en": "Dani renewed his construction safety course, it expires on September 28, 2027"
+            },
+            "appears": {
+              "es": "La fila de la ficha de Dani cambia a la fecha nueva, la vieja pasa al Historial, y te pide el documento del curso.",
+              "en": "The row on Dani's card changes to the new date, the old one moves to History, and it asks for the course's document."
+            },
+            "check": {
+              "es": "La ficha de Dani tiene la fecha nueva en Certificaciones y la vieja bajo Historial.",
+              "en": "Dani's card has the new date under Certifications and the old one under History."
+            }
+          },
+          {
+            "do": {
+              "es": "Guarda un certificado. Deja cualquier archivo PDF en la carpeta freelancers/soportes y dile de quién es.",
+              "en": "Save a certificate. Drop any PDF file in the freelancers/documents folder and tell it whose it is."
+            },
+            "say": {
+              "es": "dejé en soportes el carné de seguridad en obra de Fausto, vence el 1 de marzo de 2027",
+              "en": "I left Fausto's construction safety card in documents, it expires March 1, 2027"
+            },
+            "appears": {
+              "es": "La ficha de Fausto gana la fecha y el nombre del archivo, y la certificación deja de estar sin fecha.",
+              "en": "Fausto's card gains the date and the file name, and the certification stops being undated."
+            },
+            "check": {
+              "es": "En la ficha de Fausto la fila del curso de seguridad tiene una fecha y el nombre del archivo.",
+              "en": "On Fausto's card the safety course row has a date and the file name."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "El reporte cuenta más o menos de siete certificaciones.",
+              "en": "The report counts more or fewer than seven certifications."
+            },
+            "then": {
+              "es": "Pregúntale qué fichas leyó; cada certificación va en un solo tramo y las que vencen después de 60 días van en \"sin novedad\".",
+              "en": "Ask it which cards it read; each certification goes in one tier only and those expiring after 60 days go under \"no news\"."
+            }
+          },
+          {
+            "when": {
+              "es": "Dice que el archivo que dejaste no está.",
+              "en": "It says the file you dropped is not there."
+            },
+            "then": {
+              "es": "Revisa que esté dentro de freelancers/soportes y espera a que Drive termine de sincronizar; luego repite la frase.",
+              "en": "Check it is inside freelancers/documents and wait for Drive to finish syncing; then repeat the phrase."
+            }
+          }
+        ]
+      },
+      {
+        "id": "tidy",
+        "title": {
+          "es": "Organiza la carpeta",
+          "en": "Tidy the folder"
+        },
+        "goal": {
+          "es": "Al terminar, viste el reporte de la revisión semanal y sabes qué arregla sola y qué te deja como pregunta.",
+          "en": "When you finish, you saw the weekly review's report and know what it fixes alone and what it leaves as a question."
+        },
+        "cards": [
+          "tidy-the-folder"
+        ],
+        "before": [
+          {
+            "es": "La carpeta de ejemplo abierta como proyecto (capítulo 3).",
+            "en": "The sample folder open as the project (chapter 3)."
+          }
+        ],
+        "steps": [
+          {
+            "do": {
+              "es": "Pide la revisión.",
+              "en": "Ask for the review."
+            },
+            "say": {
+              "es": "organiza la carpeta",
+              "en": "organize the folder"
+            },
+            "appears": {
+              "es": "Un reporte nuevo en salidas/auditorias: los huecos abiertos de memoria.md, la solicitud cerrada revisada, y nada borrado.",
+              "en": "A new report in outputs/audits: the open gaps of memory.md, the closed request checked, and nothing deleted."
+            },
+            "check": {
+              "es": "El reporte existe con la fecha de hoy y lista los huecos de Fausto y Greta.",
+              "en": "The report exists with today's date and lists Fausto's and Greta's gaps."
+            }
+          },
+          {
+            "do": {
+              "es": "Rompe una ficha a propósito: abre bel-casas.md en Drive, borra la línea del idioma del bloque de Datos, guarda, y pide la revisión otra vez.",
+              "en": "Break a card on purpose: open bel-casas.md in Drive, delete the language line of the Data block, save, and ask for the review again."
+            },
+            "say": {
+              "es": "organiza la carpeta",
+              "en": "organize the folder"
+            },
+            "appears": {
+              "es": "El reporte señala la ficha de Bel con el campo que falta y te pregunta antes de repararla; no la cambia sola.",
+              "en": "The report flags Bel's card with the missing field and asks you before repairing it; it does not change it alone."
+            },
+            "check": {
+              "es": "El reporte nombra bel-casas.md y la ficha sigue igual hasta que le respondas.",
+              "en": "The report names bel-casas.md and the card stays the same until you answer."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "No hay reporte nuevo en salidas/auditorias.",
+              "en": "There is no new report in outputs/audits."
+            },
+            "then": {
+              "es": "Repite la frase con la carpeta abierta como proyecto; la revisión siempre deja un reporte, aunque sea de una línea diciendo que todo está en orden.",
+              "en": "Repeat the phrase with the folder open as the project; the review always leaves a report, even a one-line one saying all is in order."
+            }
+          }
+        ]
+      },
+      {
+        "id": "limits",
+        "title": {
+          "es": "Pídele lo que no hace",
+          "en": "Ask for what it never does"
+        },
+        "goal": {
+          "es": "Al terminar, viste al directorio negarse a enviar, a invitar y a calificar, y sabes que esa negativa es a propósito.",
+          "en": "When you finish, you saw the directory decline to send, to invite and to rate, and you know that refusal is on purpose."
+        },
+        "cards": [
+          "what-it-never-does"
+        ],
+        "before": [
+          {
+            "es": "La carpeta de ejemplo abierta como proyecto (capítulo 3), con la solicitud del puente del capítulo 4.",
+            "en": "The sample folder open as the project (chapter 3), with the bridge request from chapter 4."
+          }
+        ],
+        "steps": [
+          {
+            "do": {
+              "es": "Pídele que mande un mensaje por ti.",
+              "en": "Ask it to send a message for you."
+            },
+            "say": {
+              "es": "mándale el mensaje a Bel por WhatsApp",
+              "en": "send Bel the message on WhatsApp"
+            },
+            "appears": {
+              "es": "Te dice que no envía nada y te deja el texto listo para que lo pegues desde tu teléfono.",
+              "en": "It says it sends nothing and leaves the text ready for you to paste from your phone."
+            },
+            "check": {
+              "es": "No se envió nada y el mensaje sigue empezando con la línea de borrador.",
+              "en": "Nothing was sent and the message still opens with the draft line."
+            }
+          },
+          {
+            "do": {
+              "es": "Pídele que agende a la persona confirmada.",
+              "en": "Ask it to put the confirmed person on the calendar."
+            },
+            "say": {
+              "es": "mándale la invitación de calendario a Bel",
+              "en": "send Bel the calendar invite"
+            },
+            "appears": {
+              "es": "Te dice que la invitación la envías tú y te muestra el Texto de la invitación de la solicitud.",
+              "en": "It says you send the invite and shows you the Invite text from the request."
+            },
+            "check": {
+              "es": "No hay ningún evento nuevo en tu calendario.",
+              "en": "There is no new event on your calendar."
+            }
+          },
+          {
+            "do": {
+              "es": "Pídele una lista de quién es mejor.",
+              "en": "Ask it for a ranking of who is best."
+            },
+            "say": {
+              "es": "dime quién es el mejor fotógrafo del pool",
+              "en": "tell me who is the best photographer in the pool"
+            },
+            "appears": {
+              "es": "Te da los hechos con fecha de cada ficha y dice que el juicio es del equipo; no ordena a las personas.",
+              "en": "It gives you the dated facts from each card and says the judgment is the team's; it does not rank people."
+            },
+            "check": {
+              "es": "La respuesta no tiene un primer lugar ni adjetivos sobre las personas.",
+              "en": "The answer has no first place and no adjectives about people."
+            }
+          }
+        ],
+        "if_not": [
+          {
+            "when": {
+              "es": "Hizo alguna de las tres cosas.",
+              "en": "It did one of the three things."
+            },
+            "then": {
+              "es": "Dile \"eso no lo haces\" y pídele que lo registre en memoria.md como hueco: la regla está escrita en la carpeta y debe seguirla.",
+              "en": "Say \"you do not do that\" and ask it to record it in memory.md as a gap: the rule is written in the folder and it must follow it."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

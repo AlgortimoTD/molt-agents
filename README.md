@@ -25,6 +25,7 @@ claude.ai (web and mobile): Customize, Plugins, Add marketplace, Add from a repo
 |---|---|---|
 | [`cerebro-operativo`](cerebro-operativo/) | Operating brain for an organization: playbooks and a decision log kept current from recorded meetings, answers to "how do we handle this" with sources, drafts in the company's voice | Engine scaffolded (templates, docs, demo); skills pending their first release |
 | [`codificador-sesiones`](codificador-sesiones/) | Qualitative session coder for a research team: sessions coded by participant and variable with the quote and minute, in the team's format, calibrated on their own hand coding; variables crossed step by step | Internal pilot with Molt's design and research team (0.1.0) |
+| [`directorio-freelancers`](directorio-freelancers/) | Production freelancer directory for a production company or agency: one card per freelancer with specialties, assignment limits, certifications with expiry and dated reliability facts; availability requests drafted per person in priority order; a weekly sweep of expiring certifications | Engine complete and tested on the demo company (0.1.0); skills pending their first registry release; first customer install pending |
 
 ## Conventions
 

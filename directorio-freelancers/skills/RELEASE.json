@@ -1,0 +1,26 @@
+{
+  "stamped_at": "2026-10-05T22:21:16Z",
+  "source": "catalogs/global/<slug>/skill in the platform monorepo",
+  "skills": {
+    "directorio-freelancers-setup": {
+      "version": "1.0.0",
+      "skill_md_sha256": "842f17b79be4a837d6c1d9301fa7cede3a924e593cf96028bd758dd8325e460f"
+    },
+    "directorio-freelancers-audit": {
+      "version": "1.0.0",
+      "skill_md_sha256": "a17c83987fad8c745e87eb50febc11548234f723ef3649b71ca86d73cdd5a45a"
+    },
+    "production-pool-roster": {
+      "version": "1.0.0",
+      "skill_md_sha256": "18b53479a4738163385d72ce5114b147239dd5f444a8657f421fe9b9d901c607"
+    },
+    "certification-expiry-tracker": {
+      "version": "1.0.0",
+      "skill_md_sha256": "d66165db94d5b323cca5b2a957a19f66b2e5cf016fcf81475743f36b00cc6b4a"
+    },
+    "availability-request-drafter": {
+      "version": "1.0.0",
+      "skill_md_sha256": "b51c232ba2b1c518f48fd78d1062e7547f40a1b5838dddad51a074a11b0c6ee8"
+    }
+  }
+}

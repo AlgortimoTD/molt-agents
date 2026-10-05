@@ -17,6 +17,11 @@
       "name": "codificador-sesiones",
       "source": "./codificador-sesiones",
       "description": "Qualitative session coder for a research team on Google Drive: interviews and focus groups coded by participant and variable with the verbatim quote and minute, in the team's own format and calibrated on a study they coded by hand; emergent categories proposed with evidence; variables crossed step by step with a pause for the researcher."
+    },
+    {
+      "name": "directorio-freelancers",
+      "source": "./directorio-freelancers",
+      "description": "Production freelancer directory for a production company or agency on Google Drive: one card per freelancer (specialties, assignment limits, certifications with expiry, dated reliability facts, channel and language), availability requests drafted per person in priority order with the answers logged, and a weekly sweep of certifications about to expire. It never writes to the freelancers, books or pays anyone, or rates a person on its own."
     }
   ]
 }
